@@ -1,0 +1,27 @@
+[Unit]
+Description=Strata Qwen IQ3_S on AMD R9700
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cpaquin
+Group=cpaquin
+SupplementaryGroups=video render
+WorkingDirectory=/opt/strata
+Environment=PYTHONUNBUFFERED=1
+Environment=STRATA_ROUTE_TAIL_SKIP=0
+Environment=STRATA_SPEC_PROB=0
+Environment=STRATA_HC_Q8=0
+ExecStartPre=/usr/bin/python3 /home/cpaquin/Workspace/Git/Containerized-VLLM-AMD-R9700-Strata/scripts/check_config.py /opt/strata/strata-iq3_s.json
+ExecStartPre=/usr/bin/python3 /home/cpaquin/Workspace/Git/Containerized-VLLM-AMD-R9700-Strata/scripts/export_dashboard.py
+ExecStart=/opt/strata/.venv/bin/python -m serve.server --engine strata --config /opt/strata/strata-iq3_s.json --port 8080
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=120
+LimitMEMLOCK=infinity
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

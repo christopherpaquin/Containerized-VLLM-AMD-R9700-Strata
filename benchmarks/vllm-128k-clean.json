@@ -1,0 +1,17 @@
+[
+  {
+    "trial": 0,
+    "elapsed_s": 76.86113844800002,
+    "ttft_s": 76.8055847579999,
+    "decode_tokens_s": 162.0054401423174,
+    "prompt_tokens_per_ttft_s": 1665.842404600317,
+    "usage": {
+      "prompt_tokens": 127946,
+      "total_tokens": 127956,
+      "completion_tokens": 10
+    },
+    "timings": {},
+    "text": "SCAR-READY-7429",
+    "reasoning": ""
+  }
+]

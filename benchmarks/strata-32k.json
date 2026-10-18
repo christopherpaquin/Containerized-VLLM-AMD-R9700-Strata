@@ -1,0 +1,32 @@
+[
+  {
+    "trial": 0,
+    "elapsed_s": 17.64507480100019,
+    "ttft_s": 17.449164080000173,
+    "decode_tokens_s": 45.939292929247884,
+    "prompt_tokens_per_ttft_s": 1830.1163226840195,
+    "usage": {
+      "prompt_tokens": 31934,
+      "completion_tokens": 10,
+      "total_tokens": 31944,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 31934,
+      "prompt_ms": 17384.4,
+      "prompt_per_token_ms": 0.544,
+      "prompt_per_second": 1836.9,
+      "predicted_n": 10,
+      "predicted_ms": 216.6,
+      "predicted_per_token_ms": 21.66,
+      "predicted_per_second": 46.2,
+      "draft_n": 9,
+      "draft_n_accepted": 9
+    },
+    "text": "SCAR-READY-7429",
+    "reasoning": ""
+  }
+]

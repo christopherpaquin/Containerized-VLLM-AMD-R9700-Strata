@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/v0.1.45",
+  "node_id": "REF_kwDOUpvcvbFyZWZzL3RhZ3MvdjAuMS40NQ",
+  "url": "https://api.github.com/repos/Niko1221/Strata/git/refs/tags/v0.1.45",
+  "object": {
+    "sha": "b39442e6088d3ee405ea979723d4d47ba321a5bf",
+    "type": "tag",
+    "url": "https://api.github.com/repos/Niko1221/Strata/git/tags/b39442e6088d3ee405ea979723d4d47ba321a5bf"
+  }
+}

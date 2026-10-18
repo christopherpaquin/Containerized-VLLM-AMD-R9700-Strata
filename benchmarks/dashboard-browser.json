@@ -1,0 +1,22 @@
+{
+  "state": {
+    "engine": "Strata",
+    "health": "Healthy",
+    "model": "qwen3.8-flash-next-iq3_s",
+    "kv": "INT8",
+    "error": "",
+    "models": 1,
+    "groups": [
+      "Model",
+      "Context and memory",
+      "Reasoning and sampling",
+      "Runtime and fidelity"
+    ]
+  },
+  "result": {
+    "note": "Persisted as benchmark #16.",
+    "ttft": "381 ms",
+    "tps": "71.4 tok/s",
+    "error": ""
+  }
+}

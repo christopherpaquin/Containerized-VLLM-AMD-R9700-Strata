@@ -1,0 +1,28 @@
+2026-10-18T15:29:29-04:00
+               total        used        free      shared  buff/cache   available
+Mem:           125Gi        56Gi       1.5Gi       3.0Mi        69Gi        69Gi
+Swap:           31Gi       308Ki        31Gi
+procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
+ 3  0    308 1580132 108500 72587564    0    0 24736 25384 11606   12 14  2 83  1  0  0
+ 3  0    308 1590456 108508 72587568    0    0    40    60 4863 4795 10  7 83  0  0  0
+ 3  0    308 1598020 108508 72587620    0    0    40    32 5117 5937 10  7 83  0  0  0
+/sys/class/drm/card1/device
+mem_info_vram_total
+34208743424
+mem_info_vram_used
+33892155392
+gpu_busy_percent
+100
+    PID   RSS    VSZ COMMAND
+ 132908 55067508 95267912 strata
+  48544 372656 1639416 codex
+   2814 325504 74786468 opencode
+  48642 201164 611864 codex
+ 132901 192832 636520 python
+  51946 167572 906792 codex
+   5832 165080 903484 hermes
+ 129903 136380 513884 hermes
+   2812 115540 3055156 dockerd
+   4764 78432 163672 uvicorn
+   2493 71780 2573980 containerd

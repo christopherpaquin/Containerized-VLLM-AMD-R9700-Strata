@@ -1,0 +1,48 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "qwen3.8-flash-next-iq3_s",
+      "object": "model",
+      "status": {
+        "value": "loaded"
+      },
+      "meta": {
+        "n_ctx": 262144
+      },
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ]
+      },
+      "aliases": [
+        "scar-coder"
+      ]
+    },
+    {
+      "id": "scar-coder",
+      "object": "model",
+      "status": {
+        "value": "loaded"
+      },
+      "meta": {
+        "n_ctx": 262144
+      },
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ]
+      },
+      "aliases": [
+        "scar-coder"
+      ],
+      "alias_of": "qwen3.8-flash-next-iq3_s"
+    }
+  ]
+}

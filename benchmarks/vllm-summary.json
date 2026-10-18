@@ -1,0 +1,59 @@
+{
+  "short_decode_median_tokens_s": 122.39485567567505,
+  "short_ttft_median_s": 0.10522274599998127,
+  "diagnostic_cases": 10,
+  "diagnostic_length_finishes": 9,
+  "agent": {
+    "passed": true,
+    "elapsed_s": 23.3414714810001,
+    "steps": 5,
+    "tool_calls": 8,
+    "repeated_calls": 0
+  },
+  "long_context": {
+    "32k": {
+      "trial": 0,
+      "elapsed_s": 11.534527002999994,
+      "ttft_s": 11.456070552000028,
+      "decode_tokens_s": 114.7133203871784,
+      "prompt_tokens_per_ttft_s": 2787.517749218547,
+      "usage": {
+        "prompt_tokens": 31934,
+        "total_tokens": 31944,
+        "completion_tokens": 10
+      },
+      "text": "SCAR-READY-7429",
+      "reasoning": ""
+    },
+    "128k": {
+      "trial": 0,
+      "elapsed_s": 76.86113844800002,
+      "ttft_s": 76.8055847579999,
+      "decode_tokens_s": 162.0054401423174,
+      "prompt_tokens_per_ttft_s": 1665.842404600317,
+      "usage": {
+        "prompt_tokens": 127946,
+        "total_tokens": 127956,
+        "completion_tokens": 10
+      },
+      "timings": {},
+      "text": "SCAR-READY-7429",
+      "reasoning": ""
+    },
+    "256k": {
+      "trial": 0,
+      "elapsed_s": 160.54216391800014,
+      "ttft_s": 160.43280173300013,
+      "decode_tokens_s": 82.29535647993184,
+      "prompt_tokens_per_ttft_s": 1607.8445131768892,
+      "usage": {
+        "prompt_tokens": 257951,
+        "total_tokens": 257961,
+        "completion_tokens": 10
+      },
+      "timings": {},
+      "text": "SCAR-READY-7429",
+      "reasoning": ""
+    }
+  }
+}

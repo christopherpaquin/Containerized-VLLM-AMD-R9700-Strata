@@ -1,0 +1,20 @@
+{
+  "correct": 18,
+  "trials": 18,
+  "task_types": 9,
+  "seeds": [
+    42,
+    43
+  ],
+  "hard_correct": 2,
+  "hard_trials": 2,
+  "hard_elapsed_s": [
+    206.69904109100025,
+    207.34489303400005
+  ],
+  "notes": [
+    "Synthetic suite; no vLLM comparison performed.",
+    "Hard trials reached effective thinking cap; both final answers correct.",
+    "Human reviewed uncertainty examples in both screening trials."
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "trial": 0,
+    "elapsed_s": 4.342884511999728,
+    "ttft_s": 0.622217714999806,
+    "decode_tokens_s": 68.536102239957,
+    "prompt_tokens_per_ttft_s": 69.10764345565669,
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 256,
+      "total_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 43,
+      "prompt_ms": 563.7,
+      "prompt_per_token_ms": 13.109,
+      "prompt_per_second": 76.3,
+      "predicted_n": 256,
+      "predicted_ms": 3754.5,
+      "predicted_per_token_ms": 14.666,
+      "predicted_per_second": 68.2,
+      "draft_n": 221,
+      "draft_n_accepted": 171
+    },
+    "text": "```python\nimport json\nimport sys\n\n\ndef count_journal_units(input_lines):\n    \"\"\"\n    Parse journalctl JSON output line by line, count messages per systemd unit,\n    and ignore malformed lines.\n    \n    Args:\n        input_lines: An iterable of strings (each representing a JSON line from journalctl).\n        \n    Returns:\n        A dictionary mapping systemd unit names to their message counts.\n    \"\"\"\n    unit_counts = {}\n    \n    for line in input_lines:\n        line = line.strip()\n        if not line:\n            continue\n        \n        try:\n            data = json.loads(line)\n        except json.JSONDecodeError:\n            # Ignore malformed JSON lines\n            continue\n        \n        # journalctl JSON output typically has a \"UNIT\" or \"_SYSTEMD_UNIT\" field\n        # depending on the version and output format. We check both common keys.\n        unit = data.get(\"UNIT\") or data.get(\"_SYSTEMD_UNIT\")\n        \n        if unit is None:\n            continue\n        \n        unit = str(unit)\n        unit_counts[unit] = unit_counts.get(unit, 0) + 1\n    \n    return unit_counts\n\n\nif __name__ == \"__main__\":\n   ",
+    "reasoning": ""
+  },
+  {
+    "trial": 1,
+    "elapsed_s": 3.3750468080002065,
+    "ttft_s": 0.076001683999948,
+    "decode_tokens_s": 77.29509309978751,
+    "prompt_tokens_per_ttft_s": 565.7769372587774,
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 256,
+      "total_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 36
+      }
+    },
+    "timings": {
+      "cache_n": 36,
+      "prompt_n": 7,
+      "prompt_ms": 52.4,
+      "prompt_per_token_ms": 7.486,
+      "prompt_per_second": 133.6,
+      "predicted_n": 256,
+      "predicted_ms": 3318.4,
+      "predicted_per_token_ms": 12.963,
+      "predicted_per_second": 77.1,
+      "draft_n": 251,
+      "draft_n_accepted": 153
+    },
+    "text": "```python\nimport json\nfrom collections import defaultdict\nimport sys\n\n\ndef count_messages_by_unit(journal_lines: str) -> dict[str, int]:\n    \"\"\"\n    Parse journalctl JSON output (one JSON object per line), count messages\n    grouped by systemd unit, and silently skip malformed/invalid lines.\n    \n    Each journalctl JSON line contains fields like '_SYSTEMD_UNIT' and 'MESSAGE'.\n    We count each valid JSON line that has a '_SYSTEMD_UNIT' field, incrementing\n    the count for that unit. Lines that are not valid JSON, are missing required\n    fields, or fail in other ways are ignored.\n\n    Args:\n        journal_lines: A string containing multiple lines of journalctl JSON output.\n\n    Returns:\n        A dictionary mapping systemd unit names to their message counts.\n    \"\"\"\n    counts: dict[str, int] = defaultdict(int)\n\n    for line in journal_lines.splitlines():\n        line = line.strip()\n        if not line:\n            continue\n        try:\n            record = json.loads(line)\n        except (json.JSONDecodeError, TypeError):\n            # Skip malformed JSON lines\n            continue\n\n        # Ensure the parsed record is a",
+    "reasoning": ""
+  },
+  {
+    "trial": 2,
+    "elapsed_s": 2.9609744489998775,
+    "ttft_s": 0.07029142199962735,
+    "decode_tokens_s": 88.21444538131227,
+    "prompt_tokens_per_ttft_s": 611.7389402113386,
+    "usage": {
+      "prompt_tokens": 43,
+      "completion_tokens": 256,
+      "total_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 36
+      }
+    },
+    "timings": {
+      "cache_n": 36,
+      "prompt_n": 7,
+      "prompt_ms": 47.7,
+      "prompt_per_token_ms": 6.814,
+      "prompt_per_second": 146.8,
+      "predicted_n": 256,
+      "predicted_ms": 2909.5,
+      "predicted_per_token_ms": 11.365,
+      "predicted_per_second": 88.0,
+      "draft_n": 227,
+      "draft_n_accepted": 161
+    },
+    "text": "```python\nimport json\nfrom collections import defaultdict\nfrom typing import Iterator\n\n\ndef count_journalctl_messages(lines: Iterator[str] | list[str]) -> dict[str, int]:\n    \"\"\"\n    Safely parse journalctl JSON lines and count messages by systemd unit.\n\n    Each valid JSON line is expected to be a dict with at least a \"UNIT\" field.\n    Malformed JSON lines or missing required fields are silently ignored.\n\n    Parameters:\n        lines: An iterable of strings, each potentially a JSON object from journalctl --output=json\n\n    Returns:\n        A dictionary mapping unit names to their message counts.\n    \"\"\"\n    counts: dict[str, int] = defaultdict(int)\n\n    for line in lines:\n        try:\n            record = json.loads(line)\n            # journalctl uses \"_SYSTEMD_UNIT\" for the unit name, but \"UNIT\" is sometimes\n            # used in simplified output. Support both for robustness.\n            unit = record.get(\"_SYSTEMD_UNIT\") or record.get(\"UNIT\")\n            if unit is not None and isinstance(unit, str):\n                counts[unit] += 1\n        except (json.JSONDecodeError, TypeError, AttributeError):\n            # Sil",
+    "reasoning": ""
+  }
+]

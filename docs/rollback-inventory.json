@@ -1,0 +1,65 @@
+{
+  "Id": "5c799814e10c200fe053b1b69dfec016ce93900c2658e491f25a509cb6aaf319",
+  "Name": "/radlight-vllm",
+  "Image": "sha256:b8a082f346d069376d35784250e38b23a043efe979408ae3a33d7c6b62ee3276",
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/var/lib/radiance-vllm/radlight-cache",
+      "Destination": "/cache",
+      "Mode": "rw",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/var/lib/radiance-vllm/hf-cache/radlight-models/Qwen3.8-27B-DFlash2-FP8",
+      "Destination": "/models/drafter",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/var/lib/radiance-vllm/hf-cache/radlight-models/Qwen3.8-27B-Quark-AWQ-MXFP4",
+      "Destination": "/models/target",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/var/lib/radiance-vllm/upstream/vllm-radlight",
+      "Destination": "/opt/repo",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ],
+  "labels": {
+    "com.docker.compose.config-hash": "6d2fbd1191002262c5e3f0e6ccfb104097299a94e702ad6b10e30656456cd1bc",
+    "com.docker.compose.container-number": "1",
+    "com.docker.compose.depends_on": "",
+    "com.docker.compose.image": "sha256:b8a082f346d069376d35784250e38b23a043efe979408ae3a33d7c6b62ee3276",
+    "com.docker.compose.oneoff": "False",
+    "com.docker.compose.project": "radiance-vllm-amd-r9700",
+    "com.docker.compose.project.config_files": "/home/cpaquin/Workspace/Git/Radiance-vLLM-AMD-R9700/compose.radlight.yaml",
+    "com.docker.compose.project.working_dir": "/home/cpaquin/Workspace/Git/Radiance-vLLM-AMD-R9700",
+    "com.docker.compose.replace": "radlight-vllm",
+    "com.docker.compose.service": "radlight-vllm",
+    "com.docker.compose.version": "5.4.0",
+    "org.opencontainers.image.version": "24.04"
+  },
+  "restart_policy": {
+    "Name": "unless-stopped",
+    "MaximumRetryCount": 0
+  },
+  "ports": {
+    "8000/tcp": [
+      {
+        "HostIp": "0.0.0.0",
+        "HostPort": "8080"
+      }
+    ]
+  }
+}

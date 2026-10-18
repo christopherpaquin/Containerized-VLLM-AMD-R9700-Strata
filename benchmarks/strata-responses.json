@@ -1,0 +1,59 @@
+{
+  "id": "resp_817b9fa710304bdfb060dea47bf6f9f1",
+  "object": "response",
+  "created_at": 1792351638,
+  "status": "completed",
+  "background": false,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 64,
+  "model": "scar-coder",
+  "output": [
+    {
+      "id": "msg_e1dd0c565681480a981797b4fb4af3c7",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "SCAR_READY.",
+          "annotations": [],
+          "logprobs": []
+        }
+      ]
+    }
+  ],
+  "parallel_tool_calls": true,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "none",
+    "summary": null
+  },
+  "store": false,
+  "temperature": null,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": null,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 18,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 5,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 23
+  },
+  "user": null,
+  "metadata": {},
+  "completed_at": 1792351638
+}

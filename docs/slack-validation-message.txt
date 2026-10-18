@@ -1,0 +1,5 @@
+Validation follow-up: the Strata service passed Chat Completions, the tool-call/result round trip, Responses API generation, all five tests in the coding-agent fixture, and marker retrieval at 32K, 128K and 257,951 prompt tokens. No automatic restarts or kernel messages occurred after the final start; both server/model processes report zero swap usage.
+
+The quality baseline is running as requested. Performance acceptance remains open: median short decode is 77.3 tokens/sec versus 122.4 on vLLM (~37% lower); the coding trial took 39.7 seconds versus 23.3. Diagnostic review found mixed answers, so improved long-horizon quality is not yet established. Extended real-work validation is still needed before calling all goals complete.
+
+All settings, results, caveats and rollback commands are documented in the project. vLLM remains preserved and stopped. API/key details are in the readiness message above.

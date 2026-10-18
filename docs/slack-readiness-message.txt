@@ -1,0 +1,11 @@
+Scar inference is back up on Strata v0.1.45 with Qwen3.8-Flash-Next GSQ-RCO IQ3_S on the R9700.
+
+API: http://scar.lab:8080/v1
+Model alias: scar-coder
+API key on scar: /home/cpaquin/.config/strata/api-key (user-only file; key not posted here).
+
+Verified live generation and a tool-call/result round trip. Native 262144 context is configured, INT8 KV streams with a 32768-token resident window, and the complete 46.84 GiB expert pool is loaded in RAM. Vision, route-tail skipping, speed projection, and added Q8 projection quantization are disabled. vLLM is preserved for rollback; Hermes is stopped.
+
+Performance caveat: the initial short probe measured 69–88 output tokens/sec versus 111–142 for the old vLLM backend. The speed target is not yet met. Long-context and engineering validation are continuing; full acceptance is not yet claimed.
+
+Plan and deployment record: /home/cpaquin/Workspace/Git/Containerized-VLLM-AMD-R9700-Strata/PROJECT_PLAN.md and docs/DEPLOYMENT.md.

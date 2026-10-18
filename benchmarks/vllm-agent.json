@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "elapsed_s": 23.3414714810001,
+  "steps": 5,
+  "tool_calls": 8,
+  "repeated_calls": 0,
+  "initial": {
+    "exit_code": 1,
+    "output": "test_empty (test_app.TestApp.test_empty) ... ERROR\ntest_malformed (test_app.TestApp.test_malformed) ... ERROR\ntest_missing_name (test_app.TestApp.test_missing_name) ... ERROR\ntest_timeout_seconds (test_app.TestApp.test_timeout_seconds) ... FAIL\ntest_valid (test_app.TestApp.test_valid) ... ok\n\n======================================================================\nERROR: test_empty (test_app.TestApp.test_empty)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/work/test_app.py\", line 20, in test_empty\n    code,out,err=self.check_cli(\"\")\n                 ^^^^^^^^^^^^^^^^^^\n  File \"/work/test_app.py\", line 14, in check_cli\n    code=cli.main([str(f)])\n         ^^^^^^^^^^^^^^^^^^\n  File \"/work/cli.py\", line 5, in main\n    config = json.load(stream)\n             ^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\n======================================================================\nERROR: test_malformed (test_app.TestApp.test_malformed)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/work/test_app.py\", line 23, in test_malformed\n    code,out,err=self.check_cli(\"{\")\n                 ^^^^^^^^^^^^^^^^^^^\n  File \"/work/test_app.py\", line 14, in check_cli\n    code=cli.main([str(f)])\n         ^^^^^^^^^^^^^^^^^^\n  File \"/work/cli.py\", line 5, in main\n    config = json.load(stream)\n             ^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ^^^^^^^^^^^^^^^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n\n======================================================================\nERROR: test_missing_name (test_app.TestApp.test_missing_name)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/work/test_app.py\", line 26, in test_missing_name\n    code,out,err=self.check_cli(\"{}\")\n                 ^^^^^^^^^^^^^^^^^^^^\n  File \"/work/test_app.py\", line 14, in check_cli\n    code=cli.main([str(f)])\n         ^^^^^^^^^^^^^^^^^^\n  File \"/work/cli.py\", line 6, in main\n    print(config[\"name\"])\n          ~~~~~~^^^^^^^^\nKeyError: 'name'\n\n======================================================================\nFAIL: test_timeout_seconds (test_app.TestApp.test_timeout_seconds)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/work/test_app.py\", line 8, in test_timeout_seconds\n    session.get.assert_called_once_with(\"https://example.test\", timeout=5.0)\n  File \"/usr/lib/python3.12/unittest/mock.py\", line 956, in assert_called_once_with\n    return self.assert_called_with(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/unittest/mock.py\", line 944, in assert_called_with\n    raise AssertionError(_error_message()) from cause\nAssertionError: expected call not found.\nExpected: get('https://example.test', timeout=5.0)\n  Actual: get('https://example.test', timeout=5000)\n\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nFAILED (failures=1, errors=3)\n"
+  },
+  "final": {
+    "exit_code": 0,
+    "output": "test_empty (test_app.TestApp.test_empty) ... ok\ntest_malformed (test_app.TestApp.test_malformed) ... ok\ntest_missing_name (test_app.TestApp.test_missing_name) ... ok\ntest_timeout_seconds (test_app.TestApp.test_timeout_seconds) ... ok\ntest_valid (test_app.TestApp.test_valid) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+  },
+  "history": [
+    {
+      "step": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-9c1c8fc2ff21d0a2",
+            "type": "function",
+            "function": {
+              "name": "list_files",
+              "arguments": "{}"
+            }
+          }
+        ],
+        "reasoning": "Let's start by exploring the repository to understand what we're dealing with.\n"
+      },
+      "finish_reason": "tool_calls",
+      "results": [
+        {
+          "tool": {
+            "name": "list_files",
+            "arguments": "{}"
+          },
+          "result": [
+            "cli.py",
+            "client.py",
+            "settings.py",
+            "test_app.py"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-a6c9088f235d1f21",
+            "type": "function",
+            "function": {
+              "name": "read_file",
+              "arguments": "{\"path\": \"cli.py\"}"
+            }
+          },
+          {
+            "id": "chatcmpl-tool-939e95d964608855",
+            "type": "function",
+            "function": {
+              "name": "read_file",
+              "arguments": "{\"path\": \"client.py\"}"
+            }
+          },
+          {
+            "id": "chatcmpl-tool-a5d87a055822558e",
+            "type": "function",
+            "function": {
+              "name": "read_file",
+              "arguments": "{\"path\": \"settings.py\"}"
+            }
+          },
+          {
+            "id": "chatcmpl-tool-89ac3a0e5b021e03",
+            "type": "function",
+            "function": {
+              "name": "read_file",
+              "arguments": "{\"path\": \"test_app.py\"}"
+            }
+          }
+        ],
+        "reasoning": "I'm examining each file.\n"
+      },
+      "finish_reason": "tool_calls",
+      "results": [
+        {
+          "tool": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"cli.py\"}"
+          },
+          "result": "import json\nimport sys\ndef main(argv):\n    with open(argv[0]) as stream:\n        config = json.load(stream)\n    print(config[\"name\"])\n    return 0\nif __name__ == \"__main__\":\n    sys.exit(main(sys.argv[1:]))\n"
+        },
+        {
+          "tool": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"client.py\"}"
+          },
+          "result": "from settings import TIMEOUT_MS\ndef fetch(session, url):\n    return session.get(url, timeout=TIMEOUT_MS)\n"
+        },
+        {
+          "tool": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"settings.py\"}"
+          },
+          "result": "TIMEOUT_MS = 5000\n"
+        },
+        {
+          "tool": {
+            "name": "read_file",
+            "arguments": "{\"path\": \"test_app.py\"}"
+          },
+          "result": "import contextlib, io, tempfile, unittest\nfrom pathlib import Path\nfrom unittest.mock import Mock\nimport client, cli\nclass TestApp(unittest.TestCase):\n    def test_timeout_seconds(self):\n        session=Mock(); client.fetch(session, \"https://example.test\")\n        session.get.assert_called_once_with(\"https://example.test\", timeout=5.0)\n    def check_cli(self, text):\n        with tempfile.TemporaryDirectory() as folder:\n            f=Path(folder)/\"config.json\"; f.write_text(text)\n            stdout,stderr=io.StringIO(),io.StringIO()\n            with contextlib.redirect_stdout(stdout),contextlib.redirect_stderr(stderr):\n                code=cli.main([str(f)])\n            return code,stdout.getvalue(),stderr.getvalue()\n    def test_valid(self):\n        code,out,err=self.check_cli('{\"name\":\"scar\"}')\n        self.assertEqual((code,out,err),(0,\"scar\\n\",\"\"))\n    def test_empty(self):\n        code,out,err=self.check_cli(\"\")\n        self.assertEqual(code,2); self.assertTrue(err.strip()); self.assertNotIn(\"Traceback\",err)\n    def test_malformed(self):\n        code,out,err=self.check_cli(\"{\")\n        self.assertEqual(code,2); self.assertTrue(err.strip()); self.assertNotIn(\"Traceback\",err)\n    def test_missing_name(self):\n        code,out,err=self.check_cli(\"{}\")\n        self.assertEqual(code,2); self.assertIn(\"name\",err.lower())\n"
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "message": {
+        "role": "assistant",
+        "content": "I've reviewed all four files. The evidence:\n\n1. **Timeout bug:** `settings.py` defines `TIMEOUT_MS = 5000` (milliseconds), and `client.py` passes it **raw** to `session.get(..., timeout=TIMEOUT_MS)`. The HTTP `timeout` parameter is in **seconds**, so a 5-second timeout is being applied as 5000 seconds. There's no DNS retry logic anywhere in the repo \u2014 the operator's hypothesis is wrong. Unit confusion is the cause.\n2. **CLI bug:** `cli.py` has no error handling \u2014 an empty/malformed JSON file raises `JSONDecodeError` (traceback), and `config[\"name\"]` raises `KeyError` when the key is missing. The tests expect return code 2 and a clean stderr message.\n\nNote: `settings.py` is left unchanged (the timeout is kept in milliseconds); `client.py` converts to seconds at the call site.",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-96dec6f175081768",
+            "type": "function",
+            "function": {
+              "name": "write_file",
+              "arguments": "{\"path\": \"client.py\", \"content\": \"from settings import TIMEOUT_MS\\n\\n\\ndef fetch(session, url):\\n    # HTTP timeout is expressed in seconds; settings keep it in milliseconds.\\n    return session.get(url, timeout=TIMEOUT_MS / 1000.0)\\n\"}"
+            }
+          },
+          {
+            "id": "chatcmpl-tool-a3d6496a7106cf0e",
+            "type": "function",
+            "function": {
+              "name": "write_file",
+              "arguments": "{\"path\": \"cli.py\", \"content\": \"import json\\nimport sys\\n\\n\\ndef main(argv):\\n    if not argv:\\n        print(\\\"error: missing config file path\\\", file=sys.stderr)\\n        return 2\\n    try:\\n        with open(argv[0]) as stream:\\n            config = json.load(stream)\\n    except (OSError, ValueError) as exc:\\n        print(f\\\"error: could not read config file {argv[0]}: {exc}\\\", file=sys.stderr)\\n        return 2\\n    if not isinstance(config, dict) or \\\"name\\\" not in config:\\n        print(\\\"error: config must be a JSON object with a 'name' key\\\", file=sys.stderr)\\n        return 2\\n    print(config[\\\"name\\\"])\\n    return 0\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    sys.exit(main(sys.argv[1:]))\\n\"}"
+            }
+          }
+        ],
+        "reasoning": "Analyzing the evidence:\n\n1. **HTTP timeouts are unexpectedly long**: `TIMEOUT_MS = 5000` is being passed directly to `session.get(url, timeout=TIMEOUT_MS)`. The test expects `timeout=5.0` (seconds). That is, `TIMEOUT_MS = 5000` (milliseconds) needs to be converted to seconds when used: `timeout=TIMEOUT_MS / 1000` \u2192 5.0. The requirement says \"maintain the configured timeout in milliseconds.\" Therefore, `settings.py` should keep `TIMEOUT_MS = 5000`, and `client.py` should convert it to seconds for the HTTP call (in requests, `timeout` is in seconds). The operator's hypothesis that \"DNS retries are the cause\" is wrong \u2014 the evidence shows the timeout is being passed in milliseconds where seconds are expected, making it 1000x longer (5000 seconds \u2248 83 minutes). DNS retries have nothing to do with it. The fix: `timeout=TIMEOUT_MS / 1000.0` in `client.py`.\n\n2. **Invalid CLI configurations raise tracebacks**: `cli.py`'s `main` directly opens the file and does `json.load`, then accesses `config[\"name\"]` \u2014 with an empty/malformed file a `JSONDecodeError` is raised, and with `{}` a `KeyError` is raised. Test expectations:\n   - Valid: `{\"name\":\"scar\"}` \u2192 code 0, stdout \"scar\\n\", stderr \"\"\n   - Empty file \u2192 code 2, stderr not empty, no \"Traceback\"\n   - Malformed `{` \u2192 code 2, stderr not empty, no \"Traceback\"\n   - `{}` (missing name) \u2192 code 2, stderr contains \"name\" (case-insensitive)\n\nAlso, the case where the file itself doesn't exist is not tested, but for robustness it should similarly be handled with code 2. The requirement: \"make CLI errors return code 2 and display clear stderr.\"\n\nLet me rewrite cli.py:\n\n```python\nimport json\nimport sys\n\n\ndef main(argv):\n    if not argv:\n        print(\"usage: provide a path to a JSON config file\", file=sys.stderr)\n        return 2\n    try:\n        with open(argv[0]) as stream:\n            config = json.load(stream)\n    except (OSError, ValueError) as exc:\n        print(f\"error: failed to read config file {argv[0]}: {exc}\", file=sys.stderr)\n        return 2\n    if \"name\" not in config:\n        print(\"error: config is missing required key 'name'\", file=sys.stderr)\n        return 2\n    if not isinstance(config, dict):\n        print(\"error: config must be a JSON object with a 'name' key\", file=sys.stderr)\n        return 2\n    print(config[\"name\"])\n    return 0\n\n\nif __name__ == \"__main__\":\n    sys.exit(main(sys.argv[1:]))\n```\n\nWait \u2014 `json.load` on a non-dict like `[1]` would pass through, but then `\"name\" not in config` would raise TypeError on a list. So the dict check should come first. In fact, `\"name\" in [1,2]` checks membership and doesn't raise an exception; `in` works on lists too. So for a list, `\"name\" in config` would be False and it would proceed to the missing-name branch. That's fine, though the message might be slightly off; either way it's OK. Let's check the isinstance first for clarity.\n\nNote: `json.JSONDecodeError` is a subclass of `ValueError`, so catching `ValueError` covers it. `OSError` covers FileNotFoundError/PermissionError.\n\nRegarding empty file: `json.load` raises `JSONDecodeError: Expecting value: line 1 column 1 (char 0)` \u2192 stderr will show the message containing \"name\"? No \u2014 the empty file message is \"Expecting value...\" which does not contain \"name\". test_empty only requires code 2, non-empty stderr, and no \"Traceback\". Good.\n\nFor the missing-name case, the error message contains \"name\" (the lowercased check: `self.assertIn(\"name\", err.lower())`). My message \"error: config is missing required key 'name'\" contains \"name\". Good.\n\nOne note: the test asserts `assertNotIn(\"Traceback\", err)` \u2014 my stderr messages don't contain \"Traceback\". Good.\n\nAlso, I should be careful: when writing to stderr via `print(..., file=sys.stderr)` \u2014 the test uses `contextlib.redirect_stderr`, which replaces `sys.stderr`. Since I reference `sys.stderr` dynamically inside the function, it will use the redirected stream. Good \u2014 I use `file=sys.stderr` at call time, not a captured reference.\n\nNext, `client.py`:\n\n```python\nfrom settings import TIMEOUT_MS\n\n\ndef fetch(session, url):\n    return session.get(url, timeout=TIMEOUT_MS / 1000.0)\n```\n\nThis returns 5000 / 1000.0 = 5.0. The test expects `timeout=5.0`. `5000 / 1000.0` is 5.0.\n\nPreserve the valid-input behavior: the CLI prints the name and returns 0. Preserved.\n\nDNS retries: the operator's hypothesis \u2014 the evidence shows there are no DNS-related settings or retry logic anywhere in the repo; the true cause of the long timeouts is the unit confusion (milliseconds passed where seconds are expected). Let me state that in the final answer.\n\nAlright, let me write the files and run the tests.\n"
+      },
+      "finish_reason": "tool_calls",
+      "results": [
+        {
+          "tool": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"client.py\", \"content\": \"from settings import TIMEOUT_MS\\n\\n\\ndef fetch(session, url):\\n    # HTTP timeout is expressed in seconds; settings keep it in milliseconds.\\n    return session.get(url, timeout=TIMEOUT_MS / 1000.0)\\n\"}"
+          },
+          "result": "saved"
+        },
+        {
+          "tool": {
+            "name": "write_file",
+            "arguments": "{\"path\": \"cli.py\", \"content\": \"import json\\nimport sys\\n\\n\\ndef main(argv):\\n    if not argv:\\n        print(\\\"error: missing config file path\\\", file=sys.stderr)\\n        return 2\\n    try:\\n        with open(argv[0]) as stream:\\n            config = json.load(stream)\\n    except (OSError, ValueError) as exc:\\n        print(f\\\"error: could not read config file {argv[0]}: {exc}\\\", file=sys.stderr)\\n        return 2\\n    if not isinstance(config, dict) or \\\"name\\\" not in config:\\n        print(\\\"error: config must be a JSON object with a 'name' key\\\", file=sys.stderr)\\n        return 2\\n    print(config[\\\"name\\\"])\\n    return 0\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    sys.exit(main(sys.argv[1:]))\\n\"}"
+          },
+          "result": "saved"
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "message": {
+        "role": "assistant",
+        "content": "Both fixes are in. Running the tests:",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "chatcmpl-tool-a3efd6c57cf26b42",
+            "type": "function",
+            "function": {
+              "name": "run_tests",
+              "arguments": "{}"
+            }
+          }
+        ],
+        "reasoning": "Next, I'll run the test.\n"
+      },
+      "finish_reason": "tool_calls",
+      "results": [
+        {
+          "tool": {
+            "name": "run_tests",
+            "arguments": "{}"
+          },
+          "result": {
+            "exit_code": 0,
+            "output": "test_empty (test_app.TestApp.test_empty) ... ok\ntest_malformed (test_app.TestApp.test_malformed) ... ok\ntest_missing_name (test_app.TestApp.test_missing_name) ... ok\ntest_timeout_seconds (test_app.TestApp.test_timeout_seconds) ... ok\ntest_valid (test_app.TestApp.test_valid) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK\n"
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "message": {
+        "role": "assistant",
+        "content": "\n\nAll 5 tests pass. Summary of findings and changes:\n\n**Diagnosis (evidence-based):**\n- **Long HTTP timeouts** \u2014 *not* DNS retries (no DNS or retry logic exists anywhere in the repo). `client.py` passed `TIMEOUT_MS` (5000) directly to `session.get(timeout=...)`, but the `timeout` parameter is in seconds, so requests waited up to 5000 s (~83 min) instead of 5 s.\n- **Tracebacks on invalid CLI config** \u2014 `cli.py` had no exception handling, so `JSONDecodeError` (empty/malformed file) and `KeyError` (missing `name`) propagated as raw tracebacks.\n\n**Changes:**\n- `client.py` \u2014 converts at the call site: `timeout=TIMEOUT_MS / 1000.0`, so `settings.py` keeps `TIMEOUT_MS = 5000` (milliseconds) untouched and the session receives `5.0` seconds.\n- `cli.py` \u2014 wraps config loading and validation:\n  - Missing/empty/malformed file \u2192 `error: could not read config file ...: <reason>` to stderr, return code 2\n  - Missing `name` key (or non-object config) \u2192 `error: config must be a JSON object with a 'name' key` to stderr, return code 2\n  - Valid input behavior preserved: prints the name to stdout, returns 0, stderr empty.",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "reasoning": "All 5 tests passed. Done. Summarizing the changes and the conclusion.\n"
+      },
+      "finish_reason": "stop",
+      "results": []
+    }
+  ],
+  "files": {
+    "settings.py": "TIMEOUT_MS = 5000\n",
+    "client.py": "from settings import TIMEOUT_MS\n\n\ndef fetch(session, url):\n    # HTTP timeout is expressed in seconds; settings keep it in milliseconds.\n    return session.get(url, timeout=TIMEOUT_MS / 1000.0)\n",
+    "cli.py": "import json\nimport sys\n\n\ndef main(argv):\n    if not argv:\n        print(\"error: missing config file path\", file=sys.stderr)\n        return 2\n    try:\n        with open(argv[0]) as stream:\n            config = json.load(stream)\n    except (OSError, ValueError) as exc:\n        print(f\"error: could not read config file {argv[0]}: {exc}\", file=sys.stderr)\n        return 2\n    if not isinstance(config, dict) or \"name\" not in config:\n        print(\"error: config must be a JSON object with a 'name' key\", file=sys.stderr)\n        return 2\n    print(config[\"name\"])\n    return 0\n\n\nif __name__ == \"__main__\":\n    sys.exit(main(sys.argv[1:]))\n",
+    "test_app.py": "import contextlib, io, tempfile, unittest\nfrom pathlib import Path\nfrom unittest.mock import Mock\nimport client, cli\nclass TestApp(unittest.TestCase):\n    def test_timeout_seconds(self):\n        session=Mock(); client.fetch(session, \"https://example.test\")\n        session.get.assert_called_once_with(\"https://example.test\", timeout=5.0)\n    def check_cli(self, text):\n        with tempfile.TemporaryDirectory() as folder:\n            f=Path(folder)/\"config.json\"; f.write_text(text)\n            stdout,stderr=io.StringIO(),io.StringIO()\n            with contextlib.redirect_stdout(stdout),contextlib.redirect_stderr(stderr):\n                code=cli.main([str(f)])\n            return code,stdout.getvalue(),stderr.getvalue()\n    def test_valid(self):\n        code,out,err=self.check_cli('{\"name\":\"scar\"}')\n        self.assertEqual((code,out,err),(0,\"scar\\n\",\"\"))\n    def test_empty(self):\n        code,out,err=self.check_cli(\"\")\n        self.assertEqual(code,2); self.assertTrue(err.strip()); self.assertNotIn(\"Traceback\",err)\n    def test_malformed(self):\n        code,out,err=self.check_cli(\"{\")\n        self.assertEqual(code,2); self.assertTrue(err.strip()); self.assertNotIn(\"Traceback\",err)\n    def test_missing_name(self):\n        code,out,err=self.check_cli(\"{}\")\n        self.assertEqual(code,2); self.assertIn(\"name\",err.lower())\n"
+  }
+}

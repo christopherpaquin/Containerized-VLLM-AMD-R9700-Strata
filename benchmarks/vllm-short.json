@@ -1,0 +1,44 @@
+[
+  {
+    "trial": 0,
+    "elapsed_s": 2.3064666450000004,
+    "ttft_s": 0.2230457480000041,
+    "decode_tokens_s": 122.39485567567505,
+    "prompt_tokens_per_ttft_s": 192.78556253849416,
+    "usage": {
+      "prompt_tokens": 43,
+      "total_tokens": 299,
+      "completion_tokens": 256
+    },
+    "text": "```python\nimport json\n\n\ndef parse_journalctl_json(lines):\n    \"\"\"\n    Safely parses journalctl JSON lines, counts messages by systemd unit,\n    and ignores malformed lines.\n\n    Args:\n        lines: An iterable of strings, where each string is a JSON line from journalctl.\n\n    Returns:\n        A dictionary mapping systemd unit names to the count of messages.\n    \"\"\"\n    counts = {}\n\n    for line in lines:\n        try:\n            # Strip whitespace and skip empty lines\n            stripped = line.strip()\n            if not stripped:\n                continue\n\n            # Parse the JSON line\n            record = json.loads(stripped)\n\n            # Validate that it's a dictionary (journalctl JSON lines are objects)\n            if not isinstance(record, dict):\n                continue\n\n            # Extract the unit and message\n            unit = record.get(\"UNIT\")\n            message = record.get(\"_MESSAGE\")\n\n            # Only count records that have both a unit and a message\n            if unit is not None and message is not None:\n                counts[unit] = counts.get(unit, 0) + 1\n\n        except (json.JSONDecodeError, TypeError, ValueError):\n            #",
+    "reasoning": ""
+  },
+  {
+    "trial": 1,
+    "elapsed_s": 1.8962941570000567,
+    "ttft_s": 0.10522274599998127,
+    "decode_tokens_s": 142.3728827526851,
+    "prompt_tokens_per_ttft_s": 408.6568886921812,
+    "usage": {
+      "prompt_tokens": 43,
+      "total_tokens": 299,
+      "completion_tokens": 256
+    },
+    "text": "```python\nimport json\n\n\ndef parse_journalctl_messages(json_lines: list[str]) -> dict[str, int]:\n    \"\"\"\n    Safely parse journalctl JSON lines, count messages by systemd unit, and ignore malformed lines.\n\n    Each line is expected to be a JSON object with at least '_SYSTEMD_UNIT' and 'MESSAGE' keys.\n    Malformed lines (invalid JSON, missing keys, wrong types) are silently ignored.\n\n    Args:\n        json_lines: A list of strings, each representing a JSON line from journalctl.\n\n    Returns:\n        A dictionary mapping systemd unit names to the count of messages received.\n    \"\"\"\n    counts: dict[str, int] = {}\n    for line in json_lines:\n        try:\n            obj = json.loads(line)\n        except (json.JSONDecodeError, TypeError):\n            continue\n        if not isinstance(obj, dict):\n            continue\n        unit = obj.get(\"_SYSTEMD_UNIT\")\n        message = obj.get(\"MESSAGE\")\n        if not isinstance(unit, str) or not isinstance(message, str):\n            continue\n        if unit not in counts:\n            counts[unit] = 0\n        counts[unit] += 1",
+    "reasoning": ""
+  },
+  {
+    "trial": 2,
+    "elapsed_s": 2.3732196370001475,
+    "ttft_s": 0.08559638400015501,
+    "decode_tokens_s": 111.4694037427678,
+    "prompt_tokens_per_ttft_s": 502.3576696875668,
+    "usage": {
+      "prompt_tokens": 43,
+      "total_tokens": 299,
+      "completion_tokens": 256
+    },
+    "text": "```python\nimport json\nfrom collections import defaultdict\n\n\ndef count_messages_by_unit(journalctl_output: str) -> dict[str, int]:\n    \"\"\"\n    Safely parse journalctl JSON lines and count messages by systemd unit.\n\n    Args:\n        journalctl_output: A string containing one or more JSON lines,\n            as produced by `journalctl --output=json`.\n\n    Returns:\n        A dictionary mapping systemd unit names to the number of messages\n        associated with them. Malformed or unparseable lines are silently\n        ignored.\n    \"\"\"\n    counts: dict[str, int] = defaultdict(int)\n\n    for line in journalctl_output.strip().splitlines():\n        line = line.strip()\n        if not line:\n            continue\n        try:\n            record = json.loads(line)\n        except (json.JSONDecodeError, ValueError):\n            continue  # Ignore malformed lines\n\n        unit = record.get(\"_SYSTEMD_UNIT\") or record.get(\"SYSLOG_IDENTIFIER\")\n        if unit:\n            counts[unit] += 1\n\n    return dict(counts)\n\n\n# Example 1\nexample1 = '''\n{\"_SYSTEMD_UNIT\":\"nginx.service\",\"MESSAGE\":\"Started nginx\"}\n",
+    "reasoning": ""
+  }
+]
