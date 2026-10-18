@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-python3 scripts/check_config.py /opt/strata/strata-iq3_s.json
+python3 scripts/check_config.py "${STRATA_CONFIG:-/opt/strata/strata-unsloth-ud-q4_k_xl.json}"
 sudo install -m 0644 config/strata.service /etc/systemd/system/strata.service
 sudo systemctl daemon-reload
 restore() {

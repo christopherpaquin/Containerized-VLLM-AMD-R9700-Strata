@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Resumable range download of pinned IQ3_S shards, verified against LFS SHA-256."""
+"""Resumable range download of pinned model shards, verified against LFS SHA-256."""
+import argparse
 import concurrent.futures
 import hashlib
 import json
@@ -9,14 +10,40 @@ import time
 import urllib.request
 from pathlib import Path
 
-repo = 'ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF'
-revision = 'ed59f92082b1e93c0e96d60a8b11aab089b52f09'
-root = Path('/nvme/Strata-data/models/IQ3_S')
-meta = json.load(urllib.request.urlopen(f'https://huggingface.co/api/models/{repo}/tree/{revision}/IQ3_S'))
-Path('/nvme/Strata-data/model-manifest.json').write_text(json.dumps(dict(repo=repo, revision=revision, files=meta), indent=2)+'\n')
+MODELS = {
+    'IQ3_S': dict(
+        repo='ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF',
+        revision='ed59f92082b1e93c0e96d60a8b11aab089b52f09',
+        subpath='IQ3_S',
+        root=Path('/nvme/Strata-data/models/IQ3_S'),
+        manifest=Path('/nvme/Strata-data/model-manifest.json'),
+    ),
+    'UD-Q4_K_XL': dict(
+        repo='unsloth/Qwen3.8-Flash-Next-GGUF',
+        revision='38bb39ee97821de2c9009abb7e93950eec396e66',
+        subpath='UD-Q4_K_XL',
+        root=Path('/nvme/Strata-data/models/unsloth-UD-Q4_K_XL'),
+        manifest=Path('/nvme/Strata-data/model-manifest-ud-q4_k_xl.json'),
+    ),
+}
+parser = argparse.ArgumentParser()
+parser.add_argument('--model', choices=sorted(MODELS), default='UD-Q4_K_XL')
+parser.add_argument('--shard', default='')
+parser.add_argument('--workers', type=int, default=8)
+args = parser.parse_args()
+spec = MODELS[args.model]
+repo = spec['repo']
+revision = spec['revision']
+root = spec['root']
+root.mkdir(parents=True, exist_ok=True)
+meta = json.load(urllib.request.urlopen(f'https://huggingface.co/api/models/{repo}/tree/{revision}/{spec["subpath"]}'))
+if not args.shard:
+    spec['manifest'].write_text(json.dumps(dict(repo=repo, revision=revision, files=meta), indent=2)+'\n')
 lock = threading.Lock()
 for item in meta:
     if item['type'] != 'file' or not item['path'].endswith('.gguf'):
+        continue
+    if args.shard and args.shard not in item['path']:
         continue
     dst = root / Path(item['path']).name
     if dst.exists() and dst.with_name(dst.name+'.done').exists():
@@ -28,6 +55,7 @@ for item in meta:
     statefile = dst.with_name(dst.name+'.ranges.json')
     if statefile.exists():
         state = json.loads(statefile.read_text())
+        state['complete'] = sorted(set(state['complete']))
     else:
         have = part.stat().st_size if part.exists() else 0
         state = dict(prefix=have, complete=[])
@@ -75,7 +103,7 @@ for item in meta:
                 print('Retry', start, str(e), flush=True)
                 time.sleep(2*(attempt+1))
     try:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
             list(pool.map(fetch, ranges))
         os.fsync(fd)
     finally:

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Export an allowlisted public settings snapshot; never export the service API key."""
 import json
+import sys
 from pathlib import Path
 
-c = json.loads(Path('/opt/strata/strata-iq3_s.json').read_text())
+cfg_path = Path(sys.argv[1] if len(sys.argv) > 1 else '/opt/strata/strata-unsloth-ud-q4_k_xl.json')
+c = json.loads(cfg_path.read_text())
 a = c['args']
 def value(flag):
     return a[a.index(flag)+1] if flag in a else None

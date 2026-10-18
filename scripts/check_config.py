@@ -10,10 +10,10 @@ def value(flag):
     return a[a.index(flag)+1] if flag in a else None
 
 required = {'--max-context': '262144', '--kv': 'int8', '--kv-resident': '32768',
-            '--expert-cache': 'auto', '--vram-reserve-mib': '700', '--ple-io': 'direct', '--spec': '4'}
+            '--expert-cache': 'auto', '--vram-reserve-mib': '832', '--ple-io': 'direct', '--spec': '4'}
 for flag, expected in required.items():
     assert value(flag) == expected, (flag, value(flag), expected)
-assert 'IQ3_S' in value('--native'), 'Wrong quantization'
+assert any(q in value('--native') for q in ('IQ3_S', 'UD-Q4_K_XL')), 'Wrong quantization'
 assert c['backend'] == 'hip'
 assert c.get('parallel', 1) == 1
 assert not c.get('vision')

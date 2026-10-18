@@ -1,11 +1,13 @@
 # Scar.lab Strata deployment
 
-Quality-first deployment of Qwen3.8-Flash-Next GSQ-RCO IQ3_S on an AMD Radeon AI PRO R9700. Strata runs as a native HIP systemd service; the existing vLLM container is retained for rollback.
+Quality-first deployment of Qwen3.8-Flash-Next on an AMD Radeon AI PRO R9700 (`UD-Q4_K_XL` currently active; `GSQ-RCO IQ3_S` retained on `/nvme/Strata-data` for A/B comparison). Strata runs as a native HIP systemd service; the existing vLLM container is retained for rollback.
 
 - [Requested goals](goals.md)
 - [Project plan](PROJECT_PLAN.md)
 - [Deployment record and rollback](docs/DEPLOYMENT.md)
 - [Measurement caveats](benchmarks/NOTES.md)
+- [IQ3_S controlled benchmark](benchmarks/20261018-1647-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S.md)
+- [UD-Q4_K_XL controlled benchmark](benchmarks/20261018-1757-Qwen3.8-Flash-Next-UD-Q4_K_XL.md)
 
 ## Operations
 
@@ -30,12 +32,12 @@ bash scripts/rollback.sh
 
 ## Reproduce installation and checks
 
-Install the stable release recorded in `docs/strata-release.json` under `/opt/strata`. Use the existing ROCm installation. Then:
+Install the stable release recorded in `docs/strata-release.json` under `/opt/strata`. Use the existing ROCm installation. Then (defaulting to `UD-Q4_K_XL`, or set `STRATA_MODEL_PROFILE=iq3_s` for the `GSQ-RCO IQ3_S` candidate):
 
 ```bash
 bash scripts/setup-strata.sh
 python3 scripts/configure.py
-python3 scripts/check_config.py /opt/strata/strata-iq3_s.json
+python3 scripts/check_config.py /opt/strata/strata-unsloth-ud-q4_k_xl.json
 sudo install -m 0644 config/strata.service /etc/systemd/system/strata.service
 sudo systemctl daemon-reload
 ```

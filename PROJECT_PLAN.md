@@ -8,7 +8,7 @@ Replace the active Scar inference backend with stable Strata and the full Qwen3.
 
 1. Inventory hardware, active containers, endpoints and rollback configuration. Record a same-day vLLM baseline before stopping it.
 2. Install stable Strata v0.1.45 under `/opt/strata`, using the existing ROCm 7.2.2 installation. Store downloads, packs, MTP and logs under `/nvme/Strata-data`. Build HIP for gfx1201. Keep vLLM online during installation.
-3. Review and enforce the generated configuration: IQ3_S, 262144 native context, INT8 KV, 32768 resident KV window, full expert arena in RAM, automatic expert cache, 700 MiB VRAM reserve, direct PLE I/O, no vision, one request, exact-match MTP depth 4. Disable route-tail skipping, speed projection and probabilistic speculation.
+3. Review and enforce the generated configuration: IQ3_S, 262144 native context, INT8 KV, 32768 resident KV window, full expert arena in RAM, automatic expert cache, 832 MiB VRAM reserve, direct PLE I/O, no vision, one request, exact-match MTP depth 4. Disable route-tail skipping, speed projection and probabilistic speculation.
 4. Configure thinking at xhigh with preserved reasoning, 16384 thinking tokens, loop recovery, and Qwen's requested sampling defaults. Document any unsupported setting rather than silently substituting it.
 5. Install a systemd service. Stop vLLM before starting Strata. Retain the old container, image, configuration and models. Restore vLLM if Strata cannot serve correctly.
 6. Validate API health, chat, tool calls, multi-turn state and engineering tasks. Measure prompt throughput, decode throughput and first-token latency. Exercise approximately 32K, 128K and near-256K inputs, leaving output room. Check resource usage, swap and kernel errors.
@@ -40,3 +40,5 @@ Implementation and controlled checks are complete. Operational readiness, API/to
 ## Follow-up implementation
 
 Completed the medium/xhigh reasoning comparison and restored xhigh after medium missed one of 18 cases. Adapted and deployed the sibling inference dashboard for native Strata, authenticated benchmarks, GGUF shard discovery, and public runtime settings. Browser validation and all 56 dashboard tests passed. Comparative reasoning results are in `benchmarks/REASONING_COMPARISON.md`.
+
+Completed the controlled A/B quantization evaluation switching `strata.service` from `ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF` (`IQ3_S`, `73.79 GiB` on disk) to `unsloth/Qwen3.8-Flash-Next-GGUF` (`UD-Q4_K_XL`, `103.69 GiB` on disk) with `--vram-reserve-mib 832`. Both models and packs remain installed under `/nvme/Strata-data` for ongoing comparison (`benchmarks/20261018-1647-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S.md` and `benchmarks/20261018-1757-Qwen3.8-Flash-Next-UD-Q4_K_XL.md`).
