@@ -6,8 +6,10 @@ Quality-first deployment of Qwen3.8-Flash-Next on an AMD Radeon AI PRO R9700 (`U
 - [Project plan](PROJECT_PLAN.md)
 - [Deployment record and rollback](docs/DEPLOYMENT.md)
 - [Measurement caveats](benchmarks/NOTES.md)
-- [IQ3_S controlled benchmark](benchmarks/20261018-1647-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S.md)
-- [UD-Q4_K_XL controlled benchmark](benchmarks/20261018-1757-Qwen3.8-Flash-Next-UD-Q4_K_XL.md)
+- [IQ3_S controlled benchmark (16K budget)](benchmarks/20261018-1647-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S.md)
+- [UD-Q4_K_XL controlled benchmark (16K budget)](benchmarks/20261018-1757-Qwen3.8-Flash-Next-UD-Q4_K_XL.md)
+- [UD-Q4_K_XL reasoning-budget benchmark (12K budget)](benchmarks/20261018-1846-Qwen3.8-Flash-Next-UD-Q4_K_XL-xhigh-12K.md)
+- [UD-Q4_K_XL reasoning-budget benchmark (8K budget)](benchmarks/20261018-1905-Qwen3.8-Flash-Next-UD-Q4_K_XL-xhigh-8K.md)
 
 ## Operations
 
