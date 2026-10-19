@@ -1,0 +1,748 @@
+Oct 18 16:37:53 scar.lab python[276645]: [strata] stopping (Ctrl+C again to end the engine at once) ...
+Oct 18 16:37:53 scar.lab systemd[1]: Stopping strata.service - Strata Qwen IQ3_S on AMD R9700...
+Oct 18 16:37:53 scar.lab python[276645]: [strata] stopped
+Oct 18 16:37:53 scar.lab systemd[1]: strata.service: Deactivated successfully.
+Oct 18 16:37:53 scar.lab systemd[1]: Stopped strata.service - Strata Qwen IQ3_S on AMD R9700.
+Oct 18 16:37:53 scar.lab systemd[1]: strata.service: Consumed 50min 1.716s CPU time, 94.9G memory peak, 0B memory swap peak.
+Oct 18 16:37:53 scar.lab systemd[1]: Starting strata.service - Strata Qwen IQ3_S on AMD R9700...
+Oct 18 16:37:53 scar.lab python3[298525]: Quality baseline configuration verified
+Oct 18 16:37:53 scar.lab python3[298533]: Exported public dashboard settings
+Oct 18 16:37:53 scar.lab systemd[1]: Started strata.service - Strata Qwen IQ3_S on AMD R9700.
+Oct 18 16:37:54 scar.lab python[298535]: [strata] sampling defaults from the config: temperature=1.0, top_p=0.95, top_k=20, min_p=0.0, presence_penalty=0.0, repetition_penalty=1.0
+Oct 18 16:37:54 scar.lab python[298535]: loading the model (the first start takes a minute or two) ...
+Oct 18 16:37:54 scar.lab python[298535]: [strata] starting the engine: reading the model's weights ...
+Oct 18 16:37:56 scar.lab python[298535]: [strata] loading the experts into RAM (about 55 GB) and locking part of them for the GPU.
+Oct 18 16:37:56 scar.lab python[298535]:          YOUR PC CAN BE SLOW OR STOP RESPONDING FOR 1-3 MINUTES NOW - this is normal.
+Oct 18 16:37:56 scar.lab python[298535]:          Please wait and don't close this window; the browser opens when it is ready.
+Oct 18 16:38:09 scar.lab python[298535]: [strata] experts loaded: 46.84 GiB at 5.26 GiB/s (16 s so far)
+Oct 18 16:38:10 scar.lab python[298535]: [strata] filling the GPU's expert cache (13103 experts, 24.87 GiB of VRAM) ...
+Oct 18 16:38:14 scar.lab python[298535]: [strata] almost ready ...
+Oct 18 16:38:14 scar.lab python[298535]: [strata] thinking level: high (reasoning_effort in the config; a request, or the Chat settings shared with other apps, can set its own)
+Oct 18 16:38:14 scar.lab python[298535]: [strata] model aliases: scar-coder
+Oct 18 16:38:14 scar.lab python[298535]: [strata] also answers to the host names scar.lab (allowed_hosts)
+Oct 18 16:38:14 scar.lab python[298535]: [strata] thinking budget: 16384 tokens (reasoning_budget_tokens; a request can set its own)
+Oct 18 16:38:14 scar.lab python[298535]: ready: http://10.1.10.10:8080/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 262144 tokens, API key required)
+Oct 18 16:38:14 scar.lab python[298535]:        open http://10.1.10.10:8080/ in a browser to chat; close this window to stop the model
+Oct 18 16:38:14 scar.lab python[298535]:        from other devices: http://10.1.10.10:8080/   (API: http://10.1.10.10:8080/v1)
+Oct 18 16:40:32 scar.lab python[298535]: [strata] answering: 44 of max 128 tokens, 68.5 tok/s, 1 s
+Oct 18 16:40:33 scar.lab python[298535]: [strata] answering: 120 of max 128 tokens, 72.6 tok/s, 2 s
+Oct 18 16:40:33 scar.lab python[298535]: [strata] done: 128 tokens in 2 s (71.4 tok/s) (length, cancel=False), expert cache 95.8% hit (+0.7% of the routed experts over PCIe)
+Oct 18 16:47:13 scar.lab python[298535]: [strata] reading the prompt: 126 of 131 tokens, 2 s so far
+Oct 18 16:47:14 scar.lab python[298535]: [strata] thinking: 68 of budget 16384 (max 24576) tokens, 84.1 tok/s, 3 s
+Oct 18 16:47:15 scar.lab python[298535]: [strata] thinking: 119 of budget 16384 (max 24576) tokens, 65.1 tok/s, 4 s
+Oct 18 16:47:16 scar.lab python[298535]: [strata] thinking: 177 of budget 16384 (max 24576) tokens, 62.1 tok/s, 5 s
+Oct 18 16:47:17 scar.lab python[298535]: [strata] thinking: 244 of budget 16384 (max 24576) tokens, 63.1 tok/s, 6 s
+Oct 18 16:47:18 scar.lab python[298535]: [strata] thinking: 299 of budget 16384 (max 24576) tokens, 61.2 tok/s, 7 s
+Oct 18 16:47:19 scar.lab python[298535]: [strata] thinking: 359 of budget 16384 (max 24576) tokens, 60.9 tok/s, 8 s
+Oct 18 16:47:20 scar.lab python[298535]: [strata] thinking: 421 of budget 16384 (max 24576) tokens, 60.9 tok/s, 9 s
+Oct 18 16:47:21 scar.lab python[298535]: [strata] thinking: 480 of budget 16384 (max 24576) tokens, 60.5 tok/s, 10 s
+Oct 18 16:47:22 scar.lab python[298535]: [strata] thinking: 537 of budget 16384 (max 24576) tokens, 60.0 tok/s, 11 s
+Oct 18 16:47:23 scar.lab python[298535]: [strata] thinking: 591 of budget 16384 (max 24576) tokens, 59.4 tok/s, 12 s
+Oct 18 16:47:24 scar.lab python[298535]: [strata] thinking: 646 of budget 16384 (max 24576) tokens, 58.9 tok/s, 13 s
+Oct 18 16:47:25 scar.lab python[298535]: [strata] thinking: 705 of budget 16384 (max 24576) tokens, 58.9 tok/s, 14 s
+Oct 18 16:47:26 scar.lab python[298535]: [strata] thinking: 761 of budget 16384 (max 24576) tokens, 58.6 tok/s, 15 s
+Oct 18 16:47:27 scar.lab python[298535]: [strata] thinking: 818 of budget 16384 (max 24576) tokens, 58.4 tok/s, 16 s
+Oct 18 16:47:28 scar.lab python[298535]: [strata] thinking: 897 of budget 16384 (max 24576) tokens, 59.7 tok/s, 17 s
+Oct 18 16:47:29 scar.lab python[298535]: [strata] thinking: 974 of budget 16384 (max 24576) tokens, 60.8 tok/s, 18 s
+Oct 18 16:47:30 scar.lab python[298535]: [strata] thinking: 1044 of budget 16384 (max 24576) tokens, 61.3 tok/s, 19 s
+Oct 18 16:47:31 scar.lab python[298535]: [strata] thinking: 1110 of budget 16384 (max 24576) tokens, 61.5 tok/s, 20 s
+Oct 18 16:47:32 scar.lab python[298535]: [strata] thinking: 1178 of budget 16384 (max 24576) tokens, 61.8 tok/s, 21 s
+Oct 18 16:47:33 scar.lab python[298535]: [strata] thinking: 1245 of budget 16384 (max 24576) tokens, 62.0 tok/s, 22 s
+Oct 18 16:47:34 scar.lab python[298535]: [strata] thinking: 1306 of budget 16384 (max 24576) tokens, 61.9 tok/s, 23 s
+Oct 18 16:47:35 scar.lab python[298535]: [strata] thinking: 1377 of budget 16384 (max 24576) tokens, 62.2 tok/s, 24 s
+Oct 18 16:47:36 scar.lab python[298535]: [strata] thinking: 1455 of budget 16384 (max 24576) tokens, 62.9 tok/s, 25 s
+Oct 18 16:47:37 scar.lab python[298535]: [strata] thinking: 1522 of budget 16384 (max 24576) tokens, 63.0 tok/s, 26 s
+Oct 18 16:47:38 scar.lab python[298535]: [strata] thinking: 1585 of budget 16384 (max 24576) tokens, 63.0 tok/s, 27 s
+Oct 18 16:47:39 scar.lab python[298535]: [strata] thinking: 1645 of budget 16384 (max 24576) tokens, 62.9 tok/s, 28 s
+Oct 18 16:47:40 scar.lab python[298535]: [strata] thinking: 1703 of budget 16384 (max 24576) tokens, 62.7 tok/s, 29 s
+Oct 18 16:47:41 scar.lab python[298535]: [strata] thinking: 1775 of budget 16384 (max 24576) tokens, 63.0 tok/s, 30 s
+Oct 18 16:47:42 scar.lab python[298535]: [strata] thinking: 1842 of budget 16384 (max 24576) tokens, 63.1 tok/s, 31 s
+Oct 18 16:47:43 scar.lab python[298535]: [strata] thinking: 1918 of budget 16384 (max 24576) tokens, 63.5 tok/s, 32 s
+Oct 18 16:47:44 scar.lab python[298535]: [strata] thinking: 1985 of budget 16384 (max 24576) tokens, 63.6 tok/s, 33 s
+Oct 18 16:47:45 scar.lab python[298535]: [strata] thinking: 2055 of budget 16384 (max 24576) tokens, 63.8 tok/s, 34 s
+Oct 18 16:47:46 scar.lab python[298535]: [strata] thinking: 2112 of budget 16384 (max 24576) tokens, 63.5 tok/s, 35 s
+Oct 18 16:47:47 scar.lab python[298535]: [strata] thinking: 2177 of budget 16384 (max 24576) tokens, 63.5 tok/s, 36 s
+Oct 18 16:47:48 scar.lab python[298535]: [strata] thinking: 2242 of budget 16384 (max 24576) tokens, 63.6 tok/s, 37 s
+Oct 18 16:47:49 scar.lab python[298535]: [strata] thinking: 2303 of budget 16384 (max 24576) tokens, 63.5 tok/s, 38 s
+Oct 18 16:47:50 scar.lab python[298535]: [strata] thinking: 2372 of budget 16384 (max 24576) tokens, 63.6 tok/s, 39 s
+Oct 18 16:47:51 scar.lab python[298535]: [strata] thinking: 2437 of budget 16384 (max 24576) tokens, 63.6 tok/s, 40 s
+Oct 18 16:47:52 scar.lab python[298535]: [strata] thinking: 2502 of budget 16384 (max 24576) tokens, 63.6 tok/s, 41 s
+Oct 18 16:47:53 scar.lab python[298535]: [strata] thinking: 2577 of budget 16384 (max 24576) tokens, 63.9 tok/s, 42 s
+Oct 18 16:47:54 scar.lab python[298535]: [strata] thinking: 2634 of budget 16384 (max 24576) tokens, 63.7 tok/s, 43 s
+Oct 18 16:47:55 scar.lab python[298535]: [strata] thinking: 2693 of budget 16384 (max 24576) tokens, 63.6 tok/s, 44 s
+Oct 18 16:47:56 scar.lab python[298535]: [strata] thinking: 2770 of budget 16384 (max 24576) tokens, 63.9 tok/s, 45 s
+Oct 18 16:47:57 scar.lab python[298535]: [strata] thinking: 2836 of budget 16384 (max 24576) tokens, 63.9 tok/s, 46 s
+Oct 18 16:47:58 scar.lab python[298535]: [strata] thinking: 2892 of budget 16384 (max 24576) tokens, 63.7 tok/s, 47 s
+Oct 18 16:47:59 scar.lab python[298535]: [strata] thinking: 2948 of budget 16384 (max 24576) tokens, 63.5 tok/s, 48 s
+Oct 18 16:48:00 scar.lab python[298535]: [strata] thinking: 3003 of budget 16384 (max 24576) tokens, 63.3 tok/s, 49 s
+Oct 18 16:48:01 scar.lab python[298535]: [strata] thinking: 3061 of budget 16384 (max 24576) tokens, 63.2 tok/s, 50 s
+Oct 18 16:48:02 scar.lab python[298535]: [strata] thinking: 3117 of budget 16384 (max 24576) tokens, 63.0 tok/s, 51 s
+Oct 18 16:48:03 scar.lab python[298535]: [strata] thinking: 3185 of budget 16384 (max 24576) tokens, 63.1 tok/s, 52 s
+Oct 18 16:48:04 scar.lab python[298535]: [strata] thinking: 3242 of budget 16384 (max 24576) tokens, 63.0 tok/s, 53 s
+Oct 18 16:48:05 scar.lab python[298535]: [strata] thinking: 3300 of budget 16384 (max 24576) tokens, 62.9 tok/s, 54 s
+Oct 18 16:48:06 scar.lab python[298535]: [strata] thinking: 3365 of budget 16384 (max 24576) tokens, 62.9 tok/s, 55 s
+Oct 18 16:48:07 scar.lab python[298535]: [strata] thinking: 3433 of budget 16384 (max 24576) tokens, 62.9 tok/s, 56 s
+Oct 18 16:48:08 scar.lab python[298535]: [strata] thinking: 3504 of budget 16384 (max 24576) tokens, 63.1 tok/s, 57 s
+Oct 18 16:48:09 scar.lab python[298535]: [strata] thinking: 3566 of budget 16384 (max 24576) tokens, 63.0 tok/s, 58 s
+Oct 18 16:48:10 scar.lab python[298535]: [strata] thinking: 3631 of budget 16384 (max 24576) tokens, 63.1 tok/s, 59 s
+Oct 18 16:48:11 scar.lab python[298535]: [strata] thinking: 3709 of budget 16384 (max 24576) tokens, 63.3 tok/s, 60 s
+Oct 18 16:48:12 scar.lab python[298535]: [strata] thinking: 3772 of budget 16384 (max 24576) tokens, 63.3 tok/s, 62 s
+Oct 18 16:48:13 scar.lab python[298535]: [strata] thinking: 3831 of budget 16384 (max 24576) tokens, 63.2 tok/s, 63 s
+Oct 18 16:48:15 scar.lab python[298535]: [strata] thinking: 3899 of budget 16384 (max 24576) tokens, 63.3 tok/s, 64 s
+Oct 18 16:48:16 scar.lab python[298535]: [strata] thinking: 3966 of budget 16384 (max 24576) tokens, 63.3 tok/s, 65 s
+Oct 18 16:48:17 scar.lab python[298535]: [strata] thinking: 4029 of budget 16384 (max 24576) tokens, 63.3 tok/s, 66 s
+Oct 18 16:48:18 scar.lab python[298535]: [strata] thinking: 4087 of budget 16384 (max 24576) tokens, 63.2 tok/s, 67 s
+Oct 18 16:48:19 scar.lab python[298535]: [strata] thinking: 4148 of budget 16384 (max 24576) tokens, 63.1 tok/s, 68 s
+Oct 18 16:48:20 scar.lab python[298535]: [strata] thinking: 4208 of budget 16384 (max 24576) tokens, 63.1 tok/s, 69 s
+Oct 18 16:48:21 scar.lab python[298535]: [strata] thinking: 4270 of budget 16384 (max 24576) tokens, 63.0 tok/s, 70 s
+Oct 18 16:48:22 scar.lab python[298535]: [strata] thinking: 4329 of budget 16384 (max 24576) tokens, 63.0 tok/s, 71 s
+Oct 18 16:48:23 scar.lab python[298535]: [strata] thinking: 4388 of budget 16384 (max 24576) tokens, 62.9 tok/s, 72 s
+Oct 18 16:48:24 scar.lab python[298535]: [strata] thinking: 4445 of budget 16384 (max 24576) tokens, 62.8 tok/s, 73 s
+Oct 18 16:48:25 scar.lab python[298535]: [strata] thinking: 4507 of budget 16384 (max 24576) tokens, 62.8 tok/s, 74 s
+Oct 18 16:48:26 scar.lab python[298535]: [strata] thinking: 4567 of budget 16384 (max 24576) tokens, 62.8 tok/s, 75 s
+Oct 18 16:48:27 scar.lab python[298535]: [strata] thinking: 4629 of budget 16384 (max 24576) tokens, 62.7 tok/s, 76 s
+Oct 18 16:48:28 scar.lab python[298535]: [strata] thinking: 4698 of budget 16384 (max 24576) tokens, 62.8 tok/s, 77 s
+Oct 18 16:48:29 scar.lab python[298535]: [strata] thinking: 4758 of budget 16384 (max 24576) tokens, 62.8 tok/s, 78 s
+Oct 18 16:48:30 scar.lab python[298535]: [strata] thinking: 4830 of budget 16384 (max 24576) tokens, 62.9 tok/s, 79 s
+Oct 18 16:48:31 scar.lab python[298535]: [strata] thinking: 4894 of budget 16384 (max 24576) tokens, 62.9 tok/s, 80 s
+Oct 18 16:48:32 scar.lab python[298535]: [strata] thinking: 4956 of budget 16384 (max 24576) tokens, 62.8 tok/s, 81 s
+Oct 18 16:48:33 scar.lab python[298535]: [strata] thinking: 5024 of budget 16384 (max 24576) tokens, 62.9 tok/s, 82 s
+Oct 18 16:48:34 scar.lab python[298535]: [strata] thinking: 5082 of budget 16384 (max 24576) tokens, 62.8 tok/s, 83 s
+Oct 18 16:48:35 scar.lab python[298535]: [strata] thinking: 5146 of budget 16384 (max 24576) tokens, 62.8 tok/s, 84 s
+Oct 18 16:48:36 scar.lab python[298535]: [strata] thinking: 5215 of budget 16384 (max 24576) tokens, 62.9 tok/s, 85 s
+Oct 18 16:48:37 scar.lab python[298535]: [strata] thinking: 5272 of budget 16384 (max 24576) tokens, 62.8 tok/s, 86 s
+Oct 18 16:48:38 scar.lab python[298535]: [strata] thinking: 5338 of budget 16384 (max 24576) tokens, 62.9 tok/s, 87 s
+Oct 18 16:48:39 scar.lab python[298535]: [strata] thinking: 5409 of budget 16384 (max 24576) tokens, 62.9 tok/s, 88 s
+Oct 18 16:48:40 scar.lab python[298535]: [strata] thinking: 5472 of budget 16384 (max 24576) tokens, 62.9 tok/s, 89 s
+Oct 18 16:48:41 scar.lab python[298535]: [strata] thinking: 5543 of budget 16384 (max 24576) tokens, 63.0 tok/s, 90 s
+Oct 18 16:48:42 scar.lab python[298535]: [strata] thinking: 5608 of budget 16384 (max 24576) tokens, 63.0 tok/s, 91 s
+Oct 18 16:48:43 scar.lab python[298535]: [strata] thinking: 5663 of budget 16384 (max 24576) tokens, 62.9 tok/s, 92 s
+Oct 18 16:48:44 scar.lab python[298535]: [strata] thinking: 5719 of budget 16384 (max 24576) tokens, 62.9 tok/s, 93 s
+Oct 18 16:48:45 scar.lab python[298535]: [strata] thinking: 5791 of budget 16384 (max 24576) tokens, 62.9 tok/s, 94 s
+Oct 18 16:48:46 scar.lab python[298535]: [strata] thinking: 5852 of budget 16384 (max 24576) tokens, 62.9 tok/s, 95 s
+Oct 18 16:48:47 scar.lab python[298535]: [strata] thinking: 5916 of budget 16384 (max 24576) tokens, 62.9 tok/s, 96 s
+Oct 18 16:48:48 scar.lab python[298535]: [strata] thinking: 5975 of budget 16384 (max 24576) tokens, 62.9 tok/s, 97 s
+Oct 18 16:48:49 scar.lab python[298535]: [strata] thinking: 6040 of budget 16384 (max 24576) tokens, 62.9 tok/s, 98 s
+Oct 18 16:48:50 scar.lab python[298535]: [strata] thinking: 6104 of budget 16384 (max 24576) tokens, 62.9 tok/s, 99 s
+Oct 18 16:48:51 scar.lab python[298535]: [strata] thinking: 6166 of budget 16384 (max 24576) tokens, 62.9 tok/s, 100 s
+Oct 18 16:48:52 scar.lab python[298535]: [strata] thinking: 6227 of budget 16384 (max 24576) tokens, 62.8 tok/s, 101 s
+Oct 18 16:48:53 scar.lab python[298535]: [strata] thinking: 6292 of budget 16384 (max 24576) tokens, 62.8 tok/s, 102 s
+Oct 18 16:48:54 scar.lab python[298535]: [strata] thinking: 6356 of budget 16384 (max 24576) tokens, 62.8 tok/s, 103 s
+Oct 18 16:48:55 scar.lab python[298535]: [strata] thinking: 6426 of budget 16384 (max 24576) tokens, 62.9 tok/s, 104 s
+Oct 18 16:48:56 scar.lab python[298535]: [strata] thinking: 6496 of budget 16384 (max 24576) tokens, 63.0 tok/s, 105 s
+Oct 18 16:48:57 scar.lab python[298535]: [strata] thinking: 6566 of budget 16384 (max 24576) tokens, 63.0 tok/s, 106 s
+Oct 18 16:48:58 scar.lab python[298535]: [strata] thinking: 6640 of budget 16384 (max 24576) tokens, 63.1 tok/s, 107 s
+Oct 18 16:48:59 scar.lab python[298535]: [strata] thinking: 6700 of budget 16384 (max 24576) tokens, 63.1 tok/s, 108 s
+Oct 18 16:49:00 scar.lab python[298535]: [strata] thinking: 6757 of budget 16384 (max 24576) tokens, 63.0 tok/s, 109 s
+Oct 18 16:49:01 scar.lab python[298535]: [strata] thinking: 6829 of budget 16384 (max 24576) tokens, 63.1 tok/s, 110 s
+Oct 18 16:49:02 scar.lab python[298535]: [strata] thinking: 6912 of budget 16384 (max 24576) tokens, 63.3 tok/s, 111 s
+Oct 18 16:49:03 scar.lab python[298535]: [strata] thinking: 6973 of budget 16384 (max 24576) tokens, 63.2 tok/s, 112 s
+Oct 18 16:49:04 scar.lab python[298535]: [strata] thinking: 7034 of budget 16384 (max 24576) tokens, 63.2 tok/s, 113 s
+Oct 18 16:49:05 scar.lab python[298535]: [strata] thinking: 7090 of budget 16384 (max 24576) tokens, 63.1 tok/s, 114 s
+Oct 18 16:49:06 scar.lab python[298535]: [strata] thinking: 7148 of budget 16384 (max 24576) tokens, 63.1 tok/s, 115 s
+Oct 18 16:49:07 scar.lab python[298535]: [strata] thinking: 7216 of budget 16384 (max 24576) tokens, 63.1 tok/s, 116 s
+Oct 18 16:49:08 scar.lab python[298535]: [strata] thinking: 7276 of budget 16384 (max 24576) tokens, 63.1 tok/s, 117 s
+Oct 18 16:49:09 scar.lab python[298535]: [strata] thinking: 7337 of budget 16384 (max 24576) tokens, 63.0 tok/s, 118 s
+Oct 18 16:49:10 scar.lab python[298535]: [strata] thinking: 7390 of budget 16384 (max 24576) tokens, 62.9 tok/s, 119 s
+Oct 18 16:49:11 scar.lab python[298535]: [strata] thinking: 7459 of budget 16384 (max 24576) tokens, 63.0 tok/s, 120 s
+Oct 18 16:49:12 scar.lab python[298535]: [strata] thinking: 7539 of budget 16384 (max 24576) tokens, 63.1 tok/s, 121 s
+Oct 18 16:49:13 scar.lab python[298535]: [strata] thinking: 7609 of budget 16384 (max 24576) tokens, 63.2 tok/s, 122 s
+Oct 18 16:49:14 scar.lab python[298535]: [strata] thinking: 7669 of budget 16384 (max 24576) tokens, 63.2 tok/s, 123 s
+Oct 18 16:49:15 scar.lab python[298535]: [strata] thinking: 7740 of budget 16384 (max 24576) tokens, 63.2 tok/s, 124 s
+Oct 18 16:49:16 scar.lab python[298535]: [strata] thinking: 7805 of budget 16384 (max 24576) tokens, 63.2 tok/s, 125 s
+Oct 18 16:49:17 scar.lab python[298535]: [strata] thinking: 7877 of budget 16384 (max 24576) tokens, 63.3 tok/s, 126 s
+Oct 18 16:49:18 scar.lab python[298535]: [strata] thinking: 7938 of budget 16384 (max 24576) tokens, 63.2 tok/s, 127 s
+Oct 18 16:49:19 scar.lab python[298535]: [strata] answering: 7995 of max 24576 tokens, 63.2 tok/s, 128 s
+Oct 18 16:49:20 scar.lab python[298535]: [strata] answering: 8069 of max 24576 tokens, 63.2 tok/s, 129 s
+Oct 18 16:49:21 scar.lab python[298535]: [strata] answering: 8148 of max 24576 tokens, 63.4 tok/s, 130 s
+Oct 18 16:49:22 scar.lab python[298535]: [strata] answering: 8227 of max 24576 tokens, 63.5 tok/s, 132 s
+Oct 18 16:49:24 scar.lab python[298535]: [strata] answering: 8318 of max 24576 tokens, 63.7 tok/s, 133 s
+Oct 18 16:49:25 scar.lab python[298535]: [strata] answering: 8414 of max 24576 tokens, 63.9 tok/s, 134 s
+Oct 18 16:49:26 scar.lab python[298535]: [strata] answering: 8504 of max 24576 tokens, 64.1 tok/s, 135 s
+Oct 18 16:49:27 scar.lab python[298535]: [strata] answering: 8593 of max 24576 tokens, 64.3 tok/s, 136 s
+Oct 18 16:49:28 scar.lab python[298535]: [strata] answering: 8680 of max 24576 tokens, 64.5 tok/s, 137 s
+Oct 18 16:49:29 scar.lab python[298535]: [strata] answering: 8756 of max 24576 tokens, 64.5 tok/s, 138 s
+Oct 18 16:49:30 scar.lab python[298535]: [strata] answering: 8830 of max 24576 tokens, 64.6 tok/s, 139 s
+Oct 18 16:49:31 scar.lab python[298535]: [strata] answering: 8901 of max 24576 tokens, 64.6 tok/s, 140 s
+Oct 18 16:49:32 scar.lab python[298535]: [strata] answering: 8973 of max 24576 tokens, 64.7 tok/s, 141 s
+Oct 18 16:49:33 scar.lab python[298535]: [strata] answering: 9072 of max 24576 tokens, 64.9 tok/s, 142 s
+Oct 18 16:49:34 scar.lab python[298535]: [strata] answering: 9140 of max 24576 tokens, 64.9 tok/s, 143 s
+Oct 18 16:49:35 scar.lab python[298535]: [strata] answering: 9213 of max 24576 tokens, 65.0 tok/s, 144 s
+Oct 18 16:49:36 scar.lab python[298535]: [strata] answering: 9289 of max 24576 tokens, 65.0 tok/s, 145 s
+Oct 18 16:49:37 scar.lab python[298535]: [strata] answering: 9365 of max 24576 tokens, 65.1 tok/s, 146 s
+Oct 18 16:49:38 scar.lab python[298535]: [strata] answering: 9449 of max 24576 tokens, 65.2 tok/s, 147 s
+Oct 18 16:49:39 scar.lab python[298535]: [strata] answering: 9523 of max 24576 tokens, 65.3 tok/s, 148 s
+Oct 18 16:49:40 scar.lab python[298535]: [strata] answering: 9599 of max 24576 tokens, 65.4 tok/s, 149 s
+Oct 18 16:49:41 scar.lab python[298535]: [strata] answering: 9662 of max 24576 tokens, 65.3 tok/s, 150 s
+Oct 18 16:49:42 scar.lab python[298535]: [strata] answering: 9734 of max 24576 tokens, 65.4 tok/s, 151 s
+Oct 18 16:49:43 scar.lab python[298535]: [strata] answering: 9820 of max 24576 tokens, 65.5 tok/s, 152 s
+Oct 18 16:49:44 scar.lab python[298535]: [strata] answering: 9897 of max 24576 tokens, 65.6 tok/s, 153 s
+Oct 18 16:49:45 scar.lab python[298535]: [strata] answering: 9965 of max 24576 tokens, 65.6 tok/s, 154 s
+Oct 18 16:49:46 scar.lab python[298535]: [strata] answering: 10051 of max 24576 tokens, 65.7 tok/s, 155 s
+Oct 18 16:49:47 scar.lab python[298535]: [strata] answering: 10137 of max 24576 tokens, 65.9 tok/s, 156 s
+Oct 18 16:49:48 scar.lab python[298535]: [strata] answering: 10223 of max 24576 tokens, 66.0 tok/s, 157 s
+Oct 18 16:49:49 scar.lab python[298535]: [strata] answering: 10295 of max 24576 tokens, 66.0 tok/s, 158 s
+Oct 18 16:49:50 scar.lab python[298535]: [strata] answering: 10377 of max 24576 tokens, 66.1 tok/s, 159 s
+Oct 18 16:49:51 scar.lab python[298535]: [strata] answering: 10465 of max 24576 tokens, 66.2 tok/s, 160 s
+Oct 18 16:49:52 scar.lab python[298535]: [strata] answering: 10560 of max 24576 tokens, 66.4 tok/s, 161 s
+Oct 18 16:49:53 scar.lab python[298535]: [strata] answering: 10640 of max 24576 tokens, 66.5 tok/s, 162 s
+Oct 18 16:49:54 scar.lab python[298535]: [strata] answering: 10730 of max 24576 tokens, 66.6 tok/s, 163 s
+Oct 18 16:49:55 scar.lab python[298535]: [strata] answering: 10801 of max 24576 tokens, 66.6 tok/s, 164 s
+Oct 18 16:49:56 scar.lab python[298535]: [strata] answering: 10876 of max 24576 tokens, 66.7 tok/s, 165 s
+Oct 18 16:49:57 scar.lab python[298535]: [strata] answering: 10971 of max 24576 tokens, 66.9 tok/s, 166 s
+Oct 18 16:49:58 scar.lab python[298535]: [strata] answering: 11059 of max 24576 tokens, 67.0 tok/s, 167 s
+Oct 18 16:49:59 scar.lab python[298535]: [strata] answering: 11128 of max 24576 tokens, 67.0 tok/s, 168 s
+Oct 18 16:50:00 scar.lab python[298535]: [strata] answering: 11215 of max 24576 tokens, 67.1 tok/s, 169 s
+Oct 18 16:50:01 scar.lab python[298535]: [strata] answering: 11301 of max 24576 tokens, 67.2 tok/s, 170 s
+Oct 18 16:50:02 scar.lab python[298535]: [strata] answering: 11380 of max 24576 tokens, 67.3 tok/s, 171 s
+Oct 18 16:50:03 scar.lab python[298535]: [strata] answering: 11469 of max 24576 tokens, 67.4 tok/s, 172 s
+Oct 18 16:50:04 scar.lab python[298535]: [strata] answering: 11551 of max 24576 tokens, 67.5 tok/s, 173 s
+Oct 18 16:50:05 scar.lab python[298535]: [strata] answering: 11632 of max 24576 tokens, 67.5 tok/s, 174 s
+Oct 18 16:50:06 scar.lab python[298535]: [strata] answering: 11701 of max 24576 tokens, 67.5 tok/s, 175 s
+Oct 18 16:50:07 scar.lab python[298535]: [strata] answering: 11779 of max 24576 tokens, 67.6 tok/s, 176 s
+Oct 18 16:50:08 scar.lab python[298535]: [strata] answering: 11856 of max 24576 tokens, 67.6 tok/s, 177 s
+Oct 18 16:50:09 scar.lab python[298535]: [strata] answering: 11927 of max 24576 tokens, 67.7 tok/s, 178 s
+Oct 18 16:50:10 scar.lab python[298535]: [strata] answering: 11995 of max 24576 tokens, 67.7 tok/s, 179 s
+Oct 18 16:50:11 scar.lab python[298535]: [strata] answering: 12064 of max 24576 tokens, 67.7 tok/s, 180 s
+Oct 18 16:50:12 scar.lab python[298535]: [strata] answering: 12140 of max 24576 tokens, 67.7 tok/s, 181 s
+Oct 18 16:50:13 scar.lab python[298535]: [strata] answering: 12212 of max 24576 tokens, 67.7 tok/s, 182 s
+Oct 18 16:50:14 scar.lab python[298535]: [strata] answering: 12295 of max 24576 tokens, 67.8 tok/s, 183 s
+Oct 18 16:50:15 scar.lab python[298535]: [strata] answering: 12379 of max 24576 tokens, 67.9 tok/s, 184 s
+Oct 18 16:50:16 scar.lab python[298535]: [strata] answering: 12463 of max 24576 tokens, 68.0 tok/s, 185 s
+Oct 18 16:50:17 scar.lab python[298535]: [strata] answering: 12549 of max 24576 tokens, 68.1 tok/s, 186 s
+Oct 18 16:50:18 scar.lab python[298535]: [strata] answering: 12633 of max 24576 tokens, 68.1 tok/s, 187 s
+Oct 18 16:50:19 scar.lab python[298535]: [strata] answering: 12718 of max 24576 tokens, 68.2 tok/s, 188 s
+Oct 18 16:50:20 scar.lab python[298535]: [strata] answering: 12806 of max 24576 tokens, 68.3 tok/s, 189 s
+Oct 18 16:50:21 scar.lab python[298535]: [strata] answering: 12893 of max 24576 tokens, 68.4 tok/s, 190 s
+Oct 18 16:50:22 scar.lab python[298535]: [strata] answering: 12970 of max 24576 tokens, 68.5 tok/s, 191 s
+Oct 18 16:50:23 scar.lab python[298535]: [strata] answering: 13054 of max 24576 tokens, 68.5 tok/s, 192 s
+Oct 18 16:50:24 scar.lab python[298535]: [strata] answering: 13135 of max 24576 tokens, 68.6 tok/s, 193 s
+Oct 18 16:50:25 scar.lab python[298535]: [strata] answering: 13219 of max 24576 tokens, 68.7 tok/s, 194 s
+Oct 18 16:50:26 scar.lab python[298535]: [strata] answering: 13311 of max 24576 tokens, 68.8 tok/s, 195 s
+Oct 18 16:50:27 scar.lab python[298535]: [strata] answering: 13401 of max 24576 tokens, 68.9 tok/s, 196 s
+Oct 18 16:50:28 scar.lab python[298535]: [strata] answering: 13472 of max 24576 tokens, 68.9 tok/s, 197 s
+Oct 18 16:50:29 scar.lab python[298535]: [strata] answering: 13534 of max 24576 tokens, 68.9 tok/s, 198 s
+Oct 18 16:50:30 scar.lab python[298535]: [strata] answering: 13606 of max 24576 tokens, 68.9 tok/s, 199 s
+Oct 18 16:50:31 scar.lab python[298535]: [strata] answering: 13670 of max 24576 tokens, 68.8 tok/s, 200 s
+Oct 18 16:50:33 scar.lab python[298535]: [strata] answering: 13747 of max 24576 tokens, 68.9 tok/s, 202 s
+Oct 18 16:50:34 scar.lab python[298535]: [strata] answering: 13827 of max 24576 tokens, 68.9 tok/s, 203 s
+Oct 18 16:50:35 scar.lab python[298535]: [strata] answering: 13908 of max 24576 tokens, 69.0 tok/s, 204 s
+Oct 18 16:50:36 scar.lab python[298535]: [strata] answering: 13993 of max 24576 tokens, 69.0 tok/s, 205 s
+Oct 18 16:50:37 scar.lab python[298535]: [strata] answering: 14086 of max 24576 tokens, 69.2 tok/s, 206 s
+Oct 18 16:50:38 scar.lab python[298535]: [strata] answering: 14170 of max 24576 tokens, 69.2 tok/s, 207 s
+Oct 18 16:50:39 scar.lab python[298535]: [strata] answering: 14262 of max 24576 tokens, 69.3 tok/s, 208 s
+Oct 18 16:50:40 scar.lab python[298535]: [strata] answering: 14342 of max 24576 tokens, 69.4 tok/s, 209 s
+Oct 18 16:50:41 scar.lab python[298535]: [strata] answering: 14420 of max 24576 tokens, 69.4 tok/s, 210 s
+Oct 18 16:50:42 scar.lab python[298535]: [strata] answering: 14489 of max 24576 tokens, 69.4 tok/s, 211 s
+Oct 18 16:50:43 scar.lab python[298535]: [strata] answering: 14575 of max 24576 tokens, 69.5 tok/s, 212 s
+Oct 18 16:50:44 scar.lab python[298535]: [strata] answering: 14648 of max 24576 tokens, 69.5 tok/s, 213 s
+Oct 18 16:50:45 scar.lab python[298535]: [strata] answering: 14740 of max 24576 tokens, 69.6 tok/s, 214 s
+Oct 18 16:50:46 scar.lab python[298535]: [strata] answering: 14814 of max 24576 tokens, 69.6 tok/s, 215 s
+Oct 18 16:50:47 scar.lab python[298535]: [strata] answering: 14890 of max 24576 tokens, 69.6 tok/s, 216 s
+Oct 18 16:50:48 scar.lab python[298535]: [strata] answering: 14975 of max 24576 tokens, 69.7 tok/s, 217 s
+Oct 18 16:50:49 scar.lab python[298535]: [strata] answering: 15060 of max 24576 tokens, 69.8 tok/s, 218 s
+Oct 18 16:50:50 scar.lab python[298535]: [strata] answering: 15151 of max 24576 tokens, 69.8 tok/s, 219 s
+Oct 18 16:50:51 scar.lab python[298535]: [strata] answering: 15231 of max 24576 tokens, 69.9 tok/s, 220 s
+Oct 18 16:50:52 scar.lab python[298535]: [strata] answering: 15315 of max 24576 tokens, 70.0 tok/s, 221 s
+Oct 18 16:50:53 scar.lab python[298535]: [strata] answering: 15383 of max 24576 tokens, 69.9 tok/s, 222 s
+Oct 18 16:50:54 scar.lab python[298535]: [strata] answering: 15448 of max 24576 tokens, 69.9 tok/s, 223 s
+Oct 18 16:50:55 scar.lab python[298535]: [strata] answering: 15523 of max 24576 tokens, 69.9 tok/s, 224 s
+Oct 18 16:50:56 scar.lab python[298535]: [strata] answering: 15598 of max 24576 tokens, 70.0 tok/s, 225 s
+Oct 18 16:50:57 scar.lab python[298535]: [strata] answering: 15677 of max 24576 tokens, 70.0 tok/s, 226 s
+Oct 18 16:50:58 scar.lab python[298535]: [strata] answering: 15765 of max 24576 tokens, 70.1 tok/s, 227 s
+Oct 18 16:50:59 scar.lab python[298535]: [strata] answering: 15831 of max 24576 tokens, 70.0 tok/s, 228 s
+Oct 18 16:51:00 scar.lab python[298535]: [strata] answering: 15915 of max 24576 tokens, 70.1 tok/s, 229 s
+Oct 18 16:51:01 scar.lab python[298535]: [strata] answering: 16005 of max 24576 tokens, 70.2 tok/s, 230 s
+Oct 18 16:51:02 scar.lab python[298535]: [strata] answering: 16093 of max 24576 tokens, 70.2 tok/s, 231 s
+Oct 18 16:51:03 scar.lab python[298535]: [strata] answering: 16190 of max 24576 tokens, 70.4 tok/s, 232 s
+Oct 18 16:51:04 scar.lab python[298535]: [strata] answering: 16246 of max 24576 tokens, 70.3 tok/s, 233 s
+Oct 18 16:51:05 scar.lab python[298535]: [strata] done: 16282 tokens in 234 s (70.2 tok/s) (stop, cancel=False), expert cache 97.0% hit (+0.2% of the routed experts over PCIe)
+Oct 18 16:51:06 scar.lab python[298535]: [strata] thinking: 2 of budget 16384 (max 24576) tokens, 31.2 tok/s, 1 s
+Oct 18 16:51:07 scar.lab python[298535]: [strata] thinking: 71 of budget 16384 (max 24576) tokens, 66.3 tok/s, 2 s
+Oct 18 16:51:08 scar.lab python[298535]: [strata] thinking: 133 of budget 16384 (max 24576) tokens, 64.2 tok/s, 3 s
+Oct 18 16:51:09 scar.lab python[298535]: [strata] thinking: 184 of budget 16384 (max 24576) tokens, 59.5 tok/s, 4 s
+Oct 18 16:51:10 scar.lab python[298535]: [strata] thinking: 237 of budget 16384 (max 24576) tokens, 57.6 tok/s, 5 s
+Oct 18 16:51:11 scar.lab python[298535]: [strata] thinking: 296 of budget 16384 (max 24576) tokens, 57.8 tok/s, 6 s
+Oct 18 16:51:12 scar.lab python[298535]: [strata] thinking: 353 of budget 16384 (max 24576) tokens, 57.6 tok/s, 7 s
+Oct 18 16:51:13 scar.lab python[298535]: [strata] thinking: 414 of budget 16384 (max 24576) tokens, 57.9 tok/s, 8 s
+Oct 18 16:51:14 scar.lab python[298535]: [strata] thinking: 487 of budget 16384 (max 24576) tokens, 59.6 tok/s, 9 s
+Oct 18 16:51:15 scar.lab python[298535]: [strata] thinking: 547 of budget 16384 (max 24576) tokens, 59.6 tok/s, 10 s
+Oct 18 16:51:16 scar.lab python[298535]: [strata] thinking: 612 of budget 16384 (max 24576) tokens, 60.1 tok/s, 11 s
+Oct 18 16:51:17 scar.lab python[298535]: [strata] thinking: 668 of budget 16384 (max 24576) tokens, 59.7 tok/s, 12 s
+Oct 18 16:51:18 scar.lab python[298535]: [strata] thinking: 722 of budget 16384 (max 24576) tokens, 59.1 tok/s, 13 s
+Oct 18 16:51:19 scar.lab python[298535]: [strata] thinking: 780 of budget 16384 (max 24576) tokens, 59.0 tok/s, 14 s
+Oct 18 16:51:20 scar.lab python[298535]: [strata] thinking: 833 of budget 16384 (max 24576) tokens, 58.5 tok/s, 15 s
+Oct 18 16:51:21 scar.lab python[298535]: [strata] thinking: 903 of budget 16384 (max 24576) tokens, 59.3 tok/s, 16 s
+Oct 18 16:51:22 scar.lab python[298535]: [strata] thinking: 969 of budget 16384 (max 24576) tokens, 59.6 tok/s, 17 s
+Oct 18 16:51:23 scar.lab python[298535]: [strata] thinking: 1033 of budget 16384 (max 24576) tokens, 59.9 tok/s, 18 s
+Oct 18 16:51:24 scar.lab python[298535]: [strata] thinking: 1103 of budget 16384 (max 24576) tokens, 60.4 tok/s, 19 s
+Oct 18 16:51:25 scar.lab python[298535]: [strata] thinking: 1168 of budget 16384 (max 24576) tokens, 60.5 tok/s, 20 s
+Oct 18 16:51:26 scar.lab python[298535]: [strata] thinking: 1244 of budget 16384 (max 24576) tokens, 61.2 tok/s, 21 s
+Oct 18 16:51:27 scar.lab python[298535]: [strata] thinking: 1314 of budget 16384 (max 24576) tokens, 61.6 tok/s, 22 s
+Oct 18 16:51:28 scar.lab python[298535]: [strata] thinking: 1380 of budget 16384 (max 24576) tokens, 61.7 tok/s, 23 s
+Oct 18 16:51:29 scar.lab python[298535]: [strata] thinking: 1442 of budget 16384 (max 24576) tokens, 61.7 tok/s, 24 s
+Oct 18 16:51:30 scar.lab python[298535]: [strata] thinking: 1499 of budget 16384 (max 24576) tokens, 61.5 tok/s, 25 s
+Oct 18 16:51:31 scar.lab python[298535]: [strata] thinking: 1557 of budget 16384 (max 24576) tokens, 61.3 tok/s, 26 s
+Oct 18 16:51:32 scar.lab python[298535]: [strata] thinking: 1621 of budget 16384 (max 24576) tokens, 61.4 tok/s, 27 s
+Oct 18 16:51:33 scar.lab python[298535]: [strata] thinking: 1684 of budget 16384 (max 24576) tokens, 61.4 tok/s, 28 s
+Oct 18 16:51:34 scar.lab python[298535]: [strata] thinking: 1742 of budget 16384 (max 24576) tokens, 61.3 tok/s, 29 s
+Oct 18 16:51:35 scar.lab python[298535]: [strata] thinking: 1816 of budget 16384 (max 24576) tokens, 61.7 tok/s, 30 s
+Oct 18 16:51:36 scar.lab python[298535]: [strata] thinking: 1881 of budget 16384 (max 24576) tokens, 61.8 tok/s, 31 s
+Oct 18 16:51:37 scar.lab python[298535]: [strata] thinking: 1944 of budget 16384 (max 24576) tokens, 61.8 tok/s, 32 s
+Oct 18 16:51:38 scar.lab python[298535]: [strata] thinking: 2010 of budget 16384 (max 24576) tokens, 61.9 tok/s, 33 s
+Oct 18 16:51:39 scar.lab python[298535]: [strata] thinking: 2071 of budget 16384 (max 24576) tokens, 61.8 tok/s, 34 s
+Oct 18 16:51:40 scar.lab python[298535]: [strata] thinking: 2141 of budget 16384 (max 24576) tokens, 62.0 tok/s, 35 s
+Oct 18 16:51:41 scar.lab python[298535]: [strata] thinking: 2224 of budget 16384 (max 24576) tokens, 62.6 tok/s, 36 s
+Oct 18 16:51:42 scar.lab python[298535]: [strata] thinking: 2301 of budget 16384 (max 24576) tokens, 63.0 tok/s, 38 s
+Oct 18 16:51:43 scar.lab python[298535]: [strata] thinking: 2363 of budget 16384 (max 24576) tokens, 62.9 tok/s, 39 s
+Oct 18 16:51:44 scar.lab python[298535]: [strata] thinking: 2451 of budget 16384 (max 24576) tokens, 63.5 tok/s, 40 s
+Oct 18 16:51:45 scar.lab python[298535]: [strata] thinking: 2532 of budget 16384 (max 24576) tokens, 63.9 tok/s, 41 s
+Oct 18 16:51:46 scar.lab python[298535]: [strata] thinking: 2601 of budget 16384 (max 24576) tokens, 64.1 tok/s, 42 s
+Oct 18 16:51:47 scar.lab python[298535]: [strata] thinking: 2683 of budget 16384 (max 24576) tokens, 64.5 tok/s, 43 s
+Oct 18 16:51:48 scar.lab python[298535]: [strata] thinking: 2768 of budget 16384 (max 24576) tokens, 64.9 tok/s, 44 s
+Oct 18 16:51:49 scar.lab python[298535]: [strata] thinking: 2849 of budget 16384 (max 24576) tokens, 65.3 tok/s, 45 s
+Oct 18 16:51:50 scar.lab python[298535]: [strata] thinking: 2906 of budget 16384 (max 24576) tokens, 65.1 tok/s, 46 s
+Oct 18 16:51:51 scar.lab python[298535]: [strata] thinking: 2963 of budget 16384 (max 24576) tokens, 64.9 tok/s, 47 s
+Oct 18 16:51:52 scar.lab python[298535]: [strata] thinking: 3019 of budget 16384 (max 24576) tokens, 64.7 tok/s, 48 s
+Oct 18 16:51:53 scar.lab python[298535]: [strata] thinking: 3072 of budget 16384 (max 24576) tokens, 64.4 tok/s, 49 s
+Oct 18 16:51:54 scar.lab python[298535]: [strata] thinking: 3148 of budget 16384 (max 24576) tokens, 64.6 tok/s, 50 s
+Oct 18 16:51:55 scar.lab python[298535]: [strata] thinking: 3214 of budget 16384 (max 24576) tokens, 64.6 tok/s, 51 s
+Oct 18 16:51:56 scar.lab python[298535]: [strata] thinking: 3267 of budget 16384 (max 24576) tokens, 64.4 tok/s, 52 s
+Oct 18 16:51:57 scar.lab python[298535]: [strata] thinking: 3330 of budget 16384 (max 24576) tokens, 64.4 tok/s, 53 s
+Oct 18 16:51:58 scar.lab python[298535]: [strata] thinking: 3384 of budget 16384 (max 24576) tokens, 64.1 tok/s, 54 s
+Oct 18 16:51:59 scar.lab python[298535]: [strata] thinking: 3443 of budget 16384 (max 24576) tokens, 64.0 tok/s, 55 s
+Oct 18 16:52:00 scar.lab python[298535]: [strata] thinking: 3510 of budget 16384 (max 24576) tokens, 64.1 tok/s, 56 s
+Oct 18 16:52:01 scar.lab python[298535]: [strata] thinking: 3568 of budget 16384 (max 24576) tokens, 64.0 tok/s, 57 s
+Oct 18 16:52:02 scar.lab python[298535]: [strata] thinking: 3631 of budget 16384 (max 24576) tokens, 63.9 tok/s, 58 s
+Oct 18 16:52:04 scar.lab python[298535]: [strata] thinking: 3687 of budget 16384 (max 24576) tokens, 63.8 tok/s, 59 s
+Oct 18 16:52:05 scar.lab python[298535]: [strata] thinking: 3748 of budget 16384 (max 24576) tokens, 63.7 tok/s, 60 s
+Oct 18 16:52:06 scar.lab python[298535]: [strata] thinking: 3807 of budget 16384 (max 24576) tokens, 63.6 tok/s, 61 s
+Oct 18 16:52:07 scar.lab python[298535]: [strata] thinking: 3878 of budget 16384 (max 24576) tokens, 63.7 tok/s, 62 s
+Oct 18 16:52:08 scar.lab python[298535]: [strata] thinking: 3941 of budget 16384 (max 24576) tokens, 63.6 tok/s, 63 s
+Oct 18 16:52:09 scar.lab python[298535]: [strata] thinking: 4010 of budget 16384 (max 24576) tokens, 63.7 tok/s, 64 s
+Oct 18 16:52:10 scar.lab python[298535]: [strata] thinking: 4072 of budget 16384 (max 24576) tokens, 63.7 tok/s, 65 s
+Oct 18 16:52:11 scar.lab python[298535]: [strata] thinking: 4142 of budget 16384 (max 24576) tokens, 63.8 tok/s, 66 s
+Oct 18 16:52:12 scar.lab python[298535]: [strata] thinking: 4209 of budget 16384 (max 24576) tokens, 63.8 tok/s, 67 s
+Oct 18 16:52:13 scar.lab python[298535]: [strata] thinking: 4298 of budget 16384 (max 24576) tokens, 64.2 tok/s, 68 s
+Oct 18 16:52:14 scar.lab python[298535]: [strata] thinking: 4376 of budget 16384 (max 24576) tokens, 64.4 tok/s, 69 s
+Oct 18 16:52:15 scar.lab python[298535]: [strata] thinking: 4453 of budget 16384 (max 24576) tokens, 64.5 tok/s, 70 s
+Oct 18 16:52:16 scar.lab python[298535]: [strata] thinking: 4545 of budget 16384 (max 24576) tokens, 64.9 tok/s, 71 s
+Oct 18 16:52:17 scar.lab python[298535]: [strata] thinking: 4628 of budget 16384 (max 24576) tokens, 65.1 tok/s, 72 s
+Oct 18 16:52:18 scar.lab python[298535]: [strata] thinking: 4692 of budget 16384 (max 24576) tokens, 65.1 tok/s, 73 s
+Oct 18 16:52:19 scar.lab python[298535]: [strata] thinking: 4755 of budget 16384 (max 24576) tokens, 65.0 tok/s, 74 s
+Oct 18 16:52:20 scar.lab python[298535]: [strata] thinking: 4837 of budget 16384 (max 24576) tokens, 65.2 tok/s, 75 s
+Oct 18 16:52:21 scar.lab python[298535]: [strata] thinking: 4899 of budget 16384 (max 24576) tokens, 65.2 tok/s, 76 s
+Oct 18 16:52:22 scar.lab python[298535]: [strata] thinking: 4959 of budget 16384 (max 24576) tokens, 65.1 tok/s, 77 s
+Oct 18 16:52:23 scar.lab python[298535]: [strata] thinking: 5031 of budget 16384 (max 24576) tokens, 65.2 tok/s, 78 s
+Oct 18 16:52:24 scar.lab python[298535]: [strata] thinking: 5094 of budget 16384 (max 24576) tokens, 65.1 tok/s, 79 s
+Oct 18 16:52:25 scar.lab python[298535]: [strata] thinking: 5161 of budget 16384 (max 24576) tokens, 65.2 tok/s, 80 s
+Oct 18 16:52:26 scar.lab python[298535]: [strata] thinking: 5226 of budget 16384 (max 24576) tokens, 65.2 tok/s, 81 s
+Oct 18 16:52:27 scar.lab python[298535]: [strata] thinking: 5278 of budget 16384 (max 24576) tokens, 65.0 tok/s, 82 s
+Oct 18 16:52:28 scar.lab python[298535]: [strata] thinking: 5332 of budget 16384 (max 24576) tokens, 64.8 tok/s, 83 s
+Oct 18 16:52:29 scar.lab python[298535]: [strata] thinking: 5395 of budget 16384 (max 24576) tokens, 64.8 tok/s, 84 s
+Oct 18 16:52:30 scar.lab python[298535]: [strata] thinking: 5461 of budget 16384 (max 24576) tokens, 64.8 tok/s, 85 s
+Oct 18 16:52:31 scar.lab python[298535]: [strata] thinking: 5519 of budget 16384 (max 24576) tokens, 64.7 tok/s, 86 s
+Oct 18 16:52:32 scar.lab python[298535]: [strata] thinking: 5572 of budget 16384 (max 24576) tokens, 64.6 tok/s, 87 s
+Oct 18 16:52:33 scar.lab python[298535]: [strata] thinking: 5627 of budget 16384 (max 24576) tokens, 64.4 tok/s, 88 s
+Oct 18 16:52:34 scar.lab python[298535]: [strata] thinking: 5685 of budget 16384 (max 24576) tokens, 64.4 tok/s, 89 s
+Oct 18 16:52:35 scar.lab python[298535]: [strata] thinking: 5768 of budget 16384 (max 24576) tokens, 64.5 tok/s, 90 s
+Oct 18 16:52:36 scar.lab python[298535]: [strata] thinking: 5856 of budget 16384 (max 24576) tokens, 64.8 tok/s, 91 s
+Oct 18 16:52:37 scar.lab python[298535]: [strata] thinking: 5930 of budget 16384 (max 24576) tokens, 64.9 tok/s, 92 s
+Oct 18 16:52:38 scar.lab python[298535]: [strata] thinking: 5996 of budget 16384 (max 24576) tokens, 64.9 tok/s, 93 s
+Oct 18 16:52:39 scar.lab python[298535]: [strata] thinking: 6059 of budget 16384 (max 24576) tokens, 64.9 tok/s, 94 s
+Oct 18 16:52:40 scar.lab python[298535]: [strata] thinking: 6130 of budget 16384 (max 24576) tokens, 64.9 tok/s, 95 s
+Oct 18 16:52:41 scar.lab python[298535]: [strata] thinking: 6204 of budget 16384 (max 24576) tokens, 65.0 tok/s, 96 s
+Oct 18 16:52:42 scar.lab python[298535]: [strata] thinking: 6259 of budget 16384 (max 24576) tokens, 64.9 tok/s, 97 s
+Oct 18 16:52:43 scar.lab python[298535]: [strata] thinking: 6311 of budget 16384 (max 24576) tokens, 64.8 tok/s, 98 s
+Oct 18 16:52:44 scar.lab python[298535]: [strata] thinking: 6370 of budget 16384 (max 24576) tokens, 64.7 tok/s, 99 s
+Oct 18 16:52:45 scar.lab python[298535]: [strata] thinking: 6429 of budget 16384 (max 24576) tokens, 64.6 tok/s, 100 s
+Oct 18 16:52:46 scar.lab python[298535]: [strata] thinking: 6481 of budget 16384 (max 24576) tokens, 64.5 tok/s, 101 s
+Oct 18 16:52:47 scar.lab python[298535]: [strata] thinking: 6555 of budget 16384 (max 24576) tokens, 64.6 tok/s, 102 s
+Oct 18 16:52:48 scar.lab python[298535]: [strata] thinking: 6638 of budget 16384 (max 24576) tokens, 64.7 tok/s, 104 s
+Oct 18 16:52:49 scar.lab python[298535]: [strata] thinking: 6706 of budget 16384 (max 24576) tokens, 64.8 tok/s, 105 s
+Oct 18 16:52:50 scar.lab python[298535]: [strata] thinking: 6768 of budget 16384 (max 24576) tokens, 64.7 tok/s, 106 s
+Oct 18 16:52:51 scar.lab python[298535]: [strata] thinking: 6848 of budget 16384 (max 24576) tokens, 64.8 tok/s, 107 s
+Oct 18 16:52:52 scar.lab python[298535]: [strata] thinking: 6923 of budget 16384 (max 24576) tokens, 64.9 tok/s, 108 s
+Oct 18 16:52:53 scar.lab python[298535]: [strata] thinking: 6999 of budget 16384 (max 24576) tokens, 65.0 tok/s, 109 s
+Oct 18 16:52:54 scar.lab python[298535]: [strata] thinking: 7056 of budget 16384 (max 24576) tokens, 64.9 tok/s, 110 s
+Oct 18 16:52:55 scar.lab python[298535]: [strata] thinking: 7111 of budget 16384 (max 24576) tokens, 64.8 tok/s, 111 s
+Oct 18 16:52:56 scar.lab python[298535]: [strata] thinking: 7173 of budget 16384 (max 24576) tokens, 64.8 tok/s, 112 s
+Oct 18 16:52:57 scar.lab python[298535]: [strata] thinking: 7253 of budget 16384 (max 24576) tokens, 64.9 tok/s, 113 s
+Oct 18 16:52:58 scar.lab python[298535]: [strata] thinking: 7344 of budget 16384 (max 24576) tokens, 65.2 tok/s, 114 s
+Oct 18 16:52:59 scar.lab python[298535]: [strata] thinking: 7419 of budget 16384 (max 24576) tokens, 65.2 tok/s, 115 s
+Oct 18 16:53:00 scar.lab python[298535]: [strata] thinking: 7485 of budget 16384 (max 24576) tokens, 65.2 tok/s, 116 s
+Oct 18 16:53:01 scar.lab python[298535]: [strata] thinking: 7557 of budget 16384 (max 24576) tokens, 65.3 tok/s, 117 s
+Oct 18 16:53:02 scar.lab python[298535]: [strata] thinking: 7624 of budget 16384 (max 24576) tokens, 65.3 tok/s, 118 s
+Oct 18 16:53:03 scar.lab python[298535]: [strata] thinking: 7681 of budget 16384 (max 24576) tokens, 65.2 tok/s, 119 s
+Oct 18 16:53:04 scar.lab python[298535]: [strata] thinking: 7746 of budget 16384 (max 24576) tokens, 65.2 tok/s, 120 s
+Oct 18 16:53:05 scar.lab python[298535]: [strata] thinking: 7809 of budget 16384 (max 24576) tokens, 65.2 tok/s, 121 s
+Oct 18 16:53:06 scar.lab python[298535]: [strata] thinking: 7870 of budget 16384 (max 24576) tokens, 65.1 tok/s, 122 s
+Oct 18 16:53:07 scar.lab python[298535]: [strata] thinking: 7936 of budget 16384 (max 24576) tokens, 65.2 tok/s, 123 s
+Oct 18 16:53:09 scar.lab python[298535]: [strata] thinking: 8034 of budget 16384 (max 24576) tokens, 65.4 tok/s, 124 s
+Oct 18 16:53:10 scar.lab python[298535]: [strata] thinking: 8093 of budget 16384 (max 24576) tokens, 65.4 tok/s, 125 s
+Oct 18 16:53:11 scar.lab python[298535]: [strata] thinking: 8157 of budget 16384 (max 24576) tokens, 65.3 tok/s, 126 s
+Oct 18 16:53:12 scar.lab python[298535]: [strata] thinking: 8253 of budget 16384 (max 24576) tokens, 65.6 tok/s, 127 s
+Oct 18 16:53:13 scar.lab python[298535]: [strata] thinking: 8342 of budget 16384 (max 24576) tokens, 65.7 tok/s, 128 s
+Oct 18 16:53:14 scar.lab python[298535]: [strata] thinking: 8409 of budget 16384 (max 24576) tokens, 65.7 tok/s, 129 s
+Oct 18 16:53:15 scar.lab python[298535]: [strata] thinking: 8492 of budget 16384 (max 24576) tokens, 65.9 tok/s, 130 s
+Oct 18 16:53:16 scar.lab python[298535]: [strata] thinking: 8546 of budget 16384 (max 24576) tokens, 65.8 tok/s, 131 s
+Oct 18 16:53:17 scar.lab python[298535]: [strata] thinking: 8612 of budget 16384 (max 24576) tokens, 65.8 tok/s, 132 s
+Oct 18 16:53:18 scar.lab python[298535]: [strata] thinking: 8701 of budget 16384 (max 24576) tokens, 65.9 tok/s, 133 s
+Oct 18 16:53:19 scar.lab python[298535]: [strata] thinking: 8784 of budget 16384 (max 24576) tokens, 66.1 tok/s, 134 s
+Oct 18 16:53:20 scar.lab python[298535]: [strata] thinking: 8850 of budget 16384 (max 24576) tokens, 66.1 tok/s, 135 s
+Oct 18 16:53:21 scar.lab python[298535]: [strata] thinking: 8910 of budget 16384 (max 24576) tokens, 66.0 tok/s, 136 s
+Oct 18 16:53:22 scar.lab python[298535]: [strata] thinking: 8966 of budget 16384 (max 24576) tokens, 65.9 tok/s, 137 s
+Oct 18 16:53:23 scar.lab python[298535]: [strata] thinking: 9014 of budget 16384 (max 24576) tokens, 65.8 tok/s, 138 s
+Oct 18 16:53:24 scar.lab python[298535]: [strata] thinking: 9079 of budget 16384 (max 24576) tokens, 65.8 tok/s, 139 s
+Oct 18 16:53:25 scar.lab python[298535]: [strata] thinking: 9165 of budget 16384 (max 24576) tokens, 65.9 tok/s, 140 s
+Oct 18 16:53:26 scar.lab python[298535]: [strata] thinking: 9217 of budget 16384 (max 24576) tokens, 65.8 tok/s, 141 s
+Oct 18 16:53:27 scar.lab python[298535]: [strata] thinking: 9284 of budget 16384 (max 24576) tokens, 65.8 tok/s, 142 s
+Oct 18 16:53:28 scar.lab python[298535]: [strata] thinking: 9375 of budget 16384 (max 24576) tokens, 66.0 tok/s, 143 s
+Oct 18 16:53:29 scar.lab python[298535]: [strata] thinking: 9474 of budget 16384 (max 24576) tokens, 66.2 tok/s, 144 s
+Oct 18 16:53:30 scar.lab python[298535]: [strata] thinking: 9573 of budget 16384 (max 24576) tokens, 66.4 tok/s, 145 s
+Oct 18 16:53:31 scar.lab python[298535]: [strata] thinking: 9666 of budget 16384 (max 24576) tokens, 66.6 tok/s, 146 s
+Oct 18 16:53:32 scar.lab python[298535]: [strata] repeated reasoning detected at 9728 tokens (coverage=0.290); resuming the same output with the low-effort instruction (reasoning_loop_recovery)
+Oct 18 16:53:32 scar.lab python[298535]: [strata] thinking: 9728 of budget 16384 (max 24576) tokens, 66.3 tok/s, 148 s
+Oct 18 16:53:38 scar.lab python[298535]: [strata] thinking: 9728 of budget 16384 (max 24576) tokens, 64.0 tok/s, 153 s
+Oct 18 16:53:39 scar.lab python[298535]: [strata] thinking: 9760 of budget 16384 (max 24576) tokens, 63.8 tok/s, 154 s
+Oct 18 16:53:40 scar.lab python[298535]: [strata] thinking: 9811 of budget 16384 (max 24576) tokens, 63.7 tok/s, 155 s
+Oct 18 16:53:41 scar.lab python[298535]: [strata] thinking: 9865 of budget 16384 (max 24576) tokens, 63.7 tok/s, 156 s
+Oct 18 16:53:42 scar.lab python[298535]: [strata] thinking: 9920 of budget 16384 (max 24576) tokens, 63.6 tok/s, 157 s
+Oct 18 16:53:43 scar.lab python[298535]: [strata] thinking: 9975 of budget 16384 (max 24576) tokens, 63.5 tok/s, 158 s
+Oct 18 16:53:44 scar.lab python[298535]: [strata] thinking: 10032 of budget 16384 (max 24576) tokens, 63.5 tok/s, 159 s
+Oct 18 16:53:45 scar.lab python[298535]: [strata] thinking: 10093 of budget 16384 (max 24576) tokens, 63.5 tok/s, 160 s
+Oct 18 16:53:46 scar.lab python[298535]: [strata] thinking: 10160 of budget 16384 (max 24576) tokens, 63.5 tok/s, 161 s
+Oct 18 16:53:47 scar.lab python[298535]: [strata] thinking: 10214 of budget 16384 (max 24576) tokens, 63.4 tok/s, 162 s
+Oct 18 16:53:48 scar.lab python[298535]: [strata] thinking: 10273 of budget 16384 (max 24576) tokens, 63.4 tok/s, 163 s
+Oct 18 16:53:49 scar.lab python[298535]: [strata] thinking: 10333 of budget 16384 (max 24576) tokens, 63.4 tok/s, 164 s
+Oct 18 16:53:50 scar.lab python[298535]: [strata] thinking: 10396 of budget 16384 (max 24576) tokens, 63.4 tok/s, 165 s
+Oct 18 16:53:51 scar.lab python[298535]: [strata] thinking: 10453 of budget 16384 (max 24576) tokens, 63.3 tok/s, 166 s
+Oct 18 16:53:52 scar.lab python[298535]: [strata] thinking: 10513 of budget 16384 (max 24576) tokens, 63.3 tok/s, 167 s
+Oct 18 16:53:53 scar.lab python[298535]: [strata] thinking: 10575 of budget 16384 (max 24576) tokens, 63.3 tok/s, 168 s
+Oct 18 16:53:54 scar.lab python[298535]: [strata] thinking: 10632 of budget 16384 (max 24576) tokens, 63.2 tok/s, 169 s
+Oct 18 16:53:55 scar.lab python[298535]: [strata] thinking: 10697 of budget 16384 (max 24576) tokens, 63.2 tok/s, 170 s
+Oct 18 16:53:56 scar.lab python[298535]: [strata] thinking: 10757 of budget 16384 (max 24576) tokens, 63.2 tok/s, 171 s
+Oct 18 16:53:57 scar.lab python[298535]: [strata] thinking: 10835 of budget 16384 (max 24576) tokens, 63.3 tok/s, 172 s
+Oct 18 16:53:58 scar.lab python[298535]: [strata] thinking: 10897 of budget 16384 (max 24576) tokens, 63.3 tok/s, 173 s
+Oct 18 16:53:59 scar.lab python[298535]: [strata] thinking: 10970 of budget 16384 (max 24576) tokens, 63.3 tok/s, 174 s
+Oct 18 16:54:00 scar.lab python[298535]: [strata] thinking: 11041 of budget 16384 (max 24576) tokens, 63.4 tok/s, 175 s
+Oct 18 16:54:01 scar.lab python[298535]: [strata] thinking: 11117 of budget 16384 (max 24576) tokens, 63.4 tok/s, 176 s
+Oct 18 16:54:02 scar.lab python[298535]: [strata] thinking: 11183 of budget 16384 (max 24576) tokens, 63.4 tok/s, 177 s
+Oct 18 16:54:03 scar.lab python[298535]: [strata] thinking: 11273 of budget 16384 (max 24576) tokens, 63.6 tok/s, 178 s
+Oct 18 16:54:04 scar.lab python[298535]: [strata] thinking: 11356 of budget 16384 (max 24576) tokens, 63.7 tok/s, 179 s
+Oct 18 16:54:05 scar.lab python[298535]: [strata] thinking: 11434 of budget 16384 (max 24576) tokens, 63.8 tok/s, 180 s
+Oct 18 16:54:06 scar.lab python[298535]: [strata] thinking: 11495 of budget 16384 (max 24576) tokens, 63.7 tok/s, 181 s
+Oct 18 16:54:07 scar.lab python[298535]: [strata] thinking: 11563 of budget 16384 (max 24576) tokens, 63.8 tok/s, 182 s
+Oct 18 16:54:08 scar.lab python[298535]: [strata] thinking: 11618 of budget 16384 (max 24576) tokens, 63.7 tok/s, 183 s
+Oct 18 16:54:09 scar.lab python[298535]: [strata] thinking: 11695 of budget 16384 (max 24576) tokens, 63.8 tok/s, 184 s
+Oct 18 16:54:10 scar.lab python[298535]: [strata] thinking: 11761 of budget 16384 (max 24576) tokens, 63.8 tok/s, 185 s
+Oct 18 16:54:11 scar.lab python[298535]: [strata] thinking: 11818 of budget 16384 (max 24576) tokens, 63.7 tok/s, 186 s
+Oct 18 16:54:12 scar.lab python[298535]: [strata] thinking: 11885 of budget 16384 (max 24576) tokens, 63.8 tok/s, 187 s
+Oct 18 16:54:13 scar.lab python[298535]: [strata] thinking: 11936 of budget 16384 (max 24576) tokens, 63.7 tok/s, 188 s
+Oct 18 16:54:14 scar.lab python[298535]: [strata] thinking: 11992 of budget 16384 (max 24576) tokens, 63.6 tok/s, 189 s
+Oct 18 16:54:15 scar.lab python[298535]: [strata] thinking: 12043 of budget 16384 (max 24576) tokens, 63.6 tok/s, 190 s
+Oct 18 16:54:16 scar.lab python[298535]: [strata] thinking: 12094 of budget 16384 (max 24576) tokens, 63.5 tok/s, 191 s
+Oct 18 16:54:17 scar.lab python[298535]: [strata] thinking: 12152 of budget 16384 (max 24576) tokens, 63.5 tok/s, 192 s
+Oct 18 16:54:18 scar.lab python[298535]: [strata] thinking: 12208 of budget 16384 (max 24576) tokens, 63.4 tok/s, 193 s
+Oct 18 16:54:19 scar.lab python[298535]: [strata] thinking: 12272 of budget 16384 (max 24576) tokens, 63.4 tok/s, 194 s
+Oct 18 16:54:20 scar.lab python[298535]: [strata] thinking: 12326 of budget 16384 (max 24576) tokens, 63.4 tok/s, 195 s
+Oct 18 16:54:21 scar.lab python[298535]: [strata] thinking: 12384 of budget 16384 (max 24576) tokens, 63.3 tok/s, 197 s
+Oct 18 16:54:22 scar.lab python[298535]: [strata] thinking: 12453 of budget 16384 (max 24576) tokens, 63.3 tok/s, 198 s
+Oct 18 16:54:23 scar.lab python[298535]: [strata] thinking: 12512 of budget 16384 (max 24576) tokens, 63.3 tok/s, 199 s
+Oct 18 16:54:24 scar.lab python[298535]: [strata] thinking: 12578 of budget 16384 (max 24576) tokens, 63.3 tok/s, 200 s
+Oct 18 16:54:25 scar.lab python[298535]: [strata] thinking: 12656 of budget 16384 (max 24576) tokens, 63.4 tok/s, 201 s
+Oct 18 16:54:26 scar.lab python[298535]: [strata] thinking: 12731 of budget 16384 (max 24576) tokens, 63.4 tok/s, 202 s
+Oct 18 16:54:27 scar.lab python[298535]: [strata] thinking: 12814 of budget 16384 (max 24576) tokens, 63.5 tok/s, 203 s
+Oct 18 16:54:28 scar.lab python[298535]: [strata] thinking: 12870 of budget 16384 (max 24576) tokens, 63.5 tok/s, 204 s
+Oct 18 16:54:29 scar.lab python[298535]: [strata] thinking: 12928 of budget 16384 (max 24576) tokens, 63.5 tok/s, 205 s
+Oct 18 16:54:30 scar.lab python[298535]: [strata] thinking: 12987 of budget 16384 (max 24576) tokens, 63.4 tok/s, 206 s
+Oct 18 16:54:31 scar.lab python[298535]: [strata] thinking: 13047 of budget 16384 (max 24576) tokens, 63.4 tok/s, 207 s
+Oct 18 16:54:32 scar.lab python[298535]: [strata] thinking: 13102 of budget 16384 (max 24576) tokens, 63.4 tok/s, 208 s
+Oct 18 16:54:33 scar.lab python[298535]: [strata] thinking: 13156 of budget 16384 (max 24576) tokens, 63.3 tok/s, 209 s
+Oct 18 16:54:34 scar.lab python[298535]: [strata] thinking: 13215 of budget 16384 (max 24576) tokens, 63.3 tok/s, 210 s
+Oct 18 16:54:35 scar.lab python[298535]: [strata] thinking: 13268 of budget 16384 (max 24576) tokens, 63.2 tok/s, 211 s
+Oct 18 16:54:36 scar.lab python[298535]: [strata] thinking: 13322 of budget 16384 (max 24576) tokens, 63.2 tok/s, 212 s
+Oct 18 16:54:38 scar.lab python[298535]: [strata] thinking: 13380 of budget 16384 (max 24576) tokens, 63.2 tok/s, 213 s
+Oct 18 16:54:39 scar.lab python[298535]: [strata] thinking: 13438 of budget 16384 (max 24576) tokens, 63.1 tok/s, 214 s
+Oct 18 16:54:40 scar.lab python[298535]: [strata] thinking: 13496 of budget 16384 (max 24576) tokens, 63.1 tok/s, 215 s
+Oct 18 16:54:41 scar.lab python[298535]: [strata] thinking: 13552 of budget 16384 (max 24576) tokens, 63.1 tok/s, 216 s
+Oct 18 16:54:42 scar.lab python[298535]: [strata] thinking: 13616 of budget 16384 (max 24576) tokens, 63.1 tok/s, 217 s
+Oct 18 16:54:43 scar.lab python[298535]: [strata] thinking: 13673 of budget 16384 (max 24576) tokens, 63.0 tok/s, 218 s
+Oct 18 16:54:44 scar.lab python[298535]: [strata] thinking: 13733 of budget 16384 (max 24576) tokens, 63.0 tok/s, 219 s
+Oct 18 16:54:45 scar.lab python[298535]: [strata] thinking: 13803 of budget 16384 (max 24576) tokens, 63.0 tok/s, 220 s
+Oct 18 16:54:46 scar.lab python[298535]: [strata] thinking: 13860 of budget 16384 (max 24576) tokens, 63.0 tok/s, 221 s
+Oct 18 16:54:47 scar.lab python[298535]: [strata] thinking: 13930 of budget 16384 (max 24576) tokens, 63.0 tok/s, 222 s
+Oct 18 16:54:48 scar.lab python[298535]: [strata] thinking: 13996 of budget 16384 (max 24576) tokens, 63.1 tok/s, 223 s
+Oct 18 16:54:49 scar.lab python[298535]: [strata] thinking: 14062 of budget 16384 (max 24576) tokens, 63.1 tok/s, 224 s
+Oct 18 16:54:50 scar.lab python[298535]: [strata] thinking: 14134 of budget 16384 (max 24576) tokens, 63.1 tok/s, 225 s
+Oct 18 16:54:51 scar.lab python[298535]: [strata] thinking: 14208 of budget 16384 (max 24576) tokens, 63.1 tok/s, 226 s
+Oct 18 16:54:52 scar.lab python[298535]: [strata] thinking: 14296 of budget 16384 (max 24576) tokens, 63.2 tok/s, 227 s
+Oct 18 16:54:53 scar.lab python[298535]: [strata] thinking: 14378 of budget 16384 (max 24576) tokens, 63.3 tok/s, 228 s
+Oct 18 16:54:54 scar.lab python[298535]: [strata] thinking: 14457 of budget 16384 (max 24576) tokens, 63.4 tok/s, 229 s
+Oct 18 16:54:55 scar.lab python[298535]: [strata] thinking: 14511 of budget 16384 (max 24576) tokens, 63.3 tok/s, 230 s
+Oct 18 16:54:56 scar.lab python[298535]: [strata] thinking: 14570 of budget 16384 (max 24576) tokens, 63.3 tok/s, 231 s
+Oct 18 16:54:57 scar.lab python[298535]: [strata] thinking: 14624 of budget 16384 (max 24576) tokens, 63.3 tok/s, 232 s
+Oct 18 16:54:58 scar.lab python[298535]: [strata] thinking: 14686 of budget 16384 (max 24576) tokens, 63.3 tok/s, 233 s
+Oct 18 16:54:59 scar.lab python[298535]: [strata] thinking: 14742 of budget 16384 (max 24576) tokens, 63.2 tok/s, 234 s
+Oct 18 16:55:00 scar.lab python[298535]: [strata] thinking: 14795 of budget 16384 (max 24576) tokens, 63.2 tok/s, 235 s
+Oct 18 16:55:01 scar.lab python[298535]: [strata] thinking: 14845 of budget 16384 (max 24576) tokens, 63.1 tok/s, 236 s
+Oct 18 16:55:02 scar.lab python[298535]: [strata] thinking: 14908 of budget 16384 (max 24576) tokens, 63.1 tok/s, 237 s
+Oct 18 16:55:03 scar.lab python[298535]: [strata] thinking: 14970 of budget 16384 (max 24576) tokens, 63.1 tok/s, 238 s
+Oct 18 16:55:04 scar.lab python[298535]: [strata] thinking: 15051 of budget 16384 (max 24576) tokens, 63.2 tok/s, 239 s
+Oct 18 16:55:05 scar.lab python[298535]: [strata] thinking: 15103 of budget 16384 (max 24576) tokens, 63.1 tok/s, 240 s
+Oct 18 16:55:06 scar.lab python[298535]: [strata] thinking: 15173 of budget 16384 (max 24576) tokens, 63.2 tok/s, 241 s
+Oct 18 16:55:07 scar.lab python[298535]: [strata] thinking: 15234 of budget 16384 (max 24576) tokens, 63.2 tok/s, 242 s
+Oct 18 16:55:08 scar.lab python[298535]: [strata] thinking: 15314 of budget 16384 (max 24576) tokens, 63.2 tok/s, 243 s
+Oct 18 16:55:09 scar.lab python[298535]: [strata] thinking: 15374 of budget 16384 (max 24576) tokens, 63.2 tok/s, 244 s
+Oct 18 16:55:10 scar.lab python[298535]: [strata] thinking: 15431 of budget 16384 (max 24576) tokens, 63.2 tok/s, 245 s
+Oct 18 16:55:11 scar.lab python[298535]: [strata] thinking: 15494 of budget 16384 (max 24576) tokens, 63.2 tok/s, 246 s
+Oct 18 16:55:12 scar.lab python[298535]: [strata] thinking: 15554 of budget 16384 (max 24576) tokens, 63.2 tok/s, 247 s
+Oct 18 16:55:13 scar.lab python[298535]: [strata] thinking: 15605 of budget 16384 (max 24576) tokens, 63.1 tok/s, 248 s
+Oct 18 16:55:14 scar.lab python[298535]: [strata] thinking: 15658 of budget 16384 (max 24576) tokens, 63.1 tok/s, 249 s
+Oct 18 16:55:15 scar.lab python[298535]: [strata] thinking: 15720 of budget 16384 (max 24576) tokens, 63.1 tok/s, 250 s
+Oct 18 16:55:16 scar.lab python[298535]: [strata] thinking: 15779 of budget 16384 (max 24576) tokens, 63.0 tok/s, 251 s
+Oct 18 16:55:17 scar.lab python[298535]: [strata] thinking: 15828 of budget 16384 (max 24576) tokens, 63.0 tok/s, 252 s
+Oct 18 16:55:18 scar.lab python[298535]: [strata] thinking: 15886 of budget 16384 (max 24576) tokens, 63.0 tok/s, 253 s
+Oct 18 16:55:19 scar.lab python[298535]: [strata] thinking: 15943 of budget 16384 (max 24576) tokens, 62.9 tok/s, 254 s
+Oct 18 16:55:20 scar.lab python[298535]: [strata] thinking: 16001 of budget 16384 (max 24576) tokens, 62.9 tok/s, 255 s
+Oct 18 16:55:21 scar.lab python[298535]: [strata] thinking: 16058 of budget 16384 (max 24576) tokens, 62.9 tok/s, 256 s
+Oct 18 16:55:22 scar.lab python[298535]: [strata] thinking: 16116 of budget 16384 (max 24576) tokens, 62.9 tok/s, 257 s
+Oct 18 16:55:23 scar.lab python[298535]: [strata] thinking: 16186 of budget 16384 (max 24576) tokens, 62.9 tok/s, 258 s
+Oct 18 16:55:24 scar.lab python[298535]: [strata] thinking: 16242 of budget 16384 (max 24576) tokens, 62.9 tok/s, 259 s
+Oct 18 16:55:25 scar.lab python[298535]: [strata] thinking: 16300 of budget 16384 (max 24576) tokens, 62.8 tok/s, 260 s
+Oct 18 16:55:26 scar.lab python[298535]: [strata] thinking: 16363 of budget 16384 (max 24576) tokens, 62.8 tok/s, 261 s
+Oct 18 16:55:27 scar.lab python[298535]: [strata] thinking budget reached (16384 tokens): wrapping up the thinking
+Oct 18 16:55:27 scar.lab python[298535]: [strata] answering: 16420 of max 24576 tokens, 62.8 tok/s, 262 s
+Oct 18 16:55:28 scar.lab python[298535]: [strata] answering: 16476 of max 24576 tokens, 62.8 tok/s, 263 s
+Oct 18 16:55:29 scar.lab python[298535]: [strata] answering: 16542 of max 24576 tokens, 62.8 tok/s, 264 s
+Oct 18 16:55:30 scar.lab python[298535]: [strata] answering: 16612 of max 24576 tokens, 62.8 tok/s, 265 s
+Oct 18 16:55:31 scar.lab python[298535]: [strata] answering: 16683 of max 24576 tokens, 62.8 tok/s, 266 s
+Oct 18 16:55:32 scar.lab python[298535]: [strata] answering: 16752 of max 24576 tokens, 62.9 tok/s, 267 s
+Oct 18 16:55:33 scar.lab python[298535]: [strata] answering: 16828 of max 24576 tokens, 62.9 tok/s, 269 s
+Oct 18 16:55:34 scar.lab python[298535]: [strata] answering: 16895 of max 24576 tokens, 62.9 tok/s, 270 s
+Oct 18 16:55:35 scar.lab python[298535]: [strata] answering: 16974 of max 24576 tokens, 63.0 tok/s, 271 s
+Oct 18 16:55:36 scar.lab python[298535]: [strata] answering: 17058 of max 24576 tokens, 63.0 tok/s, 272 s
+Oct 18 16:55:37 scar.lab python[298535]: [strata] answering: 17136 of max 24576 tokens, 63.1 tok/s, 273 s
+Oct 18 16:55:38 scar.lab python[298535]: [strata] thinking capped at 25 of max_tokens 50 to leave room for the answer (budget 16384)
+Oct 18 16:55:38 scar.lab python[298535]: [strata] answering: 17214 of max 24576 tokens, 63.1 tok/s, 274 s
+Oct 18 16:55:39 scar.lab python[298535]: [strata] answering: 17285 of max 24576 tokens, 63.2 tok/s, 275 s
+Oct 18 16:55:40 scar.lab python[298535]: [strata] answering: 17356 of max 24576 tokens, 63.2 tok/s, 276 s
+Oct 18 16:55:41 scar.lab python[298535]: [strata] answering: 17421 of max 24576 tokens, 63.2 tok/s, 277 s
+Oct 18 16:55:42 scar.lab python[298535]: [strata] answering: 17499 of max 24576 tokens, 63.2 tok/s, 278 s
+Oct 18 16:55:43 scar.lab python[298535]: [strata] answering: 17571 of max 24576 tokens, 63.3 tok/s, 279 s
+Oct 18 16:55:44 scar.lab python[298535]: [strata] answering: 17649 of max 24576 tokens, 63.3 tok/s, 280 s
+Oct 18 16:55:45 scar.lab python[298535]: [strata] answering: 17732 of max 24576 tokens, 63.4 tok/s, 281 s
+Oct 18 16:55:46 scar.lab python[298535]: [strata] answering: 17791 of max 24576 tokens, 63.4 tok/s, 282 s
+Oct 18 16:55:48 scar.lab python[298535]: [strata] answering: 17868 of max 24576 tokens, 63.4 tok/s, 283 s
+Oct 18 16:55:49 scar.lab python[298535]: [strata] answering: 17929 of max 24576 tokens, 63.4 tok/s, 284 s
+Oct 18 16:55:50 scar.lab python[298535]: [strata] answering: 18009 of max 24576 tokens, 63.4 tok/s, 285 s
+Oct 18 16:55:51 scar.lab python[298535]: [strata] answering: 18089 of max 24576 tokens, 63.5 tok/s, 286 s
+Oct 18 16:55:52 scar.lab python[298535]: [strata] answering: 18161 of max 24576 tokens, 63.5 tok/s, 287 s
+Oct 18 16:55:53 scar.lab python[298535]: [strata] answering: 18229 of max 24576 tokens, 63.5 tok/s, 288 s
+Oct 18 16:55:54 scar.lab python[298535]: [strata] answering: 18300 of max 24576 tokens, 63.6 tok/s, 289 s
+Oct 18 16:55:55 scar.lab python[298535]: [strata] answering: 18383 of max 24576 tokens, 63.6 tok/s, 290 s
+Oct 18 16:55:56 scar.lab python[298535]: [strata] answering: 18468 of max 24576 tokens, 63.7 tok/s, 291 s
+Oct 18 16:55:57 scar.lab python[298535]: [strata] answering: 18556 of max 24576 tokens, 63.8 tok/s, 292 s
+Oct 18 16:55:58 scar.lab python[298535]: [strata] answering: 18644 of max 24576 tokens, 63.9 tok/s, 293 s
+Oct 18 16:55:59 scar.lab python[298535]: [strata] answering: 18718 of max 24576 tokens, 63.9 tok/s, 294 s
+Oct 18 16:56:00 scar.lab python[298535]: [strata] answering: 18792 of max 24576 tokens, 63.9 tok/s, 295 s
+Oct 18 16:56:01 scar.lab python[298535]: [strata] answering: 18870 of max 24576 tokens, 64.0 tok/s, 296 s
+Oct 18 16:56:02 scar.lab python[298535]: [strata] answering: 18934 of max 24576 tokens, 64.0 tok/s, 297 s
+Oct 18 16:56:03 scar.lab python[298535]: [strata] answering: 18997 of max 24576 tokens, 63.9 tok/s, 298 s
+Oct 18 16:56:04 scar.lab python[298535]: [strata] answering: 19057 of max 24576 tokens, 63.9 tok/s, 299 s
+Oct 18 16:56:05 scar.lab python[298535]: [strata] answering: 19126 of max 24576 tokens, 63.9 tok/s, 300 s
+Oct 18 16:56:06 scar.lab python[298535]: [strata] answering: 19203 of max 24576 tokens, 64.0 tok/s, 301 s
+Oct 18 16:56:07 scar.lab python[298535]: [strata] answering: 19287 of max 24576 tokens, 64.0 tok/s, 302 s
+Oct 18 16:56:08 scar.lab python[298535]: [strata] answering: 19356 of max 24576 tokens, 64.0 tok/s, 303 s
+Oct 18 16:56:09 scar.lab python[298535]: [strata] answering: 19426 of max 24576 tokens, 64.1 tok/s, 304 s
+Oct 18 16:56:10 scar.lab python[298535]: [strata] answering: 19519 of max 24576 tokens, 64.2 tok/s, 305 s
+Oct 18 16:56:11 scar.lab python[298535]: [strata] answering: 19606 of max 24576 tokens, 64.2 tok/s, 306 s
+Oct 18 16:56:12 scar.lab python[298535]: [strata] answering: 19704 of max 24576 tokens, 64.3 tok/s, 307 s
+Oct 18 16:56:13 scar.lab python[298535]: [strata] answering: 19790 of max 24576 tokens, 64.4 tok/s, 308 s
+Oct 18 16:56:14 scar.lab python[298535]: [strata] answering: 19852 of max 24576 tokens, 64.4 tok/s, 309 s
+Oct 18 16:56:15 scar.lab python[298535]: [strata] answering: 19923 of max 24576 tokens, 64.4 tok/s, 310 s
+Oct 18 16:56:16 scar.lab python[298535]: [strata] answering: 20002 of max 24576 tokens, 64.4 tok/s, 311 s
+Oct 18 16:56:17 scar.lab python[298535]: [strata] answering: 20077 of max 24576 tokens, 64.5 tok/s, 312 s
+Oct 18 16:56:18 scar.lab python[298535]: [strata] answering: 20151 of max 24576 tokens, 64.5 tok/s, 313 s
+Oct 18 16:56:19 scar.lab python[298535]: [strata] answering: 20233 of max 24576 tokens, 64.6 tok/s, 314 s
+Oct 18 16:56:20 scar.lab python[298535]: [strata] answering: 20308 of max 24576 tokens, 64.6 tok/s, 315 s
+Oct 18 16:56:21 scar.lab python[298535]: [strata] answering: 20377 of max 24576 tokens, 64.6 tok/s, 316 s
+Oct 18 16:56:22 scar.lab python[298535]: [strata] answering: 20453 of max 24576 tokens, 64.6 tok/s, 317 s
+Oct 18 16:56:23 scar.lab python[298535]: [strata] answering: 20517 of max 24576 tokens, 64.6 tok/s, 318 s
+Oct 18 16:56:24 scar.lab python[298535]: [strata] done: 20580 tokens in 319 s (64.6 tok/s) (stop, cancel=False), expert cache 95.7% hit (+0.5% of the routed experts over PCIe)
+Oct 18 16:56:25 scar.lab python[298535]: [strata] thinking: 6 of budget 16384 (max 24576) tokens, 46.9 tok/s, 1 s
+Oct 18 16:56:26 scar.lab python[298535]: [strata] thinking: 60 of budget 16384 (max 24576) tokens, 52.9 tok/s, 2 s
+Oct 18 16:56:27 scar.lab python[298535]: [strata] thinking: 117 of budget 16384 (max 24576) tokens, 54.3 tok/s, 3 s
+Oct 18 16:56:28 scar.lab python[298535]: [strata] thinking: 167 of budget 16384 (max 24576) tokens, 52.9 tok/s, 4 s
+Oct 18 16:56:29 scar.lab python[298535]: [strata] thinking: 229 of budget 16384 (max 24576) tokens, 55.0 tok/s, 5 s
+Oct 18 16:56:30 scar.lab python[298535]: [strata] thinking: 292 of budget 16384 (max 24576) tokens, 56.3 tok/s, 6 s
+Oct 18 16:56:31 scar.lab python[298535]: [strata] thinking: 361 of budget 16384 (max 24576) tokens, 58.3 tok/s, 7 s
+Oct 18 16:56:32 scar.lab python[298535]: [strata] thinking: 425 of budget 16384 (max 24576) tokens, 58.9 tok/s, 8 s
+Oct 18 16:56:33 scar.lab python[298535]: [strata] thinking: 486 of budget 16384 (max 24576) tokens, 59.1 tok/s, 9 s
+Oct 18 16:56:34 scar.lab python[298535]: [strata] thinking: 550 of budget 16384 (max 24576) tokens, 59.6 tok/s, 10 s
+Oct 18 16:56:35 scar.lab python[298535]: [strata] thinking: 617 of budget 16384 (max 24576) tokens, 60.2 tok/s, 11 s
+Oct 18 16:56:36 scar.lab python[298535]: [strata] thinking: 682 of budget 16384 (max 24576) tokens, 60.6 tok/s, 12 s
+Oct 18 16:56:37 scar.lab python[298535]: [strata] thinking: 743 of budget 16384 (max 24576) tokens, 60.6 tok/s, 13 s
+Oct 18 16:56:38 scar.lab python[298535]: [strata] thinking: 806 of budget 16384 (max 24576) tokens, 60.7 tok/s, 14 s
+Oct 18 16:56:39 scar.lab python[298535]: [strata] thinking: 868 of budget 16384 (max 24576) tokens, 60.7 tok/s, 15 s
+Oct 18 16:56:40 scar.lab python[298535]: [strata] thinking: 931 of budget 16384 (max 24576) tokens, 60.8 tok/s, 16 s
+Oct 18 16:56:41 scar.lab python[298535]: [strata] thinking: 992 of budget 16384 (max 24576) tokens, 60.7 tok/s, 17 s
+Oct 18 16:56:42 scar.lab python[298535]: [strata] thinking: 1052 of budget 16384 (max 24576) tokens, 60.7 tok/s, 18 s
+Oct 18 16:56:43 scar.lab python[298535]: [strata] thinking: 1117 of budget 16384 (max 24576) tokens, 60.9 tok/s, 19 s
+Oct 18 16:56:45 scar.lab python[298535]: [strata] thinking: 1186 of budget 16384 (max 24576) tokens, 61.3 tok/s, 20 s
+Oct 18 16:56:46 scar.lab python[298535]: [strata] thinking: 1247 of budget 16384 (max 24576) tokens, 61.2 tok/s, 21 s
+Oct 18 16:56:47 scar.lab python[298535]: [strata] thinking: 1308 of budget 16384 (max 24576) tokens, 61.2 tok/s, 22 s
+Oct 18 16:56:48 scar.lab python[298535]: [strata] thinking: 1373 of budget 16384 (max 24576) tokens, 61.3 tok/s, 23 s
+Oct 18 16:56:49 scar.lab python[298535]: [strata] thinking: 1458 of budget 16384 (max 24576) tokens, 62.3 tok/s, 24 s
+Oct 18 16:56:50 scar.lab python[298535]: [strata] thinking: 1539 of budget 16384 (max 24576) tokens, 63.0 tok/s, 25 s
+Oct 18 16:56:51 scar.lab python[298535]: [strata] thinking: 1617 of budget 16384 (max 24576) tokens, 63.5 tok/s, 26 s
+Oct 18 16:56:52 scar.lab python[298535]: [strata] thinking: 1692 of budget 16384 (max 24576) tokens, 63.9 tok/s, 27 s
+Oct 18 16:56:53 scar.lab python[298535]: [strata] thinking: 1757 of budget 16384 (max 24576) tokens, 63.9 tok/s, 28 s
+Oct 18 16:56:54 scar.lab python[298535]: [strata] thinking: 1811 of budget 16384 (max 24576) tokens, 63.6 tok/s, 29 s
+Oct 18 16:56:55 scar.lab python[298535]: [strata] thinking: 1879 of budget 16384 (max 24576) tokens, 63.7 tok/s, 30 s
+Oct 18 16:56:56 scar.lab python[298535]: [strata] thinking: 1939 of budget 16384 (max 24576) tokens, 63.6 tok/s, 31 s
+Oct 18 16:56:57 scar.lab python[298535]: [strata] thinking: 2010 of budget 16384 (max 24576) tokens, 63.8 tok/s, 32 s
+Oct 18 16:56:58 scar.lab python[298535]: [strata] thinking: 2077 of budget 16384 (max 24576) tokens, 63.9 tok/s, 33 s
+Oct 18 16:56:59 scar.lab python[298535]: [strata] thinking: 2149 of budget 16384 (max 24576) tokens, 64.1 tok/s, 34 s
+Oct 18 16:57:00 scar.lab python[298535]: [strata] thinking: 2210 of budget 16384 (max 24576) tokens, 64.0 tok/s, 35 s
+Oct 18 16:57:01 scar.lab python[298535]: [strata] thinking: 2267 of budget 16384 (max 24576) tokens, 63.7 tok/s, 36 s
+Oct 18 16:57:02 scar.lab python[298535]: [strata] thinking: 2340 of budget 16384 (max 24576) tokens, 64.0 tok/s, 37 s
+Oct 18 16:57:03 scar.lab python[298535]: [strata] thinking: 2408 of budget 16384 (max 24576) tokens, 64.1 tok/s, 38 s
+Oct 18 16:57:04 scar.lab python[298535]: [strata] thinking: 2477 of budget 16384 (max 24576) tokens, 64.2 tok/s, 40 s
+Oct 18 16:57:05 scar.lab python[298535]: [strata] thinking: 2548 of budget 16384 (max 24576) tokens, 64.3 tok/s, 41 s
+Oct 18 16:57:06 scar.lab python[298535]: [strata] thinking: 2609 of budget 16384 (max 24576) tokens, 64.2 tok/s, 42 s
+Oct 18 16:57:07 scar.lab python[298535]: [strata] thinking: 2679 of budget 16384 (max 24576) tokens, 64.3 tok/s, 43 s
+Oct 18 16:57:08 scar.lab python[298535]: [strata] thinking: 2737 of budget 16384 (max 24576) tokens, 64.1 tok/s, 44 s
+Oct 18 16:57:09 scar.lab python[298535]: [strata] thinking: 2804 of budget 16384 (max 24576) tokens, 64.2 tok/s, 45 s
+Oct 18 16:57:10 scar.lab python[298535]: [strata] thinking: 2861 of budget 16384 (max 24576) tokens, 64.0 tok/s, 46 s
+Oct 18 16:57:11 scar.lab python[298535]: [strata] thinking: 2929 of budget 16384 (max 24576) tokens, 64.1 tok/s, 47 s
+Oct 18 16:57:12 scar.lab python[298535]: [strata] thinking: 3002 of budget 16384 (max 24576) tokens, 64.2 tok/s, 48 s
+Oct 18 16:57:13 scar.lab python[298535]: [strata] thinking: 3067 of budget 16384 (max 24576) tokens, 64.2 tok/s, 49 s
+Oct 18 16:57:14 scar.lab python[298535]: [strata] thinking: 3126 of budget 16384 (max 24576) tokens, 64.1 tok/s, 50 s
+Oct 18 16:57:15 scar.lab python[298535]: [strata] thinking: 3184 of budget 16384 (max 24576) tokens, 64.0 tok/s, 51 s
+Oct 18 16:57:16 scar.lab python[298535]: [strata] thinking: 3249 of budget 16384 (max 24576) tokens, 64.0 tok/s, 52 s
+Oct 18 16:57:17 scar.lab python[298535]: [strata] thinking: 3320 of budget 16384 (max 24576) tokens, 64.1 tok/s, 53 s
+Oct 18 16:57:18 scar.lab python[298535]: [strata] thinking: 3392 of budget 16384 (max 24576) tokens, 64.2 tok/s, 54 s
+Oct 18 16:57:19 scar.lab python[298535]: [strata] thinking: 3471 of budget 16384 (max 24576) tokens, 64.5 tok/s, 55 s
+Oct 18 16:57:20 scar.lab python[298535]: [strata] thinking: 3558 of budget 16384 (max 24576) tokens, 64.9 tok/s, 56 s
+Oct 18 16:57:21 scar.lab python[298535]: [strata] thinking: 3622 of budget 16384 (max 24576) tokens, 64.8 tok/s, 57 s
+Oct 18 16:57:22 scar.lab python[298535]: [strata] thinking: 3686 of budget 16384 (max 24576) tokens, 64.8 tok/s, 58 s
+Oct 18 16:57:23 scar.lab python[298535]: [strata] thinking: 3760 of budget 16384 (max 24576) tokens, 64.9 tok/s, 59 s
+Oct 18 16:57:24 scar.lab python[298535]: [strata] thinking: 3831 of budget 16384 (max 24576) tokens, 65.0 tok/s, 60 s
+Oct 18 16:57:25 scar.lab python[298535]: [strata] thinking: 3889 of budget 16384 (max 24576) tokens, 64.9 tok/s, 61 s
+Oct 18 16:57:26 scar.lab python[298535]: [strata] thinking: 3952 of budget 16384 (max 24576) tokens, 64.9 tok/s, 62 s
+Oct 18 16:57:27 scar.lab python[298535]: [strata] thinking: 4013 of budget 16384 (max 24576) tokens, 64.8 tok/s, 63 s
+Oct 18 16:57:28 scar.lab python[298535]: [strata] thinking: 4075 of budget 16384 (max 24576) tokens, 64.7 tok/s, 64 s
+Oct 18 16:57:29 scar.lab python[298535]: [strata] thinking: 4140 of budget 16384 (max 24576) tokens, 64.7 tok/s, 65 s
+Oct 18 16:57:30 scar.lab python[298535]: [strata] thinking: 4197 of budget 16384 (max 24576) tokens, 64.6 tok/s, 66 s
+Oct 18 16:57:31 scar.lab python[298535]: [strata] thinking: 4251 of budget 16384 (max 24576) tokens, 64.4 tok/s, 67 s
+Oct 18 16:57:32 scar.lab python[298535]: [strata] thinking: 4317 of budget 16384 (max 24576) tokens, 64.4 tok/s, 68 s
+Oct 18 16:57:33 scar.lab python[298535]: [strata] thinking: 4376 of budget 16384 (max 24576) tokens, 64.4 tok/s, 69 s
+Oct 18 16:57:34 scar.lab python[298535]: [strata] thinking: 4439 of budget 16384 (max 24576) tokens, 64.3 tok/s, 70 s
+Oct 18 16:57:35 scar.lab python[298535]: [strata] thinking: 4508 of budget 16384 (max 24576) tokens, 64.4 tok/s, 71 s
+Oct 18 16:57:36 scar.lab python[298535]: [strata] thinking: 4578 of budget 16384 (max 24576) tokens, 64.4 tok/s, 72 s
+Oct 18 16:57:37 scar.lab python[298535]: [strata] thinking: 4654 of budget 16384 (max 24576) tokens, 64.6 tok/s, 73 s
+Oct 18 16:57:38 scar.lab python[298535]: [strata] thinking: 4725 of budget 16384 (max 24576) tokens, 64.7 tok/s, 74 s
+Oct 18 16:57:39 scar.lab python[298535]: [strata] thinking: 4792 of budget 16384 (max 24576) tokens, 64.7 tok/s, 75 s
+Oct 18 16:57:40 scar.lab python[298535]: [strata] thinking: 4858 of budget 16384 (max 24576) tokens, 64.7 tok/s, 76 s
+Oct 18 16:57:41 scar.lab python[298535]: [strata] thinking: 4913 of budget 16384 (max 24576) tokens, 64.5 tok/s, 77 s
+Oct 18 16:57:42 scar.lab python[298535]: [strata] thinking: 4966 of budget 16384 (max 24576) tokens, 64.4 tok/s, 78 s
+Oct 18 16:57:43 scar.lab python[298535]: [strata] thinking: 5030 of budget 16384 (max 24576) tokens, 64.3 tok/s, 79 s
+Oct 18 16:57:44 scar.lab python[298535]: [strata] thinking: 5099 of budget 16384 (max 24576) tokens, 64.4 tok/s, 80 s
+Oct 18 16:57:45 scar.lab python[298535]: [strata] thinking: 5164 of budget 16384 (max 24576) tokens, 64.4 tok/s, 81 s
+Oct 18 16:57:46 scar.lab python[298535]: [strata] thinking: 5237 of budget 16384 (max 24576) tokens, 64.5 tok/s, 82 s
+Oct 18 16:57:47 scar.lab python[298535]: [strata] thinking: 5320 of budget 16384 (max 24576) tokens, 64.7 tok/s, 83 s
+Oct 18 16:57:48 scar.lab python[298535]: [strata] thinking: 5379 of budget 16384 (max 24576) tokens, 64.6 tok/s, 84 s
+Oct 18 16:57:49 scar.lab python[298535]: [strata] thinking: 5448 of budget 16384 (max 24576) tokens, 64.6 tok/s, 85 s
+Oct 18 16:57:50 scar.lab python[298535]: [strata] thinking: 5507 of budget 16384 (max 24576) tokens, 64.6 tok/s, 86 s
+Oct 18 16:57:51 scar.lab python[298535]: [strata] thinking: 5577 of budget 16384 (max 24576) tokens, 64.6 tok/s, 87 s
+Oct 18 16:57:52 scar.lab python[298535]: [strata] thinking: 5643 of budget 16384 (max 24576) tokens, 64.6 tok/s, 88 s
+Oct 18 16:57:53 scar.lab python[298535]: [strata] thinking: 5717 of budget 16384 (max 24576) tokens, 64.7 tok/s, 89 s
+Oct 18 16:57:54 scar.lab python[298535]: [strata] thinking: 5777 of budget 16384 (max 24576) tokens, 64.7 tok/s, 90 s
+Oct 18 16:57:55 scar.lab python[298535]: [strata] thinking: 5843 of budget 16384 (max 24576) tokens, 64.7 tok/s, 91 s
+Oct 18 16:57:57 scar.lab python[298535]: [strata] thinking: 5920 of budget 16384 (max 24576) tokens, 64.8 tok/s, 92 s
+Oct 18 16:57:58 scar.lab python[298535]: [strata] thinking: 5980 of budget 16384 (max 24576) tokens, 64.7 tok/s, 93 s
+Oct 18 16:57:59 scar.lab python[298535]: [strata] thinking: 6034 of budget 16384 (max 24576) tokens, 64.6 tok/s, 94 s
+Oct 18 16:58:00 scar.lab python[298535]: [strata] thinking: 6090 of budget 16384 (max 24576) tokens, 64.5 tok/s, 95 s
+Oct 18 16:58:01 scar.lab python[298535]: [strata] thinking: 6152 of budget 16384 (max 24576) tokens, 64.5 tok/s, 96 s
+Oct 18 16:58:02 scar.lab python[298535]: [strata] thinking: 6229 of budget 16384 (max 24576) tokens, 64.6 tok/s, 97 s
+Oct 18 16:58:03 scar.lab python[298535]: [strata] thinking: 6297 of budget 16384 (max 24576) tokens, 64.6 tok/s, 98 s
+Oct 18 16:58:04 scar.lab python[298535]: [strata] thinking: 6356 of budget 16384 (max 24576) tokens, 64.6 tok/s, 99 s
+Oct 18 16:58:05 scar.lab python[298535]: [strata] thinking: 6423 of budget 16384 (max 24576) tokens, 64.6 tok/s, 100 s
+Oct 18 16:58:06 scar.lab python[298535]: [strata] thinking: 6483 of budget 16384 (max 24576) tokens, 64.5 tok/s, 101 s
+Oct 18 16:58:07 scar.lab python[298535]: [strata] thinking: 6541 of budget 16384 (max 24576) tokens, 64.4 tok/s, 102 s
+Oct 18 16:58:08 scar.lab python[298535]: [strata] thinking: 6605 of budget 16384 (max 24576) tokens, 64.4 tok/s, 103 s
+Oct 18 16:58:09 scar.lab python[298535]: [strata] thinking: 6670 of budget 16384 (max 24576) tokens, 64.4 tok/s, 104 s
+Oct 18 16:58:10 scar.lab python[298535]: [strata] thinking: 6743 of budget 16384 (max 24576) tokens, 64.5 tok/s, 106 s
+Oct 18 16:58:11 scar.lab python[298535]: [strata] thinking: 6817 of budget 16384 (max 24576) tokens, 64.5 tok/s, 107 s
+Oct 18 16:58:12 scar.lab python[298535]: [strata] thinking: 6889 of budget 16384 (max 24576) tokens, 64.6 tok/s, 108 s
+Oct 18 16:58:13 scar.lab python[298535]: [strata] thinking: 6954 of budget 16384 (max 24576) tokens, 64.6 tok/s, 109 s
+Oct 18 16:58:14 scar.lab python[298535]: [strata] thinking: 7013 of budget 16384 (max 24576) tokens, 64.5 tok/s, 110 s
+Oct 18 16:58:15 scar.lab python[298535]: [strata] thinking: 7085 of budget 16384 (max 24576) tokens, 64.6 tok/s, 111 s
+Oct 18 16:58:16 scar.lab python[298535]: [strata] thinking: 7146 of budget 16384 (max 24576) tokens, 64.6 tok/s, 112 s
+Oct 18 16:58:17 scar.lab python[298535]: [strata] thinking: 7211 of budget 16384 (max 24576) tokens, 64.6 tok/s, 113 s
+Oct 18 16:58:18 scar.lab python[298535]: [strata] answering: 7264 of max 24576 tokens, 64.4 tok/s, 114 s
+Oct 18 16:58:19 scar.lab python[298535]: [strata] answering: 7334 of max 24576 tokens, 64.5 tok/s, 115 s
+Oct 18 16:58:20 scar.lab python[298535]: [strata] answering: 7411 of max 24576 tokens, 64.6 tok/s, 116 s
+Oct 18 16:58:21 scar.lab python[298535]: [strata] answering: 7482 of max 24576 tokens, 64.6 tok/s, 117 s
+Oct 18 16:58:22 scar.lab python[298535]: [strata] answering: 7557 of max 24576 tokens, 64.7 tok/s, 118 s
+Oct 18 16:58:23 scar.lab python[298535]: [strata] answering: 7625 of max 24576 tokens, 64.7 tok/s, 119 s
+Oct 18 16:58:24 scar.lab python[298535]: [strata] answering: 7704 of max 24576 tokens, 64.9 tok/s, 120 s
+Oct 18 16:58:25 scar.lab python[298535]: [strata] answering: 7790 of max 24576 tokens, 65.0 tok/s, 121 s
+Oct 18 16:58:26 scar.lab python[298535]: [strata] answering: 7866 of max 24576 tokens, 65.1 tok/s, 122 s
+Oct 18 16:58:27 scar.lab python[298535]: [strata] answering: 7944 of max 24576 tokens, 65.2 tok/s, 123 s
+Oct 18 16:58:28 scar.lab python[298535]: [strata] answering: 8025 of max 24576 tokens, 65.3 tok/s, 124 s
+Oct 18 16:58:29 scar.lab python[298535]: [strata] answering: 8093 of max 24576 tokens, 65.4 tok/s, 125 s
+Oct 18 16:58:30 scar.lab python[298535]: [strata] answering: 8182 of max 24576 tokens, 65.5 tok/s, 126 s
+Oct 18 16:58:31 scar.lab python[298535]: [strata] answering: 8255 of max 24576 tokens, 65.6 tok/s, 127 s
+Oct 18 16:58:32 scar.lab python[298535]: [strata] answering: 8337 of max 24576 tokens, 65.7 tok/s, 128 s
+Oct 18 16:58:33 scar.lab python[298535]: [strata] answering: 8416 of max 24576 tokens, 65.8 tok/s, 129 s
+Oct 18 16:58:34 scar.lab python[298535]: [strata] answering: 8502 of max 24576 tokens, 65.9 tok/s, 130 s
+Oct 18 16:58:35 scar.lab python[298535]: [strata] answering: 8589 of max 24576 tokens, 66.1 tok/s, 131 s
+Oct 18 16:58:36 scar.lab python[298535]: [strata] answering: 8667 of max 24576 tokens, 66.2 tok/s, 132 s
+Oct 18 16:58:37 scar.lab python[298535]: [strata] answering: 8755 of max 24576 tokens, 66.3 tok/s, 133 s
+Oct 18 16:58:38 scar.lab python[298535]: [strata] answering: 8832 of max 24576 tokens, 66.4 tok/s, 134 s
+Oct 18 16:58:39 scar.lab python[298535]: [strata] answering: 8900 of max 24576 tokens, 66.4 tok/s, 135 s
+Oct 18 16:58:40 scar.lab python[298535]: [strata] answering: 8987 of max 24576 tokens, 66.6 tok/s, 136 s
+Oct 18 16:58:41 scar.lab python[298535]: [strata] answering: 9068 of max 24576 tokens, 66.7 tok/s, 137 s
+Oct 18 16:58:42 scar.lab python[298535]: [strata] answering: 9146 of max 24576 tokens, 66.7 tok/s, 138 s
+Oct 18 16:58:43 scar.lab python[298535]: [strata] answering: 9223 of max 24576 tokens, 66.8 tok/s, 139 s
+Oct 18 16:58:44 scar.lab python[298535]: [strata] answering: 9308 of max 24576 tokens, 66.9 tok/s, 140 s
+Oct 18 16:58:45 scar.lab python[298535]: [strata] answering: 9388 of max 24576 tokens, 67.0 tok/s, 141 s
+Oct 18 16:58:46 scar.lab python[298535]: [strata] answering: 9473 of max 24576 tokens, 67.1 tok/s, 142 s
+Oct 18 16:58:47 scar.lab python[298535]: [strata] answering: 9538 of max 24576 tokens, 67.1 tok/s, 143 s
+Oct 18 16:58:48 scar.lab python[298535]: [strata] answering: 9616 of max 24576 tokens, 67.2 tok/s, 144 s
+Oct 18 16:58:49 scar.lab python[298535]: [strata] answering: 9681 of max 24576 tokens, 67.2 tok/s, 145 s
+Oct 18 16:58:50 scar.lab python[298535]: [strata] answering: 9750 of max 24576 tokens, 67.2 tok/s, 146 s
+Oct 18 16:58:51 scar.lab python[298535]: [strata] answering: 9834 of max 24576 tokens, 67.3 tok/s, 147 s
+Oct 18 16:58:52 scar.lab python[298535]: [strata] answering: 9897 of max 24576 tokens, 67.3 tok/s, 148 s
+Oct 18 16:58:53 scar.lab python[298535]: [strata] answering: 9967 of max 24576 tokens, 67.3 tok/s, 149 s
+Oct 18 16:58:54 scar.lab python[298535]: [strata] answering: 10050 of max 24576 tokens, 67.3 tok/s, 150 s
+Oct 18 16:58:55 scar.lab python[298535]: [strata] answering: 10134 of max 24576 tokens, 67.4 tok/s, 151 s
+Oct 18 16:58:56 scar.lab python[298535]: [strata] answering: 10205 of max 24576 tokens, 67.5 tok/s, 152 s
+Oct 18 16:58:57 scar.lab python[298535]: [strata] answering: 10279 of max 24576 tokens, 67.5 tok/s, 153 s
+Oct 18 16:58:58 scar.lab python[298535]: [strata] answering: 10350 of max 24576 tokens, 67.5 tok/s, 154 s
+Oct 18 16:58:59 scar.lab python[298535]: [strata] answering: 10419 of max 24576 tokens, 67.5 tok/s, 155 s
+Oct 18 16:59:01 scar.lab python[298535]: [strata] answering: 10504 of max 24576 tokens, 67.6 tok/s, 156 s
+Oct 18 16:59:02 scar.lab python[298535]: [strata] answering: 10585 of max 24576 tokens, 67.7 tok/s, 157 s
+Oct 18 16:59:03 scar.lab python[298535]: [strata] answering: 10670 of max 24576 tokens, 67.8 tok/s, 158 s
+Oct 18 16:59:04 scar.lab python[298535]: [strata] answering: 10756 of max 24576 tokens, 67.9 tok/s, 159 s
+Oct 18 16:59:05 scar.lab python[298535]: [strata] answering: 10826 of max 24576 tokens, 67.9 tok/s, 160 s
+Oct 18 16:59:06 scar.lab python[298535]: [strata] answering: 10909 of max 24576 tokens, 68.0 tok/s, 161 s
+Oct 18 16:59:07 scar.lab python[298535]: [strata] answering: 10985 of max 24576 tokens, 68.0 tok/s, 162 s
+Oct 18 16:59:08 scar.lab python[298535]: [strata] answering: 11072 of max 24576 tokens, 68.1 tok/s, 163 s
+Oct 18 16:59:09 scar.lab python[298535]: [strata] answering: 11162 of max 24576 tokens, 68.3 tok/s, 164 s
+Oct 18 16:59:10 scar.lab python[298535]: [strata] answering: 11236 of max 24576 tokens, 68.3 tok/s, 165 s
+Oct 18 16:59:11 scar.lab python[298535]: [strata] answering: 11319 of max 24576 tokens, 68.4 tok/s, 166 s
+Oct 18 16:59:12 scar.lab python[298535]: [strata] answering: 11405 of max 24576 tokens, 68.5 tok/s, 167 s
+Oct 18 16:59:13 scar.lab python[298535]: [strata] answering: 11481 of max 24576 tokens, 68.5 tok/s, 169 s
+Oct 18 16:59:14 scar.lab python[298535]: [strata] answering: 11553 of max 24576 tokens, 68.5 tok/s, 170 s
+Oct 18 16:59:15 scar.lab python[298535]: [strata] answering: 11633 of max 24576 tokens, 68.6 tok/s, 171 s
+Oct 18 16:59:16 scar.lab python[298535]: [strata] answering: 11711 of max 24576 tokens, 68.6 tok/s, 172 s
+Oct 18 16:59:17 scar.lab python[298535]: [strata] answering: 11774 of max 24576 tokens, 68.6 tok/s, 173 s
+Oct 18 16:59:18 scar.lab python[298535]: [strata] answering: 11853 of max 24576 tokens, 68.6 tok/s, 174 s
+Oct 18 16:59:19 scar.lab python[298535]: [strata] answering: 11934 of max 24576 tokens, 68.7 tok/s, 175 s
+Oct 18 16:59:20 scar.lab python[298535]: [strata] answering: 12007 of max 24576 tokens, 68.7 tok/s, 176 s
+Oct 18 16:59:21 scar.lab python[298535]: [strata] answering: 12066 of max 24576 tokens, 68.7 tok/s, 177 s
+Oct 18 16:59:22 scar.lab python[298535]: [strata] answering: 12140 of max 24576 tokens, 68.7 tok/s, 178 s
+Oct 18 16:59:22 scar.lab python[298535]: [strata] done: 12141 tokens in 178 s (68.7 tok/s) (stop, cancel=False), expert cache 96.6% hit (+0.3% of the routed experts over PCIe)

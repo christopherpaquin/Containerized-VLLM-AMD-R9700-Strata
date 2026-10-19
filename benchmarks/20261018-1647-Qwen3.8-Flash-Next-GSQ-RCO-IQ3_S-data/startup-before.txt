@@ -1,0 +1,29 @@
+Oct 18 16:37:53 scar.lab python[276645]: [strata] stopping (Ctrl+C again to end the engine at once) ...
+Oct 18 16:37:53 scar.lab systemd[1]: Stopping strata.service - Strata Qwen IQ3_S on AMD R9700...
+Oct 18 16:37:53 scar.lab python[276645]: [strata] stopped
+Oct 18 16:37:53 scar.lab systemd[1]: strata.service: Deactivated successfully.
+Oct 18 16:37:53 scar.lab systemd[1]: Stopped strata.service - Strata Qwen IQ3_S on AMD R9700.
+Oct 18 16:37:53 scar.lab systemd[1]: strata.service: Consumed 50min 1.716s CPU time, 94.9G memory peak, 0B memory swap peak.
+Oct 18 16:37:53 scar.lab systemd[1]: Starting strata.service - Strata Qwen IQ3_S on AMD R9700...
+Oct 18 16:37:53 scar.lab python3[298525]: Quality baseline configuration verified
+Oct 18 16:37:53 scar.lab python3[298533]: Exported public dashboard settings
+Oct 18 16:37:53 scar.lab systemd[1]: Started strata.service - Strata Qwen IQ3_S on AMD R9700.
+Oct 18 16:37:54 scar.lab python[298535]: [strata] sampling defaults from the config: temperature=1.0, top_p=0.95, top_k=20, min_p=0.0, presence_penalty=0.0, repetition_penalty=1.0
+Oct 18 16:37:54 scar.lab python[298535]: loading the model (the first start takes a minute or two) ...
+Oct 18 16:37:54 scar.lab python[298535]: [strata] starting the engine: reading the model's weights ...
+Oct 18 16:37:56 scar.lab python[298535]: [strata] loading the experts into RAM (about 55 GB) and locking part of them for the GPU.
+Oct 18 16:37:56 scar.lab python[298535]:          YOUR PC CAN BE SLOW OR STOP RESPONDING FOR 1-3 MINUTES NOW - this is normal.
+Oct 18 16:37:56 scar.lab python[298535]:          Please wait and don't close this window; the browser opens when it is ready.
+Oct 18 16:38:09 scar.lab python[298535]: [strata] experts loaded: 46.84 GiB at 5.26 GiB/s (16 s so far)
+Oct 18 16:38:10 scar.lab python[298535]: [strata] filling the GPU's expert cache (13103 experts, 24.87 GiB of VRAM) ...
+Oct 18 16:38:14 scar.lab python[298535]: [strata] almost ready ...
+Oct 18 16:38:14 scar.lab python[298535]: [strata] thinking level: high (reasoning_effort in the config; a request, or the Chat settings shared with other apps, can set its own)
+Oct 18 16:38:14 scar.lab python[298535]: [strata] model aliases: scar-coder
+Oct 18 16:38:14 scar.lab python[298535]: [strata] also answers to the host names scar.lab (allowed_hosts)
+Oct 18 16:38:14 scar.lab python[298535]: [strata] thinking budget: 16384 tokens (reasoning_budget_tokens; a request can set its own)
+Oct 18 16:38:14 scar.lab python[298535]: ready: http://10.1.10.10:8080/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 262144 tokens, API key required)
+Oct 18 16:38:14 scar.lab python[298535]:        open http://10.1.10.10:8080/ in a browser to chat; close this window to stop the model
+Oct 18 16:38:14 scar.lab python[298535]:        from other devices: http://10.1.10.10:8080/   (API: http://10.1.10.10:8080/v1)
+Oct 18 16:40:32 scar.lab python[298535]: [strata] answering: 44 of max 128 tokens, 68.5 tok/s, 1 s
+Oct 18 16:40:33 scar.lab python[298535]: [strata] answering: 120 of max 128 tokens, 72.6 tok/s, 2 s
+Oct 18 16:40:33 scar.lab python[298535]: [strata] done: 128 tokens in 2 s (71.4 tok/s) (length, cancel=False), expert cache 95.8% hit (+0.7% of the routed experts over PCIe)

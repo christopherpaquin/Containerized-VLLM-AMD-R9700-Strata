@@ -1,0 +1,6 @@
+{
+  "shared": true,
+  "defaults": {
+    "reasoning_budget_tokens": 12288
+  }
+}

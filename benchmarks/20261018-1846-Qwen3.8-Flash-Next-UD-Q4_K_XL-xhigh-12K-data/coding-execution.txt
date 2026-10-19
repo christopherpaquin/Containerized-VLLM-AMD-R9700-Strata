@@ -1,0 +1,38 @@
+Scan error while accessing '/tmp/tmp8m9h408t/blocked': [Errno 13] Permission denied: '/tmp/tmp8m9h408t/blocked'
+Scan error while accessing '/tmp/tmp8m9h408t/broken': [Errno 2] No such file or directory: '/tmp/tmp8m9h408t/broken'
+Scan error while accessing '/tmp/tmp8m9h408t/blocked': [Errno 13] Permission denied: '/tmp/tmp8m9h408t/blocked'
+{
+  "uid": 65534,
+  "checks": [
+    {
+      "name": "sorted_strict_threshold_regular_only",
+      "passed": false,
+      "actual": [
+        "big",
+        "medium",
+        "threshold"
+      ]
+    },
+    {
+      "name": "optional_follow_symlinks_cycle_guard",
+      "passed": false,
+      "actual": [
+        "big",
+        "medium",
+        "threshold"
+      ]
+    },
+    {
+      "name": "external_sort_forced_multiple_chunks",
+      "passed": false,
+      "error": "NotImplementedError('Implement external merge sort here if results do not fit in memory.')"
+    },
+    {
+      "name": "unreadable_directory_reports_and_skips",
+      "passed": true,
+      "errors": [
+        "PermissionError"
+      ]
+    }
+  ]
+}

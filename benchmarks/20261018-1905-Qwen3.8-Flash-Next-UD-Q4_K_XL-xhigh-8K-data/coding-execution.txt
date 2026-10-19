@@ -1,0 +1,34 @@
+{
+  "uid": 65534,
+  "checks": [
+    {
+      "name": "sorted_strict_threshold_regular_only",
+      "passed": true,
+      "actual": [
+        "big",
+        "medium"
+      ]
+    },
+    {
+      "name": "optional_follow_symlinks_cycle_guard",
+      "passed": false,
+      "actual": [
+        "big",
+        "big",
+        "medium"
+      ]
+    },
+    {
+      "name": "external_sort_forced_multiple_chunks",
+      "passed": false,
+      "error": "AttributeError(\"module 'generated' has no attribute 'iter_files_larger_than_1gib'\")"
+    },
+    {
+      "name": "unreadable_directory_reports_and_skips",
+      "passed": true,
+      "errors": [
+        "PermissionError"
+      ]
+    }
+  ]
+}

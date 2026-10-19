@@ -1,0 +1,40 @@
+Skipping /tmp/tmphle95_a3/blocked: [Errno 13] Permission denied: '/tmp/tmphle95_a3/blocked'
+Skipping /tmp/tmphle95_a3/broken: [Errno 2] No such file or directory: '/tmp/tmphle95_a3/broken'
+Skipping /tmp/tmphle95_a3/blocked: [Errno 13] Permission denied: '/tmp/tmphle95_a3/blocked'
+Skipping /tmp/tmphle95_a3/blocked: [Errno 13] Permission denied: '/tmp/tmphle95_a3/blocked'
+{
+  "uid": 65534,
+  "checks": [
+    {
+      "name": "sorted_strict_threshold_regular_only",
+      "passed": true,
+      "actual": [
+        "big",
+        "medium"
+      ]
+    },
+    {
+      "name": "optional_follow_symlinks_cycle_guard",
+      "passed": true,
+      "actual": [
+        "big",
+        "medium"
+      ]
+    },
+    {
+      "name": "external_sort_forced_multiple_chunks",
+      "passed": true,
+      "actual": [
+        "big",
+        "medium"
+      ]
+    },
+    {
+      "name": "unreadable_directory_reports_and_skips",
+      "passed": true,
+      "errors": [
+        "PermissionError"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Oct 18 19:05:21 scar.lab python[446197]: [strata] other apps now use the Chat settings: reasoning_budget_tokens=8192

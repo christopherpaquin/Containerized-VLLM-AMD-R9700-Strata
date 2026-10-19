@@ -1,0 +1,1 @@
+os.walk(..., followlinks=True)

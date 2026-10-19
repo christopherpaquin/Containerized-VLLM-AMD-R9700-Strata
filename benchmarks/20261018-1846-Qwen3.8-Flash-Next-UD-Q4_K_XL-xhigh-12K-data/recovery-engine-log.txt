@@ -1,0 +1,4 @@
+strata serve: prompt 110 tokens = 0 reused + 110 read in 2881 ms (38.2 tok/s), 13042 generated in 280427 ms (46.5 tok/s), drafts accepted 6701 of 10338, 1 checkpoints
+strata serve: decode expert cache hit rate: 88.2% (7003174 hits / 7937169 lookups); 69711 more read by the GPU over PCIe or from another GPU (0.9% of all 8006880 routed)
+strata serve: KV streaming: 99.96% of 95330892 block reads hit VRAM, 159.0 MiB read from RAM
+strata serve: suffix drafts: 213 windows, 366 of 517 drafts accepted

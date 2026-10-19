@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOUpvcvdoAKGIzOTQ0MmU2MDg4ZDNlZTQwNWVhOTc5NzIzZDRkNDdiYTMyMWE1YmY",
+  "sha": "b39442e6088d3ee405ea979723d4d47ba321a5bf",
+  "url": "https://api.github.com/repos/Niko1221/Strata/git/tags/b39442e6088d3ee405ea979723d4d47ba321a5bf",
+  "tagger": {
+    "name": "Niko1221",
+    "email": "Niko1221@users.noreply.github.com",
+    "date": "2026-10-17T06:50:44Z"
+  },
+  "object": {
+    "sha": "477ac13cbe8e582c20484871ce459d20d82df09d",
+    "type": "commit",
+    "url": "https://api.github.com/repos/Niko1221/Strata/git/commits/477ac13cbe8e582c20484871ce459d20d82df09d"
+  },
+  "tag": "v0.1.45",
+  "message": "Strata 0.1.45\n",
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

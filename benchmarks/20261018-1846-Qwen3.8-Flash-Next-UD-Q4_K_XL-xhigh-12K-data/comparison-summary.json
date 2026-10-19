@@ -1,0 +1,173 @@
+[
+  {
+    "test": "systemd",
+    "prompt_sha256": "bbec99181558c856b4704069b9ee119de4fd0124cb7bd8c37f9ea7bfe143cb8a",
+    "usage": {
+      "prompt_tokens": 131,
+      "completion_tokens": 18922,
+      "total_tokens": 19053,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 131,
+      "prompt_ms": 2613.2,
+      "prompt_per_token_ms": 19.948,
+      "prompt_per_second": 50.1,
+      "predicted_n": 18922,
+      "predicted_ms": 395460.2,
+      "predicted_per_token_ms": 20.899,
+      "predicted_per_second": 47.8,
+      "draft_n": 14773,
+      "draft_n_accepted": 9668
+    },
+    "ttft_s": 2.6400809090009716,
+    "first_final_s": 201.7133852349998,
+    "elapsed_s": 398.078002364,
+    "reasoning_stream_duration_s": 199.00419195799986,
+    "final_stream_duration_s": 196.36461712900018,
+    "reasoning_characters_observed": 35755,
+    "answer_chars": 36498,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792363575.0309665,
+      "duration_s": 398.1,
+      "finish": "stop",
+      "prompt_tokens": 131,
+      "reused": 0,
+      "output_tokens": 18922,
+      "prompt_total": 131,
+      "prompt_read": 131,
+      "reasoning_recoveries": 0,
+      "reasoning_repeat_coverage": 0.006,
+      "engine_generated": 18922,
+      "prompt_ms": 2613.2,
+      "decode_ms": 395460.2,
+      "decode_tok_s": 47.8,
+      "hit_rate": 0.891,
+      "pcie_share": 0.008,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 14773,
+      "drafts_accepted": 9668
+    },
+    "engine_log_delta": "strata serve: prompt 131 tokens = 0 reused + 131 read in 2613 ms (50.1 tok/s), 18922 generated in 395460 ms (47.8 tok/s), drafts accepted 9668 of 14773, 1 checkpoints\nstrata serve: decode expert cache hit rate: 89.1% (10198029 hits / 11447101 lookups); 86819 more read by the GPU over PCIe or from another GPU (0.8% of all 11533920 routed)\nstrata serve: KV streaming: 99.96% of 141049524 block reads hit VRAM, 230.3 MiB read from RAM\nstrata serve: suffix drafts: 250 windows, 400 of 622 drafts accepted\n"
+  },
+  {
+    "test": "coding",
+    "prompt_sha256": "831bd02da88bd8acd1dab58974fe3e39ebc1ac41f5fb6b3b7ac26f39293f0924",
+    "usage": {
+      "prompt_tokens": 127,
+      "completion_tokens": 17803,
+      "total_tokens": 17930,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 127,
+      "prompt_ms": 16910.3,
+      "prompt_per_token_ms": 133.152,
+      "prompt_per_second": 7.5,
+      "predicted_n": 17803,
+      "predicted_ms": 391291.5,
+      "predicted_per_token_ms": 21.997,
+      "predicted_per_second": 45.5,
+      "draft_n": 13076,
+      "draft_n_accepted": 8642
+    },
+    "ttft_s": 3.223415758000556,
+    "first_final_s": 287.77946381199945,
+    "elapsed_s": 408.2128090219994,
+    "reasoning_stream_duration_s": 270.7391388870001,
+    "final_stream_duration_s": 120.43334520999997,
+    "reasoning_characters_observed": 52306,
+    "answer_chars": 22140,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792363973.175766,
+      "duration_s": 408.2,
+      "finish": "stop",
+      "prompt_tokens": 127,
+      "reused": 0,
+      "output_tokens": 17803,
+      "prompt_total": 127,
+      "prompt_read": 127,
+      "reasoning_recoveries": 0,
+      "reasoning_repeat_coverage": 0.024,
+      "engine_generated": 17788,
+      "prompt_ms": 16910.3,
+      "decode_ms": 391291.5,
+      "decode_tok_s": 45.5,
+      "hit_rate": 0.877,
+      "pcie_share": 0.009,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 13076,
+      "drafts_accepted": 8642
+    },
+    "engine_log_delta": "strata serve: prompt 127 tokens = 0 reused + 127 read in 3168 ms (40.1 tok/s), 12291 generated in 270790 ms (45.4 tok/s), drafts accepted 5315 of 8328, 1 checkpoints\nstrata serve: decode expert cache hit rate: 89.3% (6512275 hits / 7293310 lookups); 52610 more read by the GPU over PCIe or from another GPU (0.7% of all 7345920 routed)\nstrata serve: KV streaming: 99.96% of 87621468 block reads hit VRAM, 150.1 MiB read from RAM\nstrata serve: suffix drafts: 127 windows, 171 of 269 drafts accepted\nstrata serve: prompt 12433 tokens = 122 reused + 12311 read in 13742 ms (895.9 tok/s), 5497 generated in 120501 ms (45.6 tok/s), drafts accepted 3327 of 4748, 1 checkpoints\nstrata serve: decode expert cache hit rate: 84.3% (2757720 hits / 3272604 lookups); 48516 more read by the GPU over PCIe or from another GPU (1.5% of all 3321120 routed)\nstrata serve: KV streaming: 99.96% of 130256268 block reads hit VRAM, 216.7 MiB read from RAM\nstrata serve: suffix drafts: 77 windows, 183 of 215 drafts accepted\n"
+  },
+  {
+    "test": "recovery",
+    "prompt_sha256": "da83137ad63d007a2b9c7eb690732d6c95101e71054d04a4c1cd944be0ce46b4",
+    "usage": {
+      "prompt_tokens": 110,
+      "completion_tokens": 13042,
+      "total_tokens": 13152,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 110,
+      "prompt_ms": 2880.9,
+      "prompt_per_token_ms": 26.19,
+      "prompt_per_second": 38.2,
+      "predicted_n": 13042,
+      "predicted_ms": 280426.7,
+      "predicted_per_token_ms": 21.502,
+      "predicted_per_second": 46.5,
+      "draft_n": 10338,
+      "draft_n_accepted": 6701
+    },
+    "ttft_s": 2.9350931469998613,
+    "first_final_s": 166.0222893020018,
+    "elapsed_s": 283.31172557900027,
+    "reasoning_stream_duration_s": 163.0194332600022,
+    "final_stream_duration_s": 117.28943627699846,
+    "reasoning_characters_observed": 26726,
+    "answer_chars": 20286,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792364381.4558084,
+      "duration_s": 283.3,
+      "finish": "stop",
+      "prompt_tokens": 110,
+      "reused": 0,
+      "output_tokens": 13042,
+      "prompt_total": 110,
+      "prompt_read": 110,
+      "reasoning_recoveries": 0,
+      "reasoning_repeat_coverage": 0.035,
+      "engine_generated": 13042,
+      "prompt_ms": 2880.9,
+      "decode_ms": 280426.7,
+      "decode_tok_s": 46.5,
+      "hit_rate": 0.882,
+      "pcie_share": 0.009,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 10338,
+      "drafts_accepted": 6701
+    },
+    "engine_log_delta": "strata serve: prompt 110 tokens = 0 reused + 110 read in 2881 ms (38.2 tok/s), 13042 generated in 280427 ms (46.5 tok/s), drafts accepted 6701 of 10338, 1 checkpoints\nstrata serve: decode expert cache hit rate: 88.2% (7003174 hits / 7937169 lookups); 69711 more read by the GPU over PCIe or from another GPU (0.9% of all 8006880 routed)\nstrata serve: KV streaming: 99.96% of 95330892 block reads hit VRAM, 159.0 MiB read from RAM\nstrata serve: suffix drafts: 213 windows, 366 of 517 drafts accepted\n"
+  }
+]

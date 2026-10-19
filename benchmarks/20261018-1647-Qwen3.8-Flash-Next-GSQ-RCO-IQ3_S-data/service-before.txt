@@ -1,0 +1,5 @@
+MainPID=298535
+NRestarts=0
+ExecStart={ path=/opt/strata/.venv/bin/python ; argv[]=/opt/strata/.venv/bin/python -m serve.server --engine strata --config /opt/strata/strata-iq3_s.json --port 8080 ; ignore_errors=no ; start_time=[Sun 2026-10-18 16:37:53 EDT] ; stop_time=[n/a] ; pid=298535 ; code=(null) ; status=0/0 }
+Environment=PYTHONUNBUFFERED=1 STRATA_ROUTE_TAIL_SKIP=0 STRATA_SPEC_PROB=0 STRATA_HC_Q8=0
+ActiveEnterTimestamp=Sun 2026-10-18 16:37:53 EDT

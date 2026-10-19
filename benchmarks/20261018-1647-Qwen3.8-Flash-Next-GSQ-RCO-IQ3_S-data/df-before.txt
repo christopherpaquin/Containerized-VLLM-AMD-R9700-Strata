@@ -1,0 +1,2 @@
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1 xfs   477G  103G  374G  22% /nvme

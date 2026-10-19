@@ -1,0 +1,39 @@
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered blocking state
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered disabled state
+Oct 18 16:38:24 scar.lab kernel: veth2015169: entered allmulticast mode
+Oct 18 16:38:24 scar.lab kernel: veth2015169: entered promiscuous mode
+Oct 18 16:38:24 scar.lab kernel: eth0: renamed from veth0ae9432
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered blocking state
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered forwarding state
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered disabled state
+Oct 18 16:38:24 scar.lab kernel: veth0ae9432: renamed from eth0
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered disabled state
+Oct 18 16:38:24 scar.lab kernel: veth2015169 (unregistering): left allmulticast mode
+Oct 18 16:38:24 scar.lab kernel: veth2015169 (unregistering): left promiscuous mode
+Oct 18 16:38:24 scar.lab kernel: docker0: port 1(veth2015169) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(veth152f23a) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: veth4eb6a70: renamed from eth1
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(veth152f23a) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: veth152f23a (unregistering): left allmulticast mode
+Oct 18 16:38:57 scar.lab kernel: veth152f23a (unregistering): left promiscuous mode
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(veth152f23a) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth8e399ca) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: veth14e4086: renamed from eth0
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth8e399ca) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: veth8e399ca (unregistering): left allmulticast mode
+Oct 18 16:38:57 scar.lab kernel: veth8e399ca (unregistering): left promiscuous mode
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth8e399ca) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(vethe068940) entered blocking state
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(vethe068940) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: vethe068940: entered allmulticast mode
+Oct 18 16:38:57 scar.lab kernel: vethe068940: entered promiscuous mode
+Oct 18 16:38:57 scar.lab kernel: eth0: renamed from vetha518019
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(vethe068940) entered blocking state
+Oct 18 16:38:57 scar.lab kernel: br-4c5012b3e628: port 1(vethe068940) entered forwarding state
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth4de16b8) entered blocking state
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth4de16b8) entered disabled state
+Oct 18 16:38:57 scar.lab kernel: veth4de16b8: entered allmulticast mode
+Oct 18 16:38:57 scar.lab kernel: veth4de16b8: entered promiscuous mode
+Oct 18 16:38:57 scar.lab kernel: eth1: renamed from veth1ee456e
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth4de16b8) entered blocking state
+Oct 18 16:38:57 scar.lab kernel: br-877d623b4cd0: port 2(veth4de16b8) entered forwarding state

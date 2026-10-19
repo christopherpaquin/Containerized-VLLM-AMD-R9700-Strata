@@ -1,0 +1,30 @@
+    PID    PPID CMD                           RSS    VSZ %MEM
+ 298542  298535 /opt/strata/engine/strata - 54045104 94131664 40.9
+  48544       1 /home/cpaquin/.codex/packag 362476 1563460  0.2
+   2814       1 /usr/bin/opencode serve --h 308192 74786468  0.2
+  48642       1 /home/cpaquin/.codex/packag 201356 611992  0.1
+ 298535       1 /opt/strata/.venv/bin/pytho 179304 561732  0.1
+  51946   20482 codex --dangerously-bypass- 174384 918768  0.1
+   5832    5737 /home/cpaquin/.hermes/herme 165324 903628  0.1
+ 129903    5737 /home/cpaquin/.hermes/herme 136480 513884  0.1
+    577       1 /usr/lib/systemd/systemd-jo 111372 157700  0.0
+   2812       1 /usr/bin/dockerd -H fd:// - 110288 3055436  0.0
+ 301080  301054 /usr/local/bin/python3.12 / 79528 238296  0.0
+   2493       1 /usr/bin/containerd         61576 2639588  0.0
+  50453   48544 /home/cpaquin/.codex/packag 51476 1450922332  0.0
+  84600       1 /usr/libexec/fwupd/fwupd    48412 405572  0.0
+   1891       1 /snap/snapd/current/usr/lib 45584 2593932  0.0
+   5829    5737 /home/cpaquin/.hermes/herme 43960  60152  0.0
+   5925    5836 /usr/bin/syncthing serve -- 38472 2582324  0.0
+   2908    2822 /opt/scar-metrics/venv/bin/ 31612 119540  0.0
+   2822       1 /opt/scar-metrics/venv/bin/ 26372 113076  0.0
+ 317041       1 /usr/sbin/libvirtd --timeou 26172 1625448  0.0
+   2479       1 /usr/bin/python3 /usr/share 24544 118112  0.0
+   1870       1 /usr/bin/python3 /usr/bin/n 23132  40716  0.0
+ 318350  318348 python3 /tmp/observe_strata 22608  34804  0.0
+   2811       1 /usr/sbin/cups-browsed      20480 342604  0.0
+   1987       1 /usr/sbin/NetworkManager -- 20408 1279288  0.0
+   5836    5737 /usr/bin/syncthing serve -- 18232 1767792  0.0
+   4968    4772 haproxy -W -db -f /tmp/hapr 18228  37240  0.0
+      1       0 /sbin/init splash           16512  25596  0.0
+  84605       1 /usr/libexec/udisks2/udisks 16268 543708  0.0

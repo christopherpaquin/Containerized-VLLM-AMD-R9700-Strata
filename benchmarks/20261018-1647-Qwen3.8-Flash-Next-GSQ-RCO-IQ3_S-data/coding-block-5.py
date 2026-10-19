@@ -1,0 +1,2 @@
+import resource
+print(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)

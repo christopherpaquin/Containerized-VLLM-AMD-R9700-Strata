@@ -1,0 +1,161 @@
+00400000-00420000 r--p 00000000 08:31 6818211                            /usr/bin/python3.12
+00420000-00703000 r-xp 00020000 08:31 6818211                            /usr/bin/python3.12
+00703000-00a28000 r--p 00303000 08:31 6818211                            /usr/bin/python3.12
+00a28000-00a29000 r--p 00627000 08:31 6818211                            /usr/bin/python3.12
+00a29000-00ba7000 rw-p 00628000 08:31 6818211                            /usr/bin/python3.12
+00ba7000-00bab000 rw-p 00000000 00:00 0 
+2c6cc000-2ed79000 rw-p 00000000 00:00 0                                  [heap]
+761118000000-761118021000 rw-p 00000000 00:00 0 
+761118021000-76111c000000 ---p 00000000 00:00 0 
+76111c000000-76111c021000 rw-p 00000000 00:00 0 
+76111c021000-761120000000 ---p 00000000 00:00 0 
+761120000000-761120021000 rw-p 00000000 00:00 0 
+761120021000-761124000000 ---p 00000000 00:00 0 
+761124000000-761124021000 rw-p 00000000 00:00 0 
+761124021000-761128000000 ---p 00000000 00:00 0 
+761128000000-761128021000 rw-p 00000000 00:00 0 
+761128021000-76112c000000 ---p 00000000 00:00 0 
+76112d97c000-76112d97d000 ---p 00000000 00:00 0 
+76112d97d000-76112e17d000 rw-p 00000000 00:00 0 
+76112e17d000-76112e17e000 ---p 00000000 00:00 0 
+76112e17e000-76112e97e000 rw-p 00000000 00:00 0 
+76112e97e000-76112e97f000 ---p 00000000 00:00 0 
+76112e97f000-76112f17f000 rw-p 00000000 00:00 0 
+76112f17f000-76112f37f000 rw-p 00000000 00:00 0 
+76112f37f000-76112f380000 ---p 00000000 00:00 0 
+76112f380000-76112fb80000 rw-p 00000000 00:00 0 
+76112fb80000-76112fb81000 ---p 00000000 00:00 0 
+76112fb81000-761130381000 rw-p 00000000 00:00 0 
+761130381000-761137482000 rw-p 00000000 00:00 0 
+761137482000-761137492000 r--p 00000000 08:31 58725324                   /opt/strata/.venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+761137492000-7611374cd000 r-xp 00010000 08:31 58725324                   /opt/strata/.venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+7611374cd000-76113754c000 r--p 0004b000 08:31 58725324                   /opt/strata/.venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+76113754c000-76113754d000 r--p 000c9000 08:31 58725324                   /opt/strata/.venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+76113754d000-761137556000 rw-p 000ca000 08:31 58725324                   /opt/strata/.venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+761137556000-761137956000 rw-p 00000000 00:00 0 
+761137956000-761137974000 r--p 00000000 08:31 6826890                    /usr/lib/x86_64-linux-gnu/libssl.so.3
+761137974000-7611379d6000 r-xp 0001e000 08:31 6826890                    /usr/lib/x86_64-linux-gnu/libssl.so.3
+7611379d6000-7611379f2000 r--p 00080000 08:31 6826890                    /usr/lib/x86_64-linux-gnu/libssl.so.3
+7611379f2000-7611379fc000 r--p 0009c000 08:31 6826890                    /usr/lib/x86_64-linux-gnu/libssl.so.3
+7611379fc000-761137a00000 rw-p 000a6000 08:31 6826890                    /usr/lib/x86_64-linux-gnu/libssl.so.3
+761137a00000-761137c00000 rw-p 00000000 00:00 0 
+761137c00000-761137cb3000 r--p 00000000 08:31 6826889                    /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+761137cb3000-761137fe7000 r-xp 000b3000 08:31 6826889                    /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+761137fe7000-7611380b2000 r--p 003e7000 08:31 6826889                    /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+7611380b2000-76113810e000 r--p 004b1000 08:31 6826889                    /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+76113810e000-761138111000 rw-p 0050d000 08:31 6826889                    /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+761138111000-761138114000 rw-p 00000000 00:00 0 
+7611381ca000-7611381ce000 rw-p 00000000 00:00 0 
+7611381ce000-7611381d1000 r--p 00000000 08:31 6822945                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+7611381d1000-7611381f3000 r-xp 00003000 08:31 6822945                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+7611381f3000-7611381fe000 r--p 00025000 08:31 6822945                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+7611381fe000-7611381ff000 r--p 00030000 08:31 6822945                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+7611381ff000-761138200000 rw-p 00031000 08:31 6822945                    /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+761138200000-761138600000 rw-p 00000000 00:00 0 
+761138600000-761138b75000 r--p 00000000 08:31 6816150                    /usr/lib/locale/locale-archive
+761138b77000-761138b7a000 r--p 00000000 08:31 58725403                   /opt/strata/.venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+761138b7a000-761138b7d000 r-xp 00003000 08:31 58725403                   /opt/strata/.venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+761138b7d000-761138b7e000 r--p 00006000 08:31 58725403                   /opt/strata/.venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+761138b7e000-761138b7f000 r--p 00007000 08:31 58725403                   /opt/strata/.venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+761138b7f000-761138b80000 rw-p 00008000 08:31 58725403                   /opt/strata/.venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+761138b80000-761138b82000 r--p 00000000 08:31 6846677                    /usr/lib/python3.12/lib-dynload/resource.cpython-312-x86_64-linux-gnu.so
+761138b82000-761138b83000 r-xp 00002000 08:31 6846677                    /usr/lib/python3.12/lib-dynload/resource.cpython-312-x86_64-linux-gnu.so
+761138b83000-761138b84000 r--p 00003000 08:31 6846677                    /usr/lib/python3.12/lib-dynload/resource.cpython-312-x86_64-linux-gnu.so
+761138b84000-761138b85000 r--p 00003000 08:31 6846677                    /usr/lib/python3.12/lib-dynload/resource.cpython-312-x86_64-linux-gnu.so
+761138b85000-761138b86000 rw-p 00004000 08:31 6846677                    /usr/lib/python3.12/lib-dynload/resource.cpython-312-x86_64-linux-gnu.so
+761138b86000-761138b98000 r--p 00000000 08:31 6833838                    /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+761138b98000-761138ba5000 r-xp 00012000 08:31 6833838                    /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+761138ba5000-761138bb3000 r--p 0001f000 08:31 6833838                    /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+761138bb3000-761138bb4000 r--p 0002c000 08:31 6833838                    /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+761138bb4000-761138bbd000 rw-p 0002d000 08:31 6833838                    /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+761138bbd000-761138bbf000 r--p 00000000 08:31 6815767                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+761138bbf000-761138bcd000 r-xp 00002000 08:31 6815767                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+761138bcd000-761138bcf000 r--p 00010000 08:31 6815767                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+761138bcf000-761138bd0000 r--p 00011000 08:31 6815767                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+761138bd0000-761138bd1000 rw-p 00012000 08:31 6815767                    /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+761138bd2000-761138bda000 rw-p 00000000 00:00 0 
+761138bda000-761138bdb000 r--p 00000000 08:31 6831667                    /usr/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+761138bdb000-761138bdd000 r-xp 00001000 08:31 6831667                    /usr/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+761138bdd000-761138bde000 r--p 00003000 08:31 6831667                    /usr/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+761138bde000-761138bdf000 r--p 00003000 08:31 6831667                    /usr/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+761138bdf000-761138be0000 rw-p 00004000 08:31 6831667                    /usr/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+761138be0000-761138be1000 r--p 00000000 08:31 6834061                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+761138be1000-761138be2000 r-xp 00001000 08:31 6834061                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+761138be2000-761138be3000 r--p 00002000 08:31 6834061                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+761138be3000-761138be4000 r--p 00002000 08:31 6834061                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+761138be4000-761138be5000 rw-p 00003000 08:31 6834061                    /usr/lib/x86_64-linux-gnu/libpthread.so.0
+761138be5000-761138be6000 r--p 00000000 08:31 58727192                   /opt/strata/.venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+761138be6000-761138be7000 r-xp 00001000 08:31 58727192                   /opt/strata/.venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+761138be7000-761138be8000 r--p 00002000 08:31 58727192                   /opt/strata/.venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+761138be8000-761138be9000 r--p 00002000 08:31 58727192                   /opt/strata/.venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+761138be9000-761138bea000 rw-p 00003000 08:31 58727192                   /opt/strata/.venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+761138bea000-761138bed000 r--p 00000000 08:31 6845185                    /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+761138bed000-761138bf2000 r-xp 00003000 08:31 6845185                    /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+761138bf2000-761138bf5000 r--p 00008000 08:31 6845185                    /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+761138bf5000-761138bf6000 r--p 0000a000 08:31 6845185                    /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+761138bf6000-761138bf7000 rw-p 0000b000 08:31 6845185                    /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+761138bf7000-761138bf9000 r--p 00000000 08:31 6842591                    /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+761138bf9000-761138bfc000 r-xp 00002000 08:31 6842591                    /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+761138bfc000-761138bfe000 r--p 00005000 08:31 6842591                    /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+761138bfe000-761138bff000 r--p 00006000 08:31 6842591                    /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+761138bff000-761138c00000 rw-p 00007000 08:31 6842591                    /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+761138c00000-761138c28000 r--p 00000000 08:31 6834049                    /usr/lib/x86_64-linux-gnu/libc.so.6
+761138c28000-761138db1000 r-xp 00028000 08:31 6834049                    /usr/lib/x86_64-linux-gnu/libc.so.6
+761138db1000-761138e00000 r--p 001b1000 08:31 6834049                    /usr/lib/x86_64-linux-gnu/libc.so.6
+761138e00000-761138e04000 r--p 001ff000 08:31 6834049                    /usr/lib/x86_64-linux-gnu/libc.so.6
+761138e04000-761138e06000 rw-p 00203000 08:31 6834049                    /usr/lib/x86_64-linux-gnu/libc.so.6
+761138e06000-761138e13000 rw-p 00000000 00:00 0 
+761138e16000-761138e18000 r--p 00000000 08:31 6844345                    /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+761138e18000-761138e1f000 r-xp 00002000 08:31 6844345                    /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+761138e1f000-761138e21000 r--p 00009000 08:31 6844345                    /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+761138e21000-761138e22000 r--p 0000a000 08:31 6844345                    /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+761138e22000-761138e23000 rw-p 0000b000 08:31 6844345                    /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+761138e23000-761138e25000 r--p 00000000 08:31 6831365                    /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+761138e25000-761138e2c000 r-xp 00002000 08:31 6831365                    /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+761138e2c000-761138e2d000 r--p 00009000 08:31 6831365                    /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+761138e2d000-761138e2e000 r--p 0000a000 08:31 6831365                    /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+761138e2e000-761138e2f000 rw-p 0000b000 08:31 6831365                    /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+761138e2f000-761138e35000 r--p 00000000 08:31 6844064                    /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+761138e35000-761138e47000 r-xp 00006000 08:31 6844064                    /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+761138e47000-761138e4d000 r--p 00018000 08:31 6844064                    /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+761138e4d000-761138e4e000 r--p 0001d000 08:31 6844064                    /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+761138e4e000-761138e52000 rw-p 0001e000 08:31 6844064                    /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+761138e52000-761138eb6000 rw-p 00000000 00:00 0 
+761138eb6000-761138eba000 r--p 00000000 08:31 6818167                    /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+761138eba000-761138ed9000 r-xp 00004000 08:31 6818167                    /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+761138ed9000-761138ee1000 r--p 00023000 08:31 6818167                    /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+761138ee1000-761138ee3000 r--p 0002b000 08:31 6818167                    /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+761138ee3000-761138ee4000 rw-p 0002d000 08:31 6818167                    /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+761138ee4000-761138ee6000 r--p 00000000 08:31 6829528                    /usr/lib/x86_64-linux-gnu/libz.so.1.3
+761138ee6000-761138ef8000 r-xp 00002000 08:31 6829528                    /usr/lib/x86_64-linux-gnu/libz.so.1.3
+761138ef8000-761138efe000 r--p 00014000 08:31 6829528                    /usr/lib/x86_64-linux-gnu/libz.so.1.3
+761138efe000-761138eff000 r--p 0001a000 08:31 6829528                    /usr/lib/x86_64-linux-gnu/libz.so.1.3
+761138eff000-761138f00000 rw-p 0001b000 08:31 6829528                    /usr/lib/x86_64-linux-gnu/libz.so.1.3
+761138f00000-761138f10000 r--p 00000000 08:31 6834052                    /usr/lib/x86_64-linux-gnu/libm.so.6
+761138f10000-761138f8f000 r-xp 00010000 08:31 6834052                    /usr/lib/x86_64-linux-gnu/libm.so.6
+761138f8f000-761138fe7000 r--p 0008f000 08:31 6834052                    /usr/lib/x86_64-linux-gnu/libm.so.6
+761138fe7000-761138fe8000 r--p 000e7000 08:31 6834052                    /usr/lib/x86_64-linux-gnu/libm.so.6
+761138fe8000-761138fe9000 rw-p 000e8000 08:31 6834052                    /usr/lib/x86_64-linux-gnu/libm.so.6
+761138fec000-761138fee000 r--p 00000000 08:31 6845260                    /usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so
+761138fee000-761138ff0000 r-xp 00002000 08:31 6845260                    /usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so
+761138ff0000-761138ff1000 r--p 00004000 08:31 6845260                    /usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so
+761138ff1000-761138ff2000 r--p 00004000 08:31 6845260                    /usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so
+761138ff2000-761138ff3000 rw-p 00005000 08:31 6845260                    /usr/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so
+761138ff3000-761138ff7000 r--p 00000000 08:31 6833837                    /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+761138ff7000-761138ffd000 r-xp 00004000 08:31 6833837                    /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+761138ffd000-761139001000 r--p 0000a000 08:31 6833837                    /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+761139001000-761139002000 r--p 0000d000 08:31 6833837                    /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+761139002000-761139004000 rw-p 0000e000 08:31 6833837                    /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+761139004000-761139008000 rw-p 00000000 00:00 0 
+761139008000-76113900f000 r--s 00000000 08:31 6834038                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+76113900f000-761139011000 rw-p 00000000 00:00 0 
+761139011000-761139015000 r--p 00000000 00:00 0                          [vvar]
+761139015000-761139017000 r--p 00000000 00:00 0                          [vvar_vclock]
+761139017000-761139019000 r-xp 00000000 00:00 0                          [vdso]
+761139019000-76113901a000 r--p 00000000 08:31 6834046                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76113901a000-761139045000 r-xp 00001000 08:31 6834046                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+761139045000-76113904f000 r--p 0002c000 08:31 6834046                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+76113904f000-761139051000 r--p 00036000 08:31 6834046                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+761139051000-761139053000 rw-p 00038000 08:31 6834046                    /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffecb5b5000-7ffecb5d6000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

@@ -1,0 +1,89 @@
+[
+  {
+    "path": "/nvme/Strata-data/models/unsloth-UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00001-of-00004.gguf",
+    "bytes": 10946624,
+    "quant_types": {},
+    "rope": {
+      "general.architecture": "qwen4exp",
+      "general.type": "model",
+      "general.sampling.top_k": 20,
+      "general.sampling.top_p": 0.949999988079071,
+      "general.sampling.temp": 1.0,
+      "general.name": "Qwen3.8 Flash Next",
+      "general.description": "A Preview of the Qwen4 Architecture",
+      "general.size_label": "512x56B",
+      "qwen4exp.context_length": 262144,
+      "qwen4exp.rope.dimension_sections": [
+        11,
+        11,
+        10,
+        0
+      ],
+      "qwen4exp.rope.freq_base": 10000000.0,
+      "qwen4exp.rope.dimension_count": 64,
+      "general.quantized_by": "Unsloth",
+      "general.repo_url": "https://huggingface.co/unsloth",
+      "general.tags": [
+        "unsloth"
+      ],
+      "general.quantization_version": 2,
+      "general.file_type": 15,
+      "quantize.imatrix.file": "Qwen3.8-Flash-Next-GGUF/imatrix_unsloth.gguf",
+      "quantize.imatrix.dataset": "unsloth_calibration_Qwen3.8-Flash-Next.txt",
+      "quantize.imatrix.entries_count": 926,
+      "quantize.imatrix.chunks_count": 45
+    },
+    "ple": []
+  },
+  {
+    "path": "/nvme/Strata-data/models/unsloth-UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00002-of-00004.gguf",
+    "bytes": 49859583136,
+    "quant_types": {
+      "Q8_0": 125,
+      "F32": 135,
+      "IQ4_NL": 1,
+      "Q5_1": 10,
+      "Q4_K": 20,
+      "Q5_K": 2,
+      "BF16": 4
+    },
+    "rope": {},
+    "ple": [
+      {
+        "name": "per_layer_token_embd.weight",
+        "shape": [
+          160,
+          320001536
+        ],
+        "quant": "IQ4_NL",
+        "bytes": 28800138240
+      }
+    ]
+  },
+  {
+    "path": "/nvme/Strata-data/models/unsloth-UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00003-of-00004.gguf",
+    "bytes": 49376141504,
+    "quant_types": {
+      "Q4_K": 60,
+      "F32": 342,
+      "Q8_0": 306,
+      "BF16": 16,
+      "Q5_1": 28
+    },
+    "rope": {},
+    "ple": []
+  },
+  {
+    "path": "/nvme/Strata-data/models/unsloth-UD-Q4_K_XL/Qwen3.8-Flash-Next-UD-Q4_K_XL-00004-of-00004.gguf",
+    "bytes": 12087983520,
+    "quant_types": {
+      "Q5_1": 5,
+      "Q8_0": 72,
+      "Q4_K": 14,
+      "F32": 80,
+      "BF16": 4
+    },
+    "rope": {},
+    "ple": []
+  }
+]

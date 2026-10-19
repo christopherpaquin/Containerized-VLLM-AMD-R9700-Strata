@@ -1,0 +1,30 @@
+    PID    PPID CMD                           RSS    VSZ %MEM
+ 446232  446197 /opt/strata/engine/strata - 80964076 121014228 61.4
+ 534340    5737 /home/cpaquin/.hermes/tools 387896 1679996  0.2
+  48544       1 /home/cpaquin/.codex/packag 326488 1512160  0.2
+ 371153  363710 agy --dangerously-skip-perm 324020 3301816  0.2
+ 547427    5737 /home/cpaquin/.hermes/tools 293452 2062284  0.2
+   2814       1 /usr/bin/opencode serve --h 255724 74786468  0.1
+  48642       1 /home/cpaquin/.codex/packag 201716 611884  0.1
+ 446197       1 /opt/strata/.venv/bin/pytho 179664 711248  0.1
+ 544068  534340 /home/cpaquin/.hermes/tools 147576 18404888  0.1
+ 543497  534340 /home/cpaquin/.hermes/tools 145828 18408356  0.1
+    577       1 /usr/lib/systemd/systemd-jo 85236 137908  0.0
+   2812       1 /usr/bin/dockerd -H fd:// - 69172 3055436  0.0
+ 301080  301054 /usr/local/bin/python3.12 / 43324 238296  0.0
+  84600       1 /usr/libexec/fwupd/fwupd    42740 405572  0.0
+   2493       1 /usr/bin/containerd         41256 2713512  0.0
+   5829    5737 /home/cpaquin/.hermes/herme 40024  60152  0.0
+   5925    5836 /usr/bin/syncthing serve -- 37688 2582724  0.0
+   1891       1 /snap/snapd/current/usr/lib 35048 2593932  0.0
+   2908    2822 /opt/scar-metrics/venv/bin/ 31236 119540  0.0
+   5837    5737 /usr/bin/wireplumber        30084 567988  0.0
+   2822       1 /opt/scar-metrics/venv/bin/ 26092 113076  0.0
+   2479       1 /usr/bin/python3 /usr/share 23744 118112  0.0
+ 550833  550832 python3 -                   22964  34548  0.0
+   1870       1 /usr/bin/python3 /usr/bin/n 21132  40716  0.0
+   1987       1 /usr/sbin/NetworkManager -- 20128 1279400  0.0
+   2811       1 /usr/sbin/cups-browsed      20092 342604  0.0
+   5836    5737 /usr/bin/syncthing serve -- 18132 1767792  0.0
+   4968    4772 haproxy -W -db -f /tmp/hapr 17104  37240  0.0
+      1       0 /sbin/init splash           16408  25596  0.0

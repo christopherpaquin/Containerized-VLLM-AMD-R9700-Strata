@@ -1,0 +1,63 @@
+78G	/nvme/Strata-data/models/IQ3_S
+78G	/nvme/Strata-data/models
+4.9G	/nvme/Strata-data/mtp/tensors
+787M	/nvme/Strata-data/mtp/rt
+6.5G	/nvme/Strata-data/mtp
+0	/nvme/Strata-data/cache
+60K	/nvme/Strata-data/logs
+9.4M	/nvme/Strata-data/packs/iq3_s/tokenizer
+1.5G	/nvme/Strata-data/packs/iq3_s
+1.5G	/nvme/Strata-data/packs
+4.0K	/nvme/Strata-data/dashboard
+56K	/nvme/Strata-data/benchmarks/20261018-1647-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-data
+56K	/nvme/Strata-data/benchmarks
+86G	/nvme/Strata-data
+/nvme/Strata-data/mtp/mtp-inventory.json 7514 bytes
+/nvme/Strata-data/mtp/mtp-inventory.md 2437 bytes
+/nvme/Strata-data/mtp/tensors/mtp.fc_embedding.weight.bin 13107200 bytes
+/nvme/Strata-data/mtp/tensors/mtp.fc_hidden.weight.bin 13107200 bytes
+/nvme/Strata-data/mtp/tensors/mtp.hyper_connection_mixer.hc_norm.weight.bin 20480 bytes
+/nvme/Strata-data/mtp/tensors/mtp.hyper_connection_mixer.input_mix_weight_down.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.hyper_connection_mixer.input_mix_weight_up.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.attn_hyper_connection.block_inject_weight.weight.bin 81920 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.attn_hyper_connection.hc_norm.weight.bin 20480 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.attn_hyper_connection.input_mix_weight_down.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.attn_hyper_connection.input_mix_weight_up.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.experts.down_proj.bin 1677721600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.experts.gate_up_proj.bin 3355443200 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.gate.weight.bin 2621440 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.shared_expert.down_proj.weight.bin 3276800 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.shared_expert.gate_proj.weight.bin 3276800 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.shared_expert.up_proj.weight.bin 3276800 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp.shared_expert_gate.weight.bin 5120 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp_hyper_connection.block_inject_weight.weight.bin 81920 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp_hyper_connection.hc_norm.weight.bin 20480 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp_hyper_connection.input_mix_weight_down.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.mlp_hyper_connection.input_mix_weight_up.weight.bin 6553600 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.indexer.index_qk_proj.weight.bin 3276800 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.indexer.k_layernorm.weight.bin 256 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.indexer.q_layernorm.weight.bin 256 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.k_norm.weight.bin 512 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.k_proj.weight.bin 2621440 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.o_proj.weight.bin 31457280 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.q_norm.weight.bin 512 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.q_proj.weight.bin 62914560 bytes
+/nvme/Strata-data/mtp/tensors/mtp.layers.0.self_attn.v_proj.weight.bin 2621440 bytes
+/nvme/Strata-data/mtp/tensors/mtp.pre_fc_norm_embedding.weight.bin 5120 bytes
+/nvme/Strata-data/mtp/tensors/mtp.pre_fc_norm_hidden.weight.bin 20480 bytes
+/nvme/Strata-data/mtp/mtp-manifest.json 11643 bytes
+/nvme/Strata-data/mtp/mtp-q2_0.gguf 889017216 bytes
+/nvme/Strata-data/mtp/mtp-q2_0.gguf.report.json 3589 bytes
+/nvme/Strata-data/mtp/rt/experts.bin 707788800 bytes
+/nvme/Strata-data/mtp/rt/dense.bin 116099072 bytes
+/nvme/Strata-data/mtp/rt/dense.txt 1851 bytes
+/nvme/Strata-data/mtp/rt/draft_vocab.bin 425196 bytes
+/nvme/Strata-data/packs/iq3_s/dense.bin 1538035200 bytes
+/nvme/Strata-data/packs/iq3_s/index.txt 93685 bytes
+/nvme/Strata-data/packs/iq3_s/conversions.json 306 bytes
+/nvme/Strata-data/packs/iq3_s/tokenizer/vocab.json 5737005 bytes
+/nvme/Strata-data/packs/iq3_s/tokenizer/merges.txt 3353258 bytes
+/nvme/Strata-data/packs/iq3_s/tokenizer/token_type.json 744960 bytes
+/nvme/Strata-data/packs/iq3_s/tokenizer/tokenizer.json 541 bytes
+/nvme/Strata-data/packs/iq3_s/tokenizer/chat_template.jinja 9993 bytes
+/nvme/Strata-data/packs/iq3_s/native_experts.txt 3304 bytes

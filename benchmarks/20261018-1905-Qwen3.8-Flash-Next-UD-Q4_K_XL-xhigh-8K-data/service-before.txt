@@ -1,0 +1,5 @@
+MainPID=446197
+NRestarts=0
+ExecStart={ path=/opt/strata/.venv/bin/python ; argv[]=/opt/strata/.venv/bin/python -m serve.server --engine strata --config /opt/strata/strata-unsloth-ud-q4_k_xl.json --port 8080 ; ignore_errors=no ; start_time=[Sun 2026-10-18 17:56:07 EDT] ; stop_time=[n/a] ; pid=446197 ; code=(null) ; status=0/0 }
+Environment=PYTHONUNBUFFERED=1 STRATA_ROUTE_TAIL_SKIP=0 STRATA_SPEC_PROB=0 STRATA_HC_Q8=0
+ActiveEnterTimestamp=Sun 2026-10-18 17:56:07 EDT

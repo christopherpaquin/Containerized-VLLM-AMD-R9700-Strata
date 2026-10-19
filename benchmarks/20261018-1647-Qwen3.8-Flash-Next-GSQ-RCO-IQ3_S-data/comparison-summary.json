@@ -1,0 +1,158 @@
+[
+  {
+    "test": "systemd",
+    "prompt_sha256": "bbec99181558c856b4704069b9ee119de4fd0124cb7bd8c37f9ea7bfe143cb8a",
+    "usage": {
+      "prompt_tokens": 131,
+      "completion_tokens": 16282,
+      "total_tokens": 16413,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 131,
+      "prompt_ms": 1875.6,
+      "prompt_per_token_ms": 14.318,
+      "prompt_per_second": 69.8,
+      "predicted_n": 16282,
+      "predicted_ms": 231812.6,
+      "predicted_per_token_ms": 14.237,
+      "predicted_per_second": 70.2,
+      "draft_n": 12715,
+      "draft_n_accepted": 8272
+    },
+    "ttft_s": 1.9013926329989772,
+    "first_final_s": 128.23076551399936,
+    "elapsed_s": 233.69406863499898,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792356431.4850256,
+      "duration_s": 233.7,
+      "finish": "stop",
+      "prompt_tokens": 131,
+      "reused": 0,
+      "output_tokens": 16282,
+      "prompt_total": 131,
+      "prompt_read": 131,
+      "reasoning_recoveries": 0,
+      "reasoning_repeat_coverage": 0.015,
+      "engine_generated": 16282,
+      "prompt_ms": 1875.6,
+      "decode_ms": 231812.6,
+      "decode_tok_s": 70.2,
+      "hit_rate": 0.97,
+      "pcie_share": 0.002,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 12715,
+      "drafts_accepted": 8272
+    }
+  },
+  {
+    "test": "coding",
+    "prompt_sha256": "831bd02da88bd8acd1dab58974fe3e39ebc1ac41f5fb6b3b7ac26f39293f0924",
+    "usage": {
+      "prompt_tokens": 127,
+      "completion_tokens": 20580,
+      "total_tokens": 20707,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 127,
+      "prompt_ms": 7553.6,
+      "prompt_per_token_ms": 59.477,
+      "prompt_per_second": 16.8,
+      "predicted_n": 20580,
+      "predicted_ms": 311898.3,
+      "predicted_per_token_ms": 15.166,
+      "predicted_per_second": 65.9,
+      "draft_n": 15429,
+      "draft_n_accepted": 10198
+    },
+    "ttft_s": 0.958729857000435,
+    "first_final_s": 262.1009493090005,
+    "elapsed_s": 319.4703059500007,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792356665.2196522,
+      "duration_s": 319.5,
+      "finish": "stop",
+      "prompt_tokens": 127,
+      "reused": 0,
+      "output_tokens": 20580,
+      "prompt_total": 127,
+      "prompt_read": 127,
+      "reasoning_recoveries": 1,
+      "reasoning_repeat_coverage": 0.29,
+      "engine_generated": 20565,
+      "prompt_ms": 7553.599999999999,
+      "decode_ms": 311898.3,
+      "decode_tok_s": 65.9,
+      "hit_rate": 0.957,
+      "pcie_share": 0.005,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 15429,
+      "drafts_accepted": 10198
+    }
+  },
+  {
+    "test": "recovery",
+    "prompt_sha256": "da83137ad63d007a2b9c7eb690732d6c95101e71054d04a4c1cd944be0ce46b4",
+    "usage": {
+      "prompt_tokens": 110,
+      "completion_tokens": 12141,
+      "total_tokens": 12251,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 110,
+      "prompt_ms": 869.8,
+      "prompt_per_token_ms": 7.907,
+      "prompt_per_second": 126.5,
+      "predicted_n": 12141,
+      "predicted_ms": 176770.3,
+      "predicted_per_token_ms": 14.56,
+      "predicted_per_second": 68.7,
+      "draft_n": 9442,
+      "draft_n_accepted": 6083
+    },
+    "ttft_s": 0.9067014350002864,
+    "first_final_s": 113.08507235499928,
+    "elapsed_s": 177.64432248199955,
+    "request_metrics": {
+      "projection": null,
+      "time": 1792356984.7439618,
+      "duration_s": 177.6,
+      "finish": "stop",
+      "prompt_tokens": 110,
+      "reused": 0,
+      "output_tokens": 12141,
+      "prompt_total": 110,
+      "prompt_read": 110,
+      "reasoning_recoveries": 0,
+      "reasoning_repeat_coverage": 0.0,
+      "engine_generated": 12141,
+      "prompt_ms": 869.8,
+      "decode_ms": 176770.3,
+      "decode_tok_s": 68.7,
+      "hit_rate": 0.966,
+      "pcie_share": 0.003,
+      "ram_blobs": 0,
+      "file_blobs": 0,
+      "file_mb": 0,
+      "drafts_offered": 9442,
+      "drafts_accepted": 6083
+    }
+  }
+]

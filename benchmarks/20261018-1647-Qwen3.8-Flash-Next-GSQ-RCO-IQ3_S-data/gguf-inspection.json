@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/nvme/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "bytes": 54817524224,
+    "quant_types": {
+      "Q6_K": 129,
+      "BF16": 484,
+      "F32": 292,
+      "IQ4_XS": 45,
+      "Q4_K": 47,
+      "IQ4_NL": 86,
+      "IQ3_XXS": 34,
+      "Q5_K": 35,
+      "Q2_0": 9,
+      "IQ2_S": 40,
+      "F16": 1,
+      "IQ3_S": 20,
+      "Q8_0": 1
+    },
+    "rope": {
+      "qwen4exp.rope.dimension_sections": [
+        11,
+        11,
+        10,
+        0
+      ],
+      "qwen4exp.rope.freq_base": 10000000.0,
+      "qwen4exp.rope.dimension_count": 64
+    },
+    "ple": []
+  },
+  {
+    "path": "/nvme/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+    "bytes": 28800138432,
+    "quant_types": {
+      "IQ4_NL": 1
+    },
+    "rope": {},
+    "ple": [
+      {
+        "name": "per_layer_token_embd.weight",
+        "shape": [
+          160,
+          320001536
+        ],
+        "quant": "IQ4_NL",
+        "bytes": 28800138240
+      }
+    ]
+  }
+]
