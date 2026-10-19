@@ -1,0 +1,15 @@
+The user is asking for a comprehensive troubleshooting strategy for a RHEL systemd service that fails when started via systemctl but works when run manually as root. They want me to cover specific areas: user identity, environment variables, working directory, permissions, SELinux, dependencies, filesystem paths, and journal logs. They want a structured troubleshooting strategy that gathers evidence before making changes.
+
+Let me think through this systematically. The key insight is: "works as root manually" but "fails via systemctl" — this immediately points to differences in execution context. Let me organize a thorough, practical troubleshooting methodology.
+
+The differences between manual root execution and systemd execution:
+1. **User/identity**: Even if User=root is in the unit file, systemd might run with different UID/GID context, supplementary groups, or capabilities. If no User= is specified, it defaults to root, but the security context differs.
+2. **Environment**: systemd strips most environment variables. No PATH, no LD_LIBRARY_PATH, no JAVA_HOME, etc. The shell profile is not sourced.
+3. **Working directory**: systemd uses / as default WorkingDirectory unless specified. The app might depend on relative paths.
+4. **Permissions**: File access, file descriptor limits, capability drops.
+5. **SELinux**: RHEL enforces SELinux by default. Manual execution inherits the user's SELinux context (unconfined_t for root), but systemd runs services in a specific domain (or unconfined_service_t / custom domain).
+6. **Dependencies**: After=, Requires=, Wants= — services might depend on network, mounts, etc. that aren't ready.
+7. **Filesystem paths**: Absolute vs relative paths. systemd doesn't resolve paths the same way a shell does.
+8. **Journal logs**: systemctl status, journalctl -u, dmesg.
+
+Let me structure this as a methodical troubleshooting plan, emphasizing evidence gathering before any unit file changes.

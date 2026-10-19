@@ -1,0 +1,37 @@
+The user is asking me to:
+1. Describe how to diagnose issues with an existing Python function that recursively scans directories for files > 1 GiB
+2. The known issues: crashes on unreadable dirs, follows symlink loops, excessive memory on large trees
+3. Provide a robust implementation
+
+Let me think through this carefully:
+
+**Diagnosis approach:**
+- Reproduce the crash on unreadable directories (PermissionError, OSError)
+- Detect symlink loops (a symlink pointing to an ancestor)
+- Measure memory usage on large trees (accumulating all paths in a list)
+- Use logging, profilers, test fixtures
+
+**Robust implementation considerations:**
+- Unreadable directories: wrap os.scandir / os.listdir in try/except, use `follow_symlinks=False` for stat calls, handle PermissionError, FileNotFoundError, OSError
+- Symlink loops: Track visited real paths (using os.path.realpath or os.stat inode), skip symlinks that point to already-visited directories, or simply don't follow symlinks at all for directories
+- Memory: Use a generator/iterator instead of building a full list in memory, or use a heap of fixed size (heapq.nlargest or a min-heap capped at N), or use os.walk with a generator pattern
+- Sorting: If we need sorted output, we still need all results, but we can use a bounded heap if we only want top-K. Since the requirement is "all files larger than 1 GiB sorted largest to smallest", we need all of them. But we can stream and use a heap.
+- Actually, for very large trees, the list of files > 1 GiB might itself be manageable, but the directory traversal shouldn't hold all paths in memory. We can use os.walk (which is a generator) and yield files as we find them, then collect only the large files.
+- For memory on very large trees: the problem is likely that the implementation builds a full list of ALL files first, then filters. Instead, filter during traversal.
+- Also, use os.scandir() which gives DirEntry objects that cache stat info, avoiding extra syscalls.
+
+Let me write a thorough diagnosis section and then a robust implementation.
+
+For the implementation:
+- Use `os.scandir()` for efficiency (cached stat info)
+- Wrap directory access in try/except for PermissionError, OSError
+- For symlink safety: don't follow directory symlinks (or track visited inodes)
+- Use a generator to yield large files as found
+- Collect results in a list and sort (unavoidable for sorted output)
+- Optionally: use `heapq` if we want top-N instead of all, but the spec says "all files"
+- Handle FileNotFoundError (race condition where file disappears between listing and stat)
+- Use `follow_symlinks=False` on stat to avoid symlink loops
+- For directories: use `follow_symlinks=False` to avoid traversing into symlinked directories (prevents loops)
+- Alternatively, track visited real paths
+
+Let me structure the response well with clear sections.

@@ -1,0 +1,31 @@
+{
+  "uid": 65534,
+  "checks": [
+    {
+      "name": "sorted_strict_threshold_regular_only",
+      "passed": false,
+      "actual": [
+        "big",
+        "medium",
+        "threshold"
+      ]
+    },
+    {
+      "name": "optional_follow_symlinks_cycle_guard",
+      "passed": false,
+      "error": "TypeError(\"scan_large_files() got an unexpected keyword argument 'follow_symlinks'\")"
+    },
+    {
+      "name": "external_sort_forced_multiple_chunks",
+      "passed": false,
+      "error": "AttributeError(\"module 'generated' has no attribute 'scan_large_files_external'\")"
+    },
+    {
+      "name": "unreadable_directory_reports_and_skips",
+      "passed": true,
+      "logged": [
+        "no read permission on /tmp/tmph3nh7zj5/blocked \u2013 skipping"
+      ]
+    }
+  ]
+}

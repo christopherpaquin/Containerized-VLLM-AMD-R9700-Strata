@@ -1,0 +1,344 @@
+{
+  "tag": "20261018-2053-Qwen3.8-Flash-Next-UD-Q4_K_XL-medium-16K",
+  "started_at": "2026-10-18T20:53:49.920005",
+  "model": "qwen3.8-flash-next-unsloth-ud-q4_k_xl",
+  "reasoning_effort": "medium",
+  "reasoning_budget_tokens": 16384,
+  "reasoning_loop_recovery": "recover",
+  "settings_before": {
+    "shared": true,
+    "defaults": {
+      "reasoning_effort": "medium",
+      "reasoning_budget_tokens": 16384
+    }
+  },
+  "status_before": {
+    "service": "strata",
+    "model": "qwen3.8-flash-next-unsloth-ud-q4_k_xl",
+    "loaded": true,
+    "auto_load": true,
+    "structured_output": {
+      "formats": [
+        "json_object",
+        "json_schema"
+      ],
+      "method": "prompt_and_validate",
+      "constrained_decoding": false,
+      "stream_buffered": true
+    },
+    "engine": "0.1.45",
+    "started": 1792360614,
+    "uptime_s": 10615,
+    "cache_max_tokens": 262144,
+    "context": {
+      "native": 262144,
+      "max_positions": 262144
+    },
+    "concurrency": {
+      "serving": 1,
+      "requested": 1
+    },
+    "dialects": [
+      "/v1/chat/completions",
+      "/v1/messages",
+      "/v1/responses"
+    ],
+    "vision": {
+      "enabled": false,
+      "available": false,
+      "error": null
+    },
+    "image_generation": {
+      "enabled": false
+    },
+    "activity": {
+      "requests": 51,
+      "in_flight": 0,
+      "last_request_at": 1792371112
+    },
+    "last_timings": {
+      "cache_n": 0,
+      "prompt_n": 23,
+      "prompt_ms": 486.9,
+      "prompt_per_token_ms": 21.17,
+      "prompt_per_second": 47.2,
+      "predicted_n": 1,
+      "predicted_ms": 23.6,
+      "predicted_per_token_ms": 23.6,
+      "predicted_per_second": 42.4,
+      "draft_n": 0,
+      "draft_n_accepted": 0,
+      "at": 1792371112
+    },
+    "vram": {
+      "elastic": false
+    },
+    "machine": {
+      "at": 1792371229,
+      "gpu": {
+        "name": "AMD Radeon",
+        "used_mib": 32205.0,
+        "total_mib": 32624.0,
+        "util_pct": 3,
+        "temp_c": 38.0,
+        "power_w": 14.0
+      },
+      "ram": {
+        "used_gib": 81.3,
+        "total_gib": 125.7
+      }
+    }
+  },
+  "sys_before": {
+    "vram_used_mib": 32205,
+    "vram_free_mib": 419,
+    "gtt_used_mib": 20,
+    "mem_avail_mib": 45453,
+    "swap_used_kib": 200236
+  },
+  "tests": [
+    {
+      "name": "systemd",
+      "title": "Complex Linux / RHEL / systemd Troubleshooting",
+      "wall_seconds": 84.41,
+      "finish_reason": "stop",
+      "prompt_tokens": 89,
+      "cached_tokens": 0,
+      "completion_tokens": 4216,
+      "reasoning_tokens": 403,
+      "answer_tokens": 3813,
+      "total_tokens": 4305,
+      "reasoning_budget_hit": false,
+      "loop_recovery_triggered": false,
+      "completion_tokens_details": {},
+      "last_timings": {
+        "cache_n": 0,
+        "prompt_n": 89,
+        "prompt_ms": 1888.0,
+        "prompt_per_token_ms": 21.213,
+        "prompt_per_second": 47.1,
+        "predicted_n": 4216,
+        "predicted_ms": 82514.6,
+        "predicted_per_token_ms": 19.572,
+        "predicted_per_second": 51.1,
+        "draft_n": 3794,
+        "draft_n_accepted": 2393,
+        "at": 1792371314
+      },
+      "machine_after": {
+        "at": 1792371314,
+        "gpu": {
+          "name": "AMD Radeon",
+          "used_mib": 32205.0,
+          "total_mib": 32624.0,
+          "util_pct": 100,
+          "temp_c": 69.0,
+          "power_w": 196.0
+        },
+        "ram": {
+          "used_gib": 81.3,
+          "total_gib": 125.7
+        }
+      },
+      "sys_before": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45453,
+        "swap_used_kib": 200236
+      },
+      "sys_after": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45466,
+        "swap_used_kib": 200236
+      },
+      "engine_log_delta": [
+        "strata serve: prompt 89 tokens = 0 reused + 89 read in 1888 ms (47.1 tok/s), 4216 generated in 82515 ms (51.1 tok/s), drafts accepted 2393 of 3794, 1 checkpoints",
+        "strata serve: decode expert cache hit rate: 89.8% (2405028 hits / 2679273 lookups); 17847 more read by the GPU over PCIe or from another GPU (0.7% of all 2697120 routed)",
+        "strata serve: KV streaming: 99.95% of 26896476 block reads hit VRAM, 52.1 MiB read from RAM",
+        "strata serve: suffix drafts: 21 windows, 35 of 50 drafts accepted"
+      ],
+      "reasoning_chars": 1944,
+      "answer_chars": 14024,
+      "answer_tokens_raw_encode": 3809,
+      "reasoning_repeat_coverage": 0.0
+    },
+    {
+      "name": "coding",
+      "title": "Non-Trivial Python Coding & Debugging",
+      "wall_seconds": 81.05,
+      "finish_reason": "stop",
+      "prompt_tokens": 85,
+      "cached_tokens": 0,
+      "completion_tokens": 3835,
+      "reasoning_tokens": 651,
+      "answer_tokens": 3184,
+      "total_tokens": 3920,
+      "reasoning_budget_hit": false,
+      "loop_recovery_triggered": false,
+      "completion_tokens_details": {},
+      "last_timings": {
+        "cache_n": 0,
+        "prompt_n": 85,
+        "prompt_ms": 2367.5,
+        "prompt_per_token_ms": 27.853,
+        "prompt_per_second": 35.9,
+        "predicted_n": 3835,
+        "predicted_ms": 78673.2,
+        "predicted_per_token_ms": 20.515,
+        "predicted_per_second": 48.7,
+        "draft_n": 3450,
+        "draft_n_accepted": 2231,
+        "at": 1792371395
+      },
+      "machine_after": {
+        "at": 1792371395,
+        "gpu": {
+          "name": "AMD Radeon",
+          "used_mib": 32205.0,
+          "total_mib": 32624.0,
+          "util_pct": 100,
+          "temp_c": 69.0,
+          "power_w": 218.0
+        },
+        "ram": {
+          "used_gib": 81.5,
+          "total_gib": 125.7
+        }
+      },
+      "sys_before": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45466,
+        "swap_used_kib": 200236
+      },
+      "sys_after": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45327,
+        "swap_used_kib": 200236
+      },
+      "engine_log_delta": [
+        "strata serve: prompt 85 tokens = 0 reused + 85 read in 2368 ms (35.9 tok/s), 3835 generated in 78673 ms (48.7 tok/s), drafts accepted 2231 of 3450, 1 checkpoints",
+        "strata serve: decode expert cache hit rate: 87.5% (2103195 hits / 2402603 lookups); 23317 more read by the GPU over PCIe or from another GPU (1.0% of all 2425920 routed)",
+        "strata serve: KV streaming: 99.95% of 23410284 block reads hit VRAM, 47.4 MiB read from RAM",
+        "strata serve: suffix drafts: 7 windows, 10 of 20 drafts accepted"
+      ],
+      "reasoning_chars": 2848,
+      "answer_chars": 12093,
+      "answer_tokens_raw_encode": 3181,
+      "reasoning_repeat_coverage": 0.0
+    },
+    {
+      "name": "recovery",
+      "title": "Wrong-Hypothesis Recovery (PostgreSQL / firewalld)",
+      "wall_seconds": 53.27,
+      "finish_reason": "stop",
+      "prompt_tokens": 68,
+      "cached_tokens": 0,
+      "completion_tokens": 2604,
+      "reasoning_tokens": 442,
+      "answer_tokens": 2162,
+      "total_tokens": 2672,
+      "reasoning_budget_hit": false,
+      "loop_recovery_triggered": false,
+      "completion_tokens_details": {},
+      "last_timings": {
+        "cache_n": 0,
+        "prompt_n": 68,
+        "prompt_ms": 1518.1,
+        "prompt_per_token_ms": 22.325,
+        "prompt_per_second": 44.8,
+        "predicted_n": 2604,
+        "predicted_ms": 51742.6,
+        "predicted_per_token_ms": 19.87,
+        "predicted_per_second": 50.3,
+        "draft_n": 2413,
+        "draft_n_accepted": 1447,
+        "at": 1792371448
+      },
+      "machine_after": {
+        "at": 1792371448,
+        "gpu": {
+          "name": "AMD Radeon",
+          "used_mib": 32205.0,
+          "total_mib": 32624.0,
+          "util_pct": 100,
+          "temp_c": 70.0,
+          "power_w": 226.0
+        },
+        "ram": {
+          "used_gib": 81.5,
+          "total_gib": 125.7
+        }
+      },
+      "sys_before": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45327,
+        "swap_used_kib": 200236
+      },
+      "sys_after": {
+        "vram_used_mib": 32205,
+        "vram_free_mib": 419,
+        "gtt_used_mib": 20,
+        "mem_avail_mib": 45266,
+        "swap_used_kib": 200236
+      },
+      "engine_log_delta": [
+        "strata serve: prompt 68 tokens = 0 reused + 68 read in 1518 ms (44.8 tok/s), 2604 generated in 51743 ms (50.3 tok/s), drafts accepted 1447 of 2413, 1 checkpoints",
+        "strata serve: decode expert cache hit rate: 90.2% (1536090 hits / 1703516 lookups); 11044 more read by the GPU over PCIe or from another GPU (0.6% of all 1714560 routed)",
+        "strata serve: KV streaming: 99.94% of 13888488 block reads hit VRAM, 32.3 MiB read from RAM",
+        "strata serve: suffix drafts: 10 windows, 13 of 24 drafts accepted"
+      ],
+      "reasoning_chars": 1922,
+      "answer_chars": 7785,
+      "answer_tokens_raw_encode": 2159,
+      "reasoning_repeat_coverage": 0.0
+    }
+  ],
+  "finished_at": "2026-10-18T20:57:28.642176",
+  "sys_after": {
+    "vram_used_mib": 32205,
+    "vram_free_mib": 419,
+    "gtt_used_mib": 20,
+    "mem_avail_mib": 45266,
+    "swap_used_kib": 200236
+  },
+  "coding_validation": {
+    "uid": 65534,
+    "checks": [
+      {
+        "name": "sorted_strict_threshold_regular_only",
+        "passed": false,
+        "actual": [
+          "big",
+          "medium",
+          "threshold"
+        ]
+      },
+      {
+        "name": "optional_follow_symlinks_cycle_guard",
+        "passed": false,
+        "error": "TypeError(\"scan_large_files() got an unexpected keyword argument 'follow_symlinks'\")"
+      },
+      {
+        "name": "external_sort_forced_multiple_chunks",
+        "passed": false,
+        "error": "AttributeError(\"module 'generated' has no attribute 'scan_large_files_external'\")"
+      },
+      {
+        "name": "unreadable_directory_reports_and_skips",
+        "passed": true,
+        "logged": [
+          "no read permission on /tmp/tmph3nh7zj5/blocked \u2013 skipping"
+        ]
+      }
+    ]
+  }
+}
